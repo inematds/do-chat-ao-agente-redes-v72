@@ -1,0 +1,219 @@
+{
+  "slug": "seu-plano",
+  "num": 8,
+  "titulo": "Your channel, in the right order",
+  "titulo_curto": "Your plan",
+  "menu": "Plan",
+  "minutos": 12,
+  "hero_alt": "An organized desk with an open planning notebook, a calendar, and a phone standing upright.",
+  "lead": "You’ve seen the whole pipeline. Now put the pieces together in the order they depend on one another: the reel on paper, the rules, the source material, the checked script, the schedule, and the week with a gate. Generate your dated plan, then return to the training overview to see how this step builds on the other three.",
+  "objetivo": "leave with a dated plan for the 7 exercises in step 4 and know how to say, at each stage, what proves it’s done.",
+  "competencias": [
+    "plano-do-canal",
+    "schedule-with-gate"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "The order of the pieces and why it matters"
+    },
+    {
+      "icone": "calendario",
+      "t": "Your dated plan (.md and calendar)"
+    },
+    {
+      "icone": "check",
+      "t": "What proves each stage is done"
+    },
+    {
+      "icone": "seta",
+      "t": "Where this step fits in the training"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The pieces, in dependency order",
+      "sub": "Click each step. Each one uses what came before.",
+      "nos": [
+        {
+          "icone": "video",
+          "titulo": "Reel on paper",
+          "sub": "lesson 2 · E1",
+          "detalhe": "The reel in 7 steps, based on a plan rated 7 or higher. Proof: you can read it in under 45 s, and the first line hooks you."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Niche and rules",
+          "sub": "lesson 3 · E2",
+          "detalhe": "<code>canais.md</code> and <code>regras.md</code>. Proof: 5 references, each with a one-line criterion, and the required disclaimer written out."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Sourced database",
+          "sub": "lesson 4 · E3",
+          "detalhe": "<code>base.md</code> from a transcribed video. Proof: <code>confere.py</code> prints only OK.",
+          "forte": true
+        },
+        {
+          "icone": "chat",
+          "titulo": "Verified script",
+          "sub": "lesson 5 · E4",
+          "detalhe": "The 60 s script requested from the agent. Proof: every number is in the source material, and the gate checklist is checked off."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Schedule",
+          "sub": "lesson 7 · E5",
+          "detalhe": "The timer or cron schedule written down. Proof: the next round is listed, and you know what happens on a day with no topic."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Week with a gate",
+          "sub": "lesson 7 · E6",
+          "detalhe": "A week approving each video, with rejections turned into rules. Proof: 3 days in a row without rejecting one."
+        }
+      ],
+      "legenda": "The extra challenge (3 videos for the same audience, lesson 6) comes in when E4 is done. It doesn’t depend on the schedule."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your dated plan",
+      "sub": "Choose a start date and how much time you have each week. The plan accounts for exercises that require real days of use.",
+      "curso": "Social media on autopilot",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Reel in 7 steps",
+          "aula": "reel-7-etapas"
+        },
+        {
+          "titulo": "Niche and rules",
+          "aula": "nicho-e-regras"
+        },
+        {
+          "titulo": "Sourced database",
+          "aula": "base-com-fonte"
+        },
+        {
+          "titulo": "Verified script",
+          "aula": "roteiro-conferido"
+        },
+        {
+          "titulo": "Videos by audience",
+          "aula": "videos-por-publico"
+        },
+        {
+          "titulo": "Schedule and gate",
+          "aula": "agenda-e-portao"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Social Media on Autopilot",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Estimated finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What I rejected and the rule I created",
+        "h": "hours per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Step 4 in three sentences",
+      "itens": [
+        {
+          "t": "Source before video",
+          "texto": "Every number on screen has a source, the video, and the exact excerpt. If it doesn’t, it doesn’t go in."
+        },
+        {
+          "t": "Low cost before high cost",
+          "texto": "The plan, text, and fact check come before the avatar and render. The gate goes where the spending starts."
+        },
+        {
+          "t": "Rejection becomes a rule",
+          "texto": "The schedule runs on its own, but each rejection from you becomes a line in regras.md. The gate only comes down when rejections stop."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "The full training in one video",
+      "sub": "Where this step fits: terminal, assistant, queues, and social media.",
+      "chave": "jornada-ia"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Final test",
+      "sub": "One question for each piece of the pipeline.",
+      "perguntas": [
+        {
+          "p": "Which of these sequences respects the dependencies between the pieces?",
+          "opcoes": [
+            "Schedule → source → rules → script.",
+            "Rules → source → reviewed script → schedule → week with a gate.",
+            "Script → schedule → rules → source.",
+            "Week with a gate → rules → source."
+          ],
+          "certa": 1,
+          "explica": "The source depends on the references and rules; the script depends on the source; the schedule only makes sense with the reviewed script; the gate comes last, with the schedule running.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "What proves that your sourced base is ready?",
+          "opcoes": [
+            "It has more than 20 lines.",
+            "The checker finds every passage in the transcript (only OK).",
+            "The agent said it looks good.",
+            "The numbers seem reasonable."
+          ],
+          "certa": 1,
+          "explica": "Done when it’s verifiable: the script searches for each passage in the transcript. Your opinion or the agent’s isn’t proof.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Where does the gate protect the most money and time?",
+          "opcoes": [
+            "After publishing.",
+            "Before the avatar and render, which cost money and can’t be undone.",
+            "When choosing the music.",
+            "Nowhere: it’s just a formality."
+          ],
+          "certa": 1,
+          "explica": "In promoavatar, the first gate protects the avatar expense, and the second protects the render expense. The text is the cheap part to get wrong.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continue here",
+      "links": [
+        {
+          "t": "Overview of the From chat to agent program",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "The program’s 23 exercises",
+          "href": "https://inematds.github.io/jornada-agentes/guia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Program area in eventos",
+          "href": "https://eventos.inema.pro/do-chat-ao-agente/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Free courses on INEMA.CLUB",
+          "href": "https://www.inema.club/cursos/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

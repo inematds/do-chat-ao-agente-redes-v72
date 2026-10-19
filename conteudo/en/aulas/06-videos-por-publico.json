@@ -1,0 +1,309 @@
+{
+  "slug": "videos-por-publico",
+  "num": 6,
+  "titulo": "One topic, different audiences: promoavatar and promoavatar3",
+  "titulo_curto": "Videos by audience",
+  "menu": "Audiences",
+  "minutos": 17,
+  "hero_alt": "A grid of twelve vertical screens, each showing a different audience, on an editing desk.",
+  "lead": "The same topic won’t persuade a young person and a retiree in the same way. promoavatar writes a script for each of 12 audiences; promoavatar3 writes three for the same audience: reach, authority, and promotional. In both, the bot writes and stops. You approve before spending on the avatar and rendering.",
+  "objetivo": "plan 3 videos for the same audience (reach, authority, promotional) with the two gates and each avatar’s contract title.",
+  "competencias": [
+    "videos-by-audience",
+    "gate-before-spending",
+    "contract-title"
+  ],
+  "aprende": [
+    {
+      "icone": "usuario",
+      "t": "The 12 audiences and what motivates each one"
+    },
+    {
+      "icone": "camadas",
+      "t": "Reach, authority, and promotional"
+    },
+    {
+      "icone": "portao",
+      "t": "The two gates: before the avatar and before rendering"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Why the video title is a contract"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The promoavatar cycle",
+      "sub": "Four phases and two gates. The pipeline stops at the gates and only moves forward when you approve.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Text",
+          "sub": "one script per audience",
+          "itens": [
+            {
+              "icone": "robo",
+              "t": "Agent writes"
+            },
+            {
+              "icone": "portao",
+              "t": "STOPS: /aprovar"
+            }
+          ],
+          "detalhe": "The agent writes one script per audience and sends each one in the chat with the video’s exact title. This is the first gate: you review, then type <code>/aprovar</code>. Changing the cover at this point is free.",
+          "forte": true
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Avatar",
+          "sub": "one route per flow",
+          "itens": [
+            {
+              "icone": "video",
+              "t": "You in the studio (default)"
+            }
+          ],
+          "detalhe": "Who generates the avatar video. By default, that’s you in the HeyGen studio. There are routes where the bot generates it (studio script, credits, API), but only one per flow: two would generate the same video twice."
+        },
+        {
+          "icone": "baixar",
+          "titulo": "Download",
+          "sub": "by exact title",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "A8-mulheres-v1"
+            },
+            {
+              "icone": "portao",
+              "t": "FOR: you to check"
+            }
+          ],
+          "detalhe": "Find the video in the studio by its exact title and download it. One character off and nothing is found. Second gate: you check the downloaded avatars before using up the render queue."
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Reel",
+          "sub": "delivery to the channel",
+          "itens": [
+            {
+              "icone": "megafone",
+              "t": "Audience channel"
+            }
+          ],
+          "detalhe": "Build the 9:16 reel and deliver it to that audience’s channel. Delivery is the last step in the pipeline: the <code>canal</code> field for each audience in <code>flow.json</code> sets the destination."
+        }
+      ],
+      "legenda": "Approving first is better than retrying later: avatar and render cost money and can’t be undone. The first gate protects your avatar spend; the second protects your render spend."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Three videos for the same audience (promoavatar3)",
+      "sub": "Publish in this order: reach → authority → promotional.",
+      "passos": [
+        {
+          "titulo": "Reach",
+          "sub": "-alc · 25–40 s",
+          "texto": [
+            "Goal: stop the scroll and get shared.",
+            "CTA: comment or share. Never promotional."
+          ],
+          "exemplo": {
+            "rot": "Studio title",
+            "texto": "C7-jovens-alc-v1"
+          }
+        },
+        {
+          "titulo": "Authority",
+          "sub": "-aut · 35–60 s",
+          "texto": [
+            "Goal: teach something concrete and get saved.",
+            "CTA: save, follow, or try it."
+          ],
+          "exemplo": {
+            "rot": "Studio title",
+            "texto": "C7-jovens-aut-v1"
+          }
+        },
+        {
+          "titulo": "Promotional",
+          "sub": "-pro · 30–45 s",
+          "texto": [
+            "Goal: connect the pain point to the solution.",
+            "CTA: just one, for inema.club."
+          ],
+          "exemplo": {
+            "rot": "Studio title",
+            "texto": "C7-jovens-pro-v1"
+          }
+        },
+        {
+          "titulo": "The 12 audiences",
+          "sub": "each with its own trigger",
+          "texto": [
+            "everyday people, young people, professionals, women, entrepreneurs, technicians, 40+, 60+, educators, creators, people looking for a new job, and families. Each audience has its own trigger and channel."
+          ],
+          "exemplo": {
+            "rot": "40+ trigger",
+            "texto": "Your experience goes further when you multiply it with AI."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Commands and contract",
+      "sub": "Bot commands (inemaccbot). For your channel, the key pattern is: filter, review the plan, approve.",
+      "blocos": [
+        {
+          "rot": "bot chat",
+          "icone": "chat",
+          "conteudo": "# review the plan without spending anything (does not add to the queue)\n/promoavatar3 <assunto> | alvos=jovens-alc,jovens-aut,jovens-pro | sombra\n\n# run for just one audience, across all three types\n/promoavatar3 <assunto> | alvos=jovens-alc,jovens-aut,jovens-pro\n\n# after reviewing the text\n/aprovar C#7"
+        },
+        {
+          "rot": "titulo-contrato.txt",
+          "icone": "arquivo",
+          "conteudo": "promoavatar:   A<N>-<publico>-v1        ex.: A8-mulheres-v1\npromoavatar3:  C<N>-<publico>-<tipo>-v1 ex.: C7-jovens-pro-v1\n\nThe download matches by exact equality. Short suffixes (alc, aut, pro):\na long title was already truncated in the studio and broke the match."
+        },
+        {
+          "rot": "meus-3-videos.md",
+          "icone": "video",
+          "conteudo": "# Same topic, same audience: <público>\n\nTopic: \nAudience trigger: \n\n| Type | Length | Goal | CTA | Studio title |\n|---|---|---|---|---|\n| reach | 25–40 s | get shared | comment or share | |\n| authority | 35–60 s | get saved | save, follow, or try it | |\n| promotional | 30–45 s | connect a pain point to a solution | one only, for your site | |\n\nResult (comments in 7 days): reach __ · auth __ · promo __"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Promoavatar × promoavatar3",
+            "html": "<ul><li><b>promoavatar</b>: one video per audience, 12 audiences. Reference A#N.</li><li><b>promoavatar3</b>: three videos per audience (reach, authority, promo), 36 possible targets. Reference C#N. The usual way to filter is <code>| alvos=</code>.</li><li>They are separate systems: changing one does not affect the other.</li></ul>"
+          },
+          {
+            "rot": "Viral variant",
+            "html": "<p><code>| prompt=viral</code>: reach above all. No brand, no course, and no inema.club in the spoken lines; always use an engagement CTA, with a flexible length of 15 to 45 s. The final clip shows only the brand, so it does not compete with the request to comment.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "Find the download by title",
+      "sub": "The avatars are in the studio. The download looks for each one by its exact title.",
+      "tarefas": [
+        "C7-jovens-alc-v1",
+        "C7-jovens-aut-v1",
+        "C7-jovens-pro-v1",
+        "C7-40mais-alc-v1",
+        "C7-40mais-aut-v1"
+      ],
+      "falha": 3,
+      "rot": {
+        "entrada": "in studio",
+        "rodando": "downloading",
+        "feito": "reel delivered",
+        "falhou": "not found",
+        "rodar": "Download and assemble",
+        "parar": "Interrupt",
+        "zerar": "Start again"
+      },
+      "msg": {
+        "inicio": "5 avatars are ready in the studio. Click \"Download and assemble\".",
+        "rodando": "Looking for each video by its exact title, downloading, and assembling the reel.",
+        "parou": "Interrupted. Anything being downloaded goes back in the queue for the next run.",
+        "retoma": "Resumed: reels that are already done are not made again.",
+        "fim": "All reels delivered to the audience channel.",
+        "fimfalha": "One video was not found: in the studio, it was saved as \"C7-40mais-alcance-v1\". A title outside the contract never matches."
+      },
+      "legenda": "Illustrative browser simulation. The failure is intentional: a title typed from memory, with the longer suffix."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the extra challenge for sequence 4",
+      "sub": "Do this after E4. Use an avatar, your camera, or just the scripts.",
+      "exercicios": [
+        {
+          "id": "desafio",
+          "titulo": "Challenge · 3 videos for the same audience",
+          "min": "1 week",
+          "dias": 7,
+          "texto": "Write <code>meus-3-videos.md</code> for an audience in your niche, publish in this order: reach → authority → promotional, and note the comments on each one.",
+          "pronto": "all three were published with titles that match the contract, and you know which one got the most comments."
+        }
+      ],
+      "fonte": "Extra challenge from <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after you answer.",
+      "perguntas": [
+        {
+          "p": "When does changing a reel's cover image cost nothing?",
+          "opcoes": [
+            "After the reel has been assembled.",
+            "At the text gate, before any avatar or render.",
+            "During the download.",
+            "It is never free."
+          ],
+          "certa": 1,
+          "explica": "At the text gate, no avatar, image, or render has been created yet. After that, changing it means assembling the reel again.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "What is the CTA for a reach video?",
+          "opcoes": [
+            "Buy now.",
+            "Comment or share, never a sales CTA.",
+            "Visit three websites.",
+            "Subscribe to the channel and the course."
+          ],
+          "certa": 1,
+          "explica": "Reach content aims to stop the scroll and get shared. The invitation to visit the site belongs in the promotional video.",
+          "ref": "passos"
+        },
+        {
+          "p": "The video was saved in the studio as \"C7-jovens-promocional-v1\". What happens during the download?",
+          "opcoes": [
+            "It downloads normally.",
+            "It is not found: the title must be exactly C7-jovens-pro-v1.",
+            "The bot fixes the name automatically.",
+            "It downloads the version without captions."
+          ],
+          "certa": 1,
+          "explica": "The download matches by exact text. That’s why the chat sends the finished title, so you don’t have to type it from memory.",
+          "ref": "codigo"
+        },
+        {
+          "p": "What is “| sombra” for?",
+          "opcoes": [
+            "To darken the video.",
+            "To see the plan (phase × target × queue) without queueing anything or spending anything.",
+            "To publish secretly.",
+            "To skip the gates."
+          ],
+          "certa": 1,
+          "explica": "With “| sombra,” the bot only prints the plan. That’s how you check a new topic before spending GPU time.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To learn more",
+      "links": [
+        {
+          "t": "promoavatar Guide",
+          "href": "https://inematds.github.io/promoavatar/guia/",
+          "icone": "megafone"
+        },
+        {
+          "t": "promoavatar3 Guide",
+          "href": "https://inematds.github.io/promoavatar3/guia/",
+          "icone": "megafone"
+        }
+      ]
+    }
+  ]
+}

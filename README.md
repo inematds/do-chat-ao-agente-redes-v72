@@ -4,6 +4,8 @@ Curso completo do **degrau 4** da formação [Do chat ao agente](https://inematd
 
 **Abrir o curso:** https://inematds.github.io/do-chat-ao-agente-redes-v72/
 
+**Other languages / Otros idiomas:** [English](https://inematds.github.io/do-chat-ao-agente-redes-v72/en/) · [Español](https://inematds.github.io/do-chat-ao-agente-redes-v72/es/)
+
 ## As 8 aulas
 
 1. A esteira de um canal com fonte na tela

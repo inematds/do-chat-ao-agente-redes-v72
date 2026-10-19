@@ -1,0 +1,297 @@
+{
+  "slug": "base-com-fonte",
+  "num": 4,
+  "titulo": "The sourced database: every number with the exact quote",
+  "titulo_curto": "The sourced database",
+  "menu": "Database",
+  "minutos": 18,
+  "hero_alt": "Screen showing a long transcript with a highlighted excerpt being copied into a table.",
+  "lead": "base.md is the heart of the channel with sources. Every number that appears on screen goes in with who said it, the video, the date, and a quote copied from the transcript without edits. A script checks each quote; if one isn’t there, the video is discarded. Here you’ll build your database and checker.",
+  "objetivo": "build base.md for a video in your niche, with an exact quote on every row, and use a script to check each quote against the transcript.",
+  "competencias": [
+    "sourced-database",
+    "local-transcription",
+    "automatic-check"
+  ],
+  "aprende": [
+    {
+      "icone": "chat",
+      "t": "From video to transcript, on your computer"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The five columns in base.md"
+    },
+    {
+      "icone": "lupa",
+      "t": "What counts as an exact quote (and what doesn’t)"
+    },
+    {
+      "icone": "check",
+      "t": "A 15-line checker, like checar.py"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From video to checked row",
+      "sub": "Click each block.",
+      "nos": [
+        {
+          "icone": "video",
+          "titulo": "Video",
+          "sub": "from a source",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "id, date, title"
+            }
+          ],
+          "detalhe": "A video from one of the 5 channels in your <code>canais.md</code>. Note the YouTube ID, date, and title: they go in the \"Video\" column and in the source shown on screen."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Transcript",
+          "sub": "local",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "Whisper large-v3"
+            }
+          ],
+          "detalhe": "The monitoring tools download only the audio and transcribe it on your computer (inemavox, Whisper large-v3). Any local transcription tool will work. The <code>transcript.txt</code> file is proof of everything that follows."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "base.md",
+          "sub": "one row per number",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Number used"
+            },
+            {
+              "icone": "usuario",
+              "t": "Who said it"
+            },
+            {
+              "icone": "chat",
+              "t": "Quote in quotation marks"
+            }
+          ],
+          "detalhe": "Columns: number used, who said it, video (exact ID), date, and quote. Put the quote in straight quotation marks. It must be a verbatim copy of one continuous passage from the transcript, 6 to 30 words long, with no edits or combined passages.",
+          "forte": true
+        },
+        {
+          "icone": "portao",
+          "titulo": "Review",
+          "sub": "is the quote there?",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Ignores accents and punctuation"
+            },
+            {
+              "icone": "x",
+              "t": "If it’s not there: discard the video"
+            }
+          ],
+          "detalhe": "The script normalizes the text (lowercase, no accents, no punctuation) and searches for each quote in the transcript of the cited video. If a quote isn’t there, the entire database fails."
+        }
+      ],
+      "legenda": "The check doesn’t judge whether the number is true in the real world. It confirms that someone said exactly that in the cited video. That’s why everything is attributed (\"according to him\")."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Verbatim quotes: right and wrong",
+      "sub": "Illustrative examples based on an invented transcript for the real estate niche.",
+      "passos": [
+        {
+          "titulo": "Right",
+          "sub": "continuous copy",
+          "texto": [
+            "Copy directly from the transcript, exactly as written, even if the speech is informal. Use 6 to 30 words, enough to prove the number."
+          ],
+          "exemplo": {
+            "rot": "Quote",
+            "texto": "\"the average rent here in the area went up twelve percent in one year\""
+          }
+        },
+        {
+          "titulo": "Incorrect: edited",
+          "sub": "improved the wording",
+          "texto": [
+            "Changing words to make them sound better breaks the verification. The script can’t find them, and the video fails."
+          ],
+          "exemplo": {
+            "rot": "Quote",
+            "texto": "\"the average rent in the area increased 12% over the last year\""
+          }
+        },
+        {
+          "titulo": "Incorrect: stitched together",
+          "sub": "joined two pieces",
+          "texto": [
+            "Joining the beginning of one sentence to the end of another creates a sentence no one said."
+          ],
+          "exemplo": {
+            "rot": "Quote",
+            "texto": "\"average rent went up… and will keep rising in two thousand twenty-seven\""
+          }
+        },
+        {
+          "titulo": "Incorrect: too short",
+          "sub": "proves nothing",
+          "texto": [
+            "Two or three words can appear anywhere and don’t show the context. Use at least 6."
+          ],
+          "exemplo": {
+            "rot": "Quote",
+            "texto": "\"twelve percent\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The models: transcribe, note, verify",
+      "sub": "Run it in the agent’s folder. Replace &lt;URL&gt; with the selected video.",
+      "blocos": [
+        {
+          "rot": "terminal: audio + local transcript",
+          "icone": "terminal",
+          "conteudo": "yt-dlp -x --audio-format mp3 -o \"audio.%(ext)s\" \"<URL>\"\n# with inemavox (or another local transcriber):\npython transcrever_v1.py --in audio.mp3 --outdir tx --whisper-model large-v3"
+        },
+        {
+          "rot": "base.md",
+          "icone": "arquivo",
+          "conteudo": "| Number used | Who said it | Video | Date | Transcript excerpt |\n|---|---|---|---|---|\n| | | <id do YouTube> | dd/mm/aaaa | \"<6 a 30 palavras copiadas>\" |"
+        },
+        {
+          "rot": "confere.py",
+          "icone": "check",
+          "conteudo": "#!/usr/bin/env python3\n\"\"\"usage: python3 confere.py base.md transcript.txt\nIs each quoted excerpt from the source in the transcript? Exits 1 if any are missing.\"\"\"\nimport re, sys, unicodedata\n\ndef n(s):  # lowercase, no accents, no punctuation\n    s = unicodedata.normalize(\"NFD\", s.lower()).encode(\"ascii\", \"ignore\").decode()\n    return re.sub(r\"\\s+\", \" \", re.sub(r\"[^a-z0-9%]+\", \" \", s)).strip()\n\nbase = open(sys.argv[1], encoding=\"utf-8\").read()\ntx = n(open(sys.argv[2], encoding=\"utf-8\").read())\nfora = 0\nfor trecho in re.findall(r'\"([^\"]{20,})\"', base):\n    ok = n(trecho) in tx\n    fora += not ok\n    print(\"OK  \" if ok else \"FORA\", trecho[:70])\nsys.exit(1 if fora else 0)"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Output",
+            "html": "<pre>OK   average rent here in the area went up twelve percent in one year\nFORA average rent in the area increased 12% over the last year</pre><p>One line is FORA: fix it by copying it again from the transcript. The radars’ <code>checar.py</code> does the same for every video cited.</p>"
+          },
+          {
+            "rot": "Why normalize",
+            "html": "<p>The transcript and the source can differ in accents, commas, or capitalization without changing the meaning. Normalizing both sides avoids false failures and still catches changed words or stitched-together sentences.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "See verification in action",
+      "sub": "Each line in the source goes through the checker. Interrupt it halfway and run it again.",
+      "tarefas": [
+        "Line 1 · rent went up 12% in one year",
+        "Line 2 · 3 neighborhoods with high vacancy",
+        "Line 3 · 30 days’ notice for an increase",
+        "Line 4 · mortgage interest rate",
+        "Line 5 · 40% of contracts renewed"
+      ],
+      "falha": 3,
+      "rot": {
+        "entrada": "base.md",
+        "rodando": "checking",
+        "feito": "found",
+        "falhou": "not in transcript",
+        "rodar": "Check the source",
+        "parar": "Interrupt",
+        "zerar": "Start again"
+      },
+      "msg": {
+        "inicio": "5 lines in base.md. Click \"Check the source\".",
+        "rodando": "Checking: each excerpt is searched for in the cited video’s transcript.",
+        "parou": "Interrupted. The line in the middle stayed at checking. Run it again.",
+        "retoma": "Resumed: the line that was checking goes back in the queue; lines already found are not checked again.",
+        "fim": "Source checked: all lines found.",
+        "fimfalha": "One line is missing from the transcript. In the radar, that fails the source check: the script gets one revision, and if it fails again, the video isn’t made."
+      },
+      "legenda": "Illustrative browser simulation. The failing line is intentional: its excerpt was “improved” and is no longer verbatim."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your sourced evidence list",
+      "sub": "Exercise 3 in sequence 4.",
+      "exercicios": [
+        {
+          "id": "e3",
+          "titulo": "E3 · The source-backed foundation",
+          "min": "30 min",
+          "texto": "Transcribe a video from one of your 5 channels and build <code>base.md</code> with the number, who said it, video, date, and exact quote. Run <code>confere.py</code>.",
+          "pronto": "each line has the exact quote in quotation marks, and <code>confere.py</code> prints only OK."
+        }
+      ],
+      "fonte": "Full exercise: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after you answer.",
+      "perguntas": [
+        {
+          "p": "You changed \"twelve percent\" to \"12%\" in the quote in the source file to make it cleaner. What happens during verification?",
+          "opcoes": [
+            "Nothing: it means the same thing.",
+            "The quote is no longer exact, so verification fails.",
+            "The script converts it automatically.",
+            "It only fails if the number is wrong."
+          ],
+          "certa": 1,
+          "explica": "Normalization ignores accents, punctuation, and capitalization, but it does not replace a word with a numeral. An edited quote is no longer an exact copy.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "What does verification guarantee?",
+          "opcoes": [
+            "That the number is true in the real world.",
+            "That someone said exactly that in the cited video.",
+            "That the video will go viral.",
+            "That the channel is trustworthy."
+          ],
+          "certa": 1,
+          "explica": "It proves attribution, not truth. That’s why everything is reported (\"according to him\"), and trust comes from the choice of channels (lesson 3).",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Which quote works for the source file?",
+          "opcoes": [
+            "\"twelve percent\"",
+            "Your summary of what he meant.",
+            "A continuous passage of 6 to 30 words, copied from the transcript.",
+            "The beginning of one sentence joined to the end of another."
+          ],
+          "certa": 2,
+          "explica": "Too short doesn’t prove context; summaries and mashups aren’t exact quotes.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To learn more",
+      "links": [
+        {
+          "t": "finviral guide (how checar.py works)",
+          "href": "https://inematds.github.io/finviral/guia/",
+          "icone": "grafico"
+        },
+        {
+          "t": "finviral repository",
+          "href": "https://github.com/inematds/finviral",
+          "icone": "git"
+        }
+      ]
+    }
+  ]
+}

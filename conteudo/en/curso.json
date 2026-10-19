@@ -1,0 +1,183 @@
+{
+  "id": "do-chat-ao-agente-redes-v72",
+  "lang": "en",
+  "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/en/",
+  "nome": "Social media on autopilot",
+  "sub": "From chat to agent · step 4 complete",
+  "volta": {
+    "t": "Overview: From chat to agent",
+    "href": "https://inematds.github.io/do-chat-ao-agente-v72/"
+  },
+  "lado_card": {
+    "rot": "Practice for this step",
+    "t": "6 exercises + 1 challenge with \"done when\"",
+    "texto": "From a reel on paper to a week with a gate. Move on only when \"done when\" is true.",
+    "link": "Open the exercises for sequence 4",
+    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md"
+  },
+  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/\">Overview: From chat to agent</a> · <a href=\"https://eventos.inema.pro/do-chat-ao-agente/\">eventos.inema.pro/do-chat-ao-agente</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guide: how to learn artificial intelligence</a> · <a href=\"https://www.inema.club/cursos/327-do-chat-ao-agente-degrau-4-redes-no-automatico-com-fonte-na-tela/\">Full course details on INEMA.CLUB</a>",
+  "videos": {
+    "seq4-redes": {
+      "titulo": "Social media on autopilot",
+      "duracao": "1 min 42 sec",
+      "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
+      "vtt": "assets/vtt/seq4-redes.vtt",
+      "poster": "assets/img/seq4-redes.jpg",
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/"
+    },
+    "jornada-ia": {
+      "titulo": "From chat to agent: the overview",
+      "duracao": "2 min 27 sec",
+      "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
+      "vtt": "assets/vtt/jornada-ia.vtt",
+      "poster": "assets/img/jornada-ia.jpg",
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/"
+    }
+  },
+  "inicio": {
+    "kicker": "Course · step 4 of the From chat to agent program · 8 lessons",
+    "titulo": "Social media on autopilot, with sources on screen",
+    "lead": "A reel in 7 steps, videos for different audiences, and a channel in your niche that watches the top performers, checks every number, and publishes only what you approved. In eight lessons, you’ll build the whole workflow: rules, a source-backed knowledge base, a checked script, a schedule, and a gate.",
+    "cta": "Start with lesson 1",
+    "cta2": {
+      "t": "View the program overview",
+      "href": "https://inematds.github.io/do-chat-ao-agente-v72/"
+    },
+    "capa_alt": "An editing desk with a 9:16 phone, a source table, and a calendar: the workflow for a channel with sources on screen.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "lessons"
+      },
+      {
+        "v": "7",
+        "t": "trigger steps"
+      },
+      {
+        "v": "7",
+        "t": "hands-on exercises"
+      },
+      {
+        "v": "7",
+        "t": "open repositories"
+      }
+    ],
+    "aulas_titulo": "The lessons",
+    "aulas_sub": "Follow the workflow: start with the script, then set up the rules and source-backed knowledge base, check the script, make videos for different audiences, and finish with the schedule and gate.",
+    "blocos": [
+      {
+        "t": "Who this is for",
+        "itens": [
+          "Anyone who has completed steps 1–3 (terminal, your own assistant, and queue) and wants to bring that work to social media.",
+          "Professionals and creators in a niche who want to post regularly without making up numbers.",
+          "Anyone who guides teams or clients and needs a responsible method for automating content."
+        ]
+      },
+      {
+        "t": "What you’ll be able to do",
+        "itens": [
+          "Write a reel in 7 steps from a plan with a potential score.",
+          "Create canais.md, regras.md, and base.md for your niche, with the exact passage behind each number.",
+          "Ask the agent for a 60-second script and flag anything that doesn’t match the knowledge base.",
+          "Write the schedule (timer) and run it for a week with a gate, turning every rejection into a rule."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Skip to the content",
+    "aulas": "Lessons",
+    "concluido": "complete",
+    "aula": "Lesson",
+    "nesta_aula": "In this lesson, you’ll learn:",
+    "objetivo": "Goal:",
+    "proxima_aula": "Next lesson",
+    "aula_anterior": "Previous lesson",
+    "voltar_inicio": "Back to the course home",
+    "marcar_concluida": "Mark lesson as complete",
+    "dg_dica": "Click each block in the diagram to see what it does.",
+    "copiar": "Copy",
+    "copiado": "Copied",
+    "selo_simulacao": "Simulation: illustrative example",
+    "selo_real": "Repository example",
+    "pronto_quando": "Done when:",
+    "fiz": "I did this exercise",
+    "video_pagina": "Video page with script",
+    "pergunta": "Question",
+    "de": "of",
+    "cert_tag": "competency",
+    "correto": "Correct",
+    "errado": "Not this one",
+    "quiz_aguarda": "Choose an option. The explanation appears after your attempt.",
+    "proxima_pergunta": "Next question",
+    "quiz_ver": "See results",
+    "quiz_fim": "Test complete",
+    "quiz_total": "You got {a} out of {n} right. Get them all right to mark the lesson complete.",
+    "aparencia": "Appearance",
+    "tamanho_texto": "Text size",
+    "tema": "Theme",
+    "tema_escuro": "Dark",
+    "tema_papel": "Light paper",
+    "role_dica": "Scroll down: each step below lights up its part of the diagram.",
+    "pre_requisito": "requires",
+    "ver_aula": "View lesson",
+    "mapa_dica": "Click an exercise to see what to do and the “done when” criteria.",
+    "etapas": "Steps",
+    "exercicios": "exercises",
+    "rever": "Review:",
+    "revisar_erradas": "Review incorrect answers",
+    "refazer": "Retake the test",
+    "h_semana": "hours per week",
+    "data_inicio": "Start date",
+    "ritmo": "Available time",
+    "gerar_plano": "Generate my plan",
+    "baixar_md": "Download plano.md",
+    "baixar_ics": "Download for calendar (.ics)",
+    "ind_estudo": "Study (lessons)",
+    "ind_pratica": "Practice reported",
+    "ind_nota": "Practice = exercises you marked as done. Your certification exam is where you prove your skills.",
+    "estudo": {
+      "titulo": "Your study",
+      "continuar": "Pick up where I left off",
+      "comecar": "Start with lesson 1",
+      "cta_continuar": "Continue lesson {n}",
+      "hoje": "today",
+      "ontem": "yesterday",
+      "ha_dias": "{n} days ago",
+      "desempenho": "Test performance",
+      "notas": "My notes",
+      "dados": "Copy my data",
+      "sem_testes": "No tests taken yet. The test is at the end of each lesson.",
+      "nao_fez": "test not taken yet",
+      "ultimo": "Latest",
+      "melhor": "Best",
+      "tentativas": "attempts",
+      "tentativa": "attempt",
+      "tudo_certo": "You got everything right on the last test.",
+      "rever": "To review",
+      "resposta": "Correct answer:",
+      "ir_teste": "Retake the test",
+      "sem_notas": "No notes yet. In the lesson, select a passage of text and tap Mark or Add note.",
+      "so_marcado": "(marked only)",
+      "marcar": "Mark",
+      "anotar": "Add note",
+      "salvar": "Save",
+      "apagar": "Remove mark",
+      "fechar": "Close",
+      "nota_ph": "Write a note about this passage…",
+      "um_bloco": "Select text within a single paragraph.",
+      "nao_marca": "This passage can’t be marked.",
+      "dados_exp": "Your progress, notes, and test scores are stored only in this browser. Download a copy (.json) to save it or continue on another computer or browser; load the copy there. Loading adds to what’s already there and doesn’t delete anything.",
+      "exportar": "Download a copy",
+      "importar": "Load a copy",
+      "import_ok": "Copy loaded ({n} items). Refreshing the page…",
+      "import_erro": "File not recognized. Nothing was changed.",
+      "import_outro": "This copy is from another course. Nothing was changed.",
+      "export_ok": "Copy downloaded."
+    },
+    "comecar": "Start the lesson",
+    "nesta_vai": "In this lesson, you will",
+    "trocar_tema": "Switch between light and dark themes"
+  },
+  "icone": "camadas"
+}

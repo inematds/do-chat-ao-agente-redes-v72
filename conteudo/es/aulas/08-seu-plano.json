@@ -1,0 +1,219 @@
+{
+  "slug": "seu-plano",
+  "num": 8,
+  "titulo": "Tu canal, en el orden correcto",
+  "titulo_curto": "Tu plan",
+  "menu": "Plan",
+  "minutos": 12,
+  "hero_alt": "Mesa organizada con un cuaderno de planificación abierto, un calendario y un celular en posición vertical apoyado.",
+  "lead": "Ya viste toda la cadena. Ahora reúne las piezas en el orden en que dependen unas de otras: el reel en papel, las reglas, la base, el guion revisado, la agenda y la semana con compuerta. Genera tu plan con fechas y vuelve a la vista general de la formación para ver cómo este nivel se apoya en los otros tres.",
+  "objetivo": "salir con un plan con fechas para los 7 ejercicios del nivel 4 y saber decir, en cada etapa, qué demuestra que quedó lista.",
+  "competencias": [
+    "plan-del-canal",
+    "agenda-con-compuerta"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "El orden de las piezas y por qué importa"
+    },
+    {
+      "icone": "calendario",
+      "t": "Tu plan con fechas (.md y calendario)"
+    },
+    {
+      "icone": "check",
+      "t": "Qué demuestra cada etapa"
+    },
+    {
+      "icone": "seta",
+      "t": "Dónde encaja este nivel en la formación"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Las piezas, en el orden de dependencia",
+      "sub": "Haz clic en cada nivel. Cada uno usa lo que vino antes.",
+      "nos": [
+        {
+          "icone": "video",
+          "titulo": "Reel en papel",
+          "sub": "clase 2 · E1",
+          "detalhe": "El reel en 7 etapas, a partir de un plan con una nota de 7 o más. Prueba: lo lees en menos de 45 s y la primera frase engancha."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Nicho y reglas",
+          "sub": "clase 3 · E2",
+          "detalhe": "<code>canais.md</code> y <code>regras.md</code>. Prueba: 5 referencias con un criterio de una línea y el aviso obligatorio por escrito."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Base con fuentes",
+          "sub": "clase 4 · E3",
+          "detalhe": "<code>base.md</code> de un video transcrito. Prueba: <code>confere.py</code> imprime solo OK.",
+          "forte": true
+        },
+        {
+          "icone": "chat",
+          "titulo": "Guion verificado",
+          "sub": "clase 5 · E4",
+          "detalhe": "El guion de 60 s que le pediste al agente. Prueba: todos los números están en la base y la lista de la compuerta está marcada."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Agenda",
+          "sub": "clase 7 · E5",
+          "detalhe": "El temporizador o el cron escrito. Prueba: aparece la siguiente ronda y sabes qué pasa un día sin tema."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Semana con compuerta",
+          "sub": "clase 7 · E6",
+          "detalhe": "Una semana aprobando cada video, con los rechazos convertidos en reglas. Prueba: 3 días seguidos sin rechazar."
+        }
+      ],
+      "legenda": "El desafío extra (3 videos para el mismo público, clase 6) entra cuando E4 esté listo. No depende de la agenda."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que requieren días de uso real.",
+      "curso": "Redes en automático",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Reel en 7 etapas",
+          "aula": "reel-7-etapas"
+        },
+        {
+          "titulo": "Nicho y reglas",
+          "aula": "nicho-e-regras"
+        },
+        {
+          "titulo": "Base con fuentes",
+          "aula": "base-com-fonte"
+        },
+        {
+          "titulo": "Guion verificado",
+          "aula": "roteiro-conferido"
+        },
+        {
+          "titulo": "Videos por público",
+          "aula": "videos-por-publico"
+        },
+        {
+          "titulo": "Agenda y compuerta",
+          "aula": "agenda-e-portao"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Redes en automático",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Finalización prevista",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué rechacé y la regla que creé",
+        "h": "h por semana",
+        "exs": "ejercicios"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "El nivel 4 en tres frases",
+      "itens": [
+        {
+          "t": "La fuente antes del video",
+          "texto": "Cada número en pantalla tiene quién lo dijo, el video y el fragmento literal. Si no los tiene, no se incluye."
+        },
+        {
+          "t": "Lo barato antes que lo caro",
+          "texto": "El plan, el texto y la revisión van antes que el avatar y el render. La compuerta queda donde empieza el gasto."
+        },
+        {
+          "t": "El rechazo se convierte en regla",
+          "texto": "La agenda funciona sola, pero cada rechazo tuyo se convierte en una línea en regras.md. La compuerta solo se quita cuando dejan de haber rechazos."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Toda la formación en video",
+      "sub": "Dónde entra este nivel: terminal, asistente, colas y redes.",
+      "chave": "jornada-ia"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba final",
+      "sub": "Una pregunta por cada pieza de la cadena.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estos órdenes respeta la dependencia entre las piezas?",
+          "opcoes": [
+            "Agenda → base → reglas → guion.",
+            "Reglas → base → guion revisado → agenda → semana con compuerta.",
+            "Guion → agenda → reglas → base.",
+            "Semana con compuerta → reglas → base."
+          ],
+          "certa": 1,
+          "explica": "La base depende de las referencias y las reglas; el guion depende de la base; la agenda solo tiene sentido con el guion revisado; la compuerta va al final, con la agenda en marcha.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Qué demuestra que tu base con fuentes está lista?",
+          "opcoes": [
+            "Tiene más de 20 líneas.",
+            "El verificador encuentra cada fragmento en la transcripción (solo OK).",
+            "El agente dijo que está bien.",
+            "Los números parecen razonables."
+          ],
+          "certa": 1,
+          "explica": "Listo cuando es verificable: el script busca cada fragmento en la transcripción. Una opinión, tuya o del agente, no es una prueba.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Dónde protege la compuerta más dinero y tiempo?",
+          "opcoes": [
+            "Después de la publicación.",
+            "Antes del avatar y del render, que cuestan y no se pueden deshacer.",
+            "Al elegir la música.",
+            "En ningún lugar: es solo una formalidad."
+          ],
+          "certa": 1,
+          "explica": "En promoavatar, la primera compuerta protege el gasto en avatar y la segunda, el de render. Equivocarse en el texto sale barato.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continúa por aquí",
+      "links": [
+        {
+          "t": "Visión general de la formación Del chat al agente",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Los 23 ejercicios de la formación",
+          "href": "https://inematds.github.io/jornada-agentes/guia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Área de la formación en eventos",
+          "href": "https://eventos.inema.pro/do-chat-ao-agente/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Cursos gratuitos en INEMA.CLUB",
+          "href": "https://www.inema.club/cursos/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

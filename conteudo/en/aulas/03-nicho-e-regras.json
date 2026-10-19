@@ -1,0 +1,299 @@
+{
+  "slug": "nicho-e-regras",
+  "num": 3,
+  "titulo": "The 5 in your niche and the rules that never change",
+  "titulo_curto": "Niche and rules",
+  "menu": "Niche",
+  "minutos": 16,
+  "hero_alt": "A corkboard with five cards for reference channels and a sheet of rules pinned beside them.",
+  "lead": "A radar is only as good as the sources it watches and the rules it follows. Finance, health, and law use the same engine, but each niche has its own required disclaimer, what counts as a fact, and what never goes live. In this lesson, you’ll choose your references and write the rules for your niche.",
+  "objetivo": "create canais.md and regras.md for your niche: 5 established references, what counts as a fact, the required disclaimer, and what never gets published.",
+  "competencias": [
+    "niche-rules",
+    "source-curation"
+  ],
+  "aprende": [
+    {
+      "icone": "lupa",
+      "t": "How to choose references (and who never makes the cut)"
+    },
+    {
+      "icone": "escudo",
+      "t": "The four parts of regras.md"
+    },
+    {
+      "icone": "camadas",
+      "t": "How finance, health, and law each handled it"
+    },
+    {
+      "icone": "x",
+      "t": "How a rejection becomes a new rule"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From references to rules",
+      "sub": "Click each block. This is what goes in canais.json and in each radar’s script.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "References",
+          "sub": "canais.md",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Ranking or measurement"
+            },
+            {
+              "icone": "x",
+              "t": "\"ativo\": false pauses it"
+            }
+          ],
+          "detalhe": "Established names, with written criteria: for finviral, the Anbima FInfluence ranking’s Top 10; for advviral, with no official ranking, a search by topic and a dated measurement. To pause someone, use <code>\"ativo\": false</code>, without deleting them."
+        },
+        {
+          "icone": "check",
+          "titulo": "What counts as fact",
+          "sub": "only what was said",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "It’s in the transcript"
+            },
+            {
+              "icone": "usuario",
+              "t": "Attributed: \"according to him\""
+            }
+          ],
+          "detalhe": "Only facts or numbers from the transcript are included, with the source (channel, date, title) on screen. Everything is reported and attributed. For law, mention laws, deadlines, amounts, and STF decisions only as they were stated, and call a proposed law a proposal.",
+          "forte": true
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Disclaimer",
+          "sub": "in every video",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "One fixed sentence for each niche"
+            }
+          ],
+          "detalhe": "Finance: \"This is not investment advice.\" Health: \"This does not replace a medical consultation.\" Law: \"This does not replace guidance from a lawyer.\" The review rejects any script that’s missing its sentence."
+        },
+        {
+          "icone": "x",
+          "titulo": "I never publish",
+          "sub": "the red line",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "Instructions for the viewer’s own situation"
+            },
+            {
+              "icone": "x",
+              "t": "Taking sides in politics"
+            }
+          ],
+          "detalhe": "For health, no dosage, medication, or diet instructions. For law, no \"do X\" advice for the viewer’s own situation, and no law firm advertising. In all niches, attribute political statements and stay neutral; for law, no one is guilty before being convicted."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Rejections",
+          "sub": "new rules",
+          "itens": [
+            {
+              "icone": "caneta",
+              "t": "Date + reason"
+            }
+          ],
+          "detalhe": "Each time you reject something at the gate, the reason becomes a new line in <code>regras.md</code>, with the date. That’s how \"gov B R\" without \"dot\" got into finviral: the owner rejected it on 10/13/2026."
+        }
+      ],
+      "volta": "Each rejection at the gate becomes a new rule",
+      "legenda": "The rules aren’t decoration: checar.py and the script prompt read every one of them."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Three niches, three ways to protect viewers",
+      "sub": "Real radar rules. Use them as a starting point for your own.",
+      "passos": [
+        {
+          "titulo": "Finance",
+          "sub": "finviral",
+          "texto": [
+            "References: the Anbima FInfluence ranking’s Top 10. Disclaimer: \"This is not investment advice.\"",
+            "Elections and politics: the video reports what each person said, always attributed and without taking sides."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "Only include numbers from the transcript, with the source (channel, date, title) on screen."
+          }
+        },
+        {
+          "titulo": "Health",
+          "sub": "saudeviral",
+          "texto": [
+            "References: the most widely followed doctors, nutritionists, and psychologists, based on a dated search.",
+            "Anything without scientific consensus gets the <b>NO CONSENSUS</b> label or is left out. Channels with this profile stay active at the owner’s discretion, always with the label."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "No dosage, medication, or diet instructions. \"This does not replace a medical consultation.\" in every video."
+          }
+        },
+        {
+          "titulo": "Law",
+          "sub": "advviral",
+          "texto": [
+            "References: 10 YouTube lawyers by practice area (social security, consumer rights, debt, employment, real estate, family, scams). Channels teaching for civil service exams were left out.",
+            "Nothing becomes advice for the viewer’s own situation."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "\"Every case is different: consult a lawyer or the public defender’s office.\""
+          }
+        },
+        {
+          "titulo": "Your niche",
+          "sub": "illustrative example",
+          "texto": [
+            "Ask: what could harm someone watching if it’s said incorrectly in my niche? The answer becomes the disclaimer and the list of things I never publish.",
+            "Choose 5 channels using criteria you can write in one line."
+          ],
+          "exemplo": {
+            "rot": "Real estate",
+            "texto": "Disclaimer: \"this is not an appraisal of your property.\" I never publish: a specific property’s price as a certainty."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The two files for your niche",
+      "sub": "Copy, fill in, and save them in the agent’s folder (the same one from step 1).",
+      "blocos": [
+        {
+          "rot": "canais.md",
+          "icone": "lupa",
+          "conteudo": "# Reference channels: <your niche>\n\nSelection criteria (one line): \n\n| Name | Link | Video frequency | Topic that gets the most traction | Active |\n|---|---|---|---|---|\n| | | | | yes |\n| | | | | yes |\n| | | | | yes |\n| | | | | yes |\n| | | | | yes |\n\nEmerging names are never added. New additions only with my OK."
+        },
+        {
+          "rot": "regras.md",
+          "icone": "escudo",
+          "conteudo": "# Niche rules: <your niche>\n\n## What counts as fact\n- Only what’s in the transcript, with the source (channel, date, title) on screen.\n- Everything is reported and attributed (\"according to them\").\n- \n\n## Required disclaimer (in every video)\n- \n\n## I never publish\n- Instructions for someone watching about their specific case.\n- Taking a side in politics.\n- \n\n## Rules from gate refusals\n- YYYY-MM-DD: "
+        },
+        {
+          "rot": "canais.json (radar format)",
+          "icone": "arquivo",
+          "conteudo": "{\n  \"_como_editar\": \"'ativo': false pauses without deleting. Emerging names are never added.\",\n  \"canais\": [\n    {\"handle\": \"@canal1\", \"nome\": \"Channel name\", \"rk\": \"CRITERIA · FIELD\", \"ativo\": true},\n    {\"handle\": \"@canal2\", \"nome\": \"Channel name\", \"rk\": \"CRITERIA · FIELD\", \"ativo\": false}\n  ]\n}"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Who gets added",
+            "html": "<p>Across the three radars, if another established and trustworthy name appears in the spotlight, the system <b>suggests</b> adding it in the bot’s message. Emerging names are never added, and additions only happen with the owner’s OK.</p><p>In health, the criteria also require professional registration.</p>"
+          },
+          {
+            "rot": "The rk field",
+            "html": "<p><code>rk</code> appears on the influencer’s card in the video: \"No. 1 · ANBIMA\" in finviral, \"DOCTOR · ONCOLOGIST\" in saudeviral, \"LAW · SOCIAL SECURITY\" in advviral. Viewers can see why that person is a source.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the 5 in your niche",
+      "sub": "Exercise 2 in sequence 4.",
+      "exercicios": [
+        {
+          "id": "e2",
+          "titulo": "E2 · The 5 in your niche",
+          "min": "20 min",
+          "texto": "Choose 5 reference channels in your niche (name, link, frequency, topic that gets the most traction) and write the rules: what counts as fact, the required disclaimer, and what you never publish.",
+          "pronto": "you have <code>canais.md</code> and <code>regras.md</code> for your niche, and the selection criteria fit in one line."
+        }
+      ],
+      "fonte": "Full exercise: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after you answer.",
+      "perguntas": [
+        {
+          "p": "A new channel in your niche is growing fast. Should the radar add it?",
+          "opcoes": [
+            "Yes, automatically, because it’s trending.",
+            "No: emerging names are never added; the system can suggest established names, and only adds them with your OK.",
+            "Yes, if it has more than a thousand subscribers.",
+            "Only on Sundays."
+          ],
+          "certa": 1,
+          "explica": "The radars only suggest established and trustworthy names, and adding one depends on the owner’s OK. Emerging names are never added.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "A respected doctor backs a treatment with no scientific consensus. How does saudeviral handle it?",
+          "opcoes": [
+            "Publishes it as a recommendation.",
+            "Reports it, attributes it, and labels it NO CONSENSUS, or leaves it out.",
+            "Corrects the doctor with Nei’s opinion.",
+            "Removes the channel from the list right away."
+          ],
+          "certa": 1,
+          "explica": "A treatment with no consensus gets the NO CONSENSUS label or is left out. The video reports and attributes; it gives no instructions about dosage, medication, or diet.",
+          "ref": "passos"
+        },
+        {
+          "p": "A lawyer comments on a bill that hasn’t been voted on yet. How does advviral describe it?",
+          "opcoes": [
+            "As a law in effect.",
+            "As a proposal, attributed to the person who said it.",
+            "Doesn’t discuss laws.",
+            "As advice for viewers."
+          ],
+          "certa": 1,
+          "explica": "A bill is called a proposal. A law, deadline, amount, and Supreme Court decision are described only as stated.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "What is the \"Rules from gate refusals\" section for?",
+          "opcoes": [
+            "To save video ideas.",
+            "So each refusal becomes a dated rule and the same mistake doesn’t happen again.",
+            "To list the paused channels.",
+            "Not useful: it’s optional."
+          ],
+          "certa": 1,
+          "explica": "Refusing without a rule keeps happening. When you write it in regras.md, the script and the review will read it.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To learn more",
+      "links": [
+        {
+          "t": "saudeviral guide (NO CONSENSUS rule)",
+          "href": "https://inematds.github.io/saudeviral/guia/",
+          "icone": "escudo"
+        },
+        {
+          "t": "advviral guide (neutrality and proposals)",
+          "href": "https://inematds.github.io/advviral/guia/",
+          "icone": "lista"
+        },
+        {
+          "t": "finviral guide (Anbima ranking)",
+          "href": "https://inematds.github.io/finviral/guia/",
+          "icone": "grafico"
+        }
+      ]
+    }
+  ]
+}

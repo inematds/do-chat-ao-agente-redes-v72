@@ -1,0 +1,334 @@
+{
+  "slug": "reel-7-etapas",
+  "num": 2,
+  "titulo": "El reel en 7 etapas: plan antes de hablar",
+  "titulo_curto": "El reel en 7 etapas",
+  "menu": "Reel r7e",
+  "minutos": 18,
+  "hero_alt": "Celular vertical sobre una mesa oscura, con un guion dividido en siete tarjetas al lado.",
+  "lead": "El r7e crea el guion: siete partes con gancho, desde el gancho con número hasta la invitación a comentar. Fueron cuatro tandas de reels hasta llegar al estándar r7ex: el contenido acertó cuando el plan llegó antes que la voz, y la forma acertó con el acabado de noticiero. Aquí aprendes el plan, las siete partes y las reglas para hablar.",
+  "objetivo": "escribir un reel de 30 a 45 s en 7 etapas a partir de un plan con público, deseo, gancho con número, nota y destino.",
+  "competencias": [
+    "plan-del-reel",
+    "guion-r7e",
+    "voz-para-avatar"
+  ],
+  "aprende": [
+    {
+      "icone": "alvo",
+      "t": "El plan en cinco campos, antes de escribir la voz"
+    },
+    {
+      "icone": "video",
+      "t": "Las siete partes, con el ejemplo real del reel del hacker"
+    },
+    {
+      "icone": "lista",
+      "t": "Las reglas para hablar: extensión, números escritos con letras, CTA"
+    },
+    {
+      "icone": "grafico",
+      "t": "Lo que enseñaron las cuatro tandas"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De la tesis al reel en r7ex",
+      "sub": "Claude escribe, Codex diseña, HeyGen habla y el motor sincroniza todo con la voz.",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Plan",
+          "sub": "antes de hablar",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Persona y lo que quiere"
+            },
+            {
+              "icone": "grafico",
+              "t": "Nota 0–10"
+            }
+          ],
+          "detalhe": "Persona, lo que quiere, gancho con número o dato, nota de potencial y destino en inema.club. Por debajo de 7, cambia el enfoque o el tema antes de escribir cualquier parte del guion.",
+          "forte": true
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Ficha",
+          "sub": "ficha.yaml",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "7 partes: voz + imagen + panel"
+            }
+          ],
+          "detalhe": "<code>python3 r7ex.py novo &lt;slug&gt;</code> crea la ficha a partir del modelo. Escribes el plan, la apertura, las siete partes (voz, imagen o captura, panel), el CTA y dónde publicar."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Revisar",
+          "sub": "compuerta de la ficha",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "7 partes, 550–700 caracteres"
+            }
+          ],
+          "detalhe": "<code>r7ex.py checar</code> exige 7 partes, una voz de 550 a 700 caracteres y que cada palabra del panel o contador aparezca en la voz de esa parte."
+        },
+        {
+          "icone": "video",
+          "titulo": "Hacer",
+          "sub": "imágenes + avatar + renderizado",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Avatar solo con el OK"
+            },
+            {
+              "icone": "grafico",
+              "t": "Hoja de 12 cuadros"
+            }
+          ],
+          "detalhe": "Imágenes con Codex, avatar con el estudio de HeyGen (solo con el OK escrito en <code>APROVADO_HEYGEN</code>), escena, renderizado y hoja de revisión. Lees el título de la apertura y la hoja antes de enviar."
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Cola",
+          "sub": "bot + canal",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "Nunca subir directamente"
+            }
+          ],
+          "detalhe": "Va al bot en Telegram y se agrega al final de la cola del canal (1 cada 2 horas). Nunca subas directamente: la cola espacia las publicaciones y deja tiempo para detener un video."
+        }
+      ],
+      "legenda": "Ejemplo del repositorio r7ex. Para tu canal, lo importante es el orden: plan → ficha → compuerta → medios → revisión → cola.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "El camino completo",
+        "texto": "Nada de avatar ni render antes del plan y la compuerta de la ficha. Lo que cuesta (avatar, imágenes, render) solo empieza cuando lo barato (texto) ya pasó."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Las 7 partes del reel del hacker",
+      "sub": "Ejemplo real de r7ex (reel publicado). El orden de 2 a 6 se adapta al tema; siempre son siete partes de ~30–40 s.",
+      "passos": [
+        {
+          "titulo": "Gancho",
+          "sub": "detonante + número",
+          "texto": [
+            "Miedo, novedad o provocación, <b>con un número o un hecho</b>. Nunca desactives el detonante en la misma frase."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "Hackers invadieron OpenCode… US$ 1.700 en una noche."
+          }
+        },
+        {
+          "titulo": "Miedo o prueba",
+          "sub": "por qué te afecta",
+          "texto": [
+            "Muestra por qué eso afecta a quien mira. También puede ser una prueba: \"ya pasó 3 veces\"."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "La clave es la contraseña que usa la IA… la tuya podría ser la siguiente."
+          }
+        },
+        {
+          "titulo": "Deseo",
+          "sub": "cómo sería si funciona",
+          "texto": [
+            "La persona se imagina del otro lado del problema."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "Imagina dormir sabiendo que… las pérdidas tienen un límite."
+          }
+        },
+        {
+          "titulo": "Facilidad",
+          "sub": "quita la objeción",
+          "texto": [
+            "Responde al \"no soy técnico\" o al \"no tengo tiempo\" antes de que la persona siga deslizando la pantalla."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "No necesitas ser especialista ni programador."
+          }
+        },
+        {
+          "titulo": "Descubrimiento",
+          "sub": "el método, con 3 elementos",
+          "texto": [
+            "Aquí va el nombre de la solución o el método, de preferencia en tres elementos."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "Son tres ajustes: límite, una clave por uso, alarma…"
+          }
+        },
+        {
+          "titulo": "Beneficio",
+          "sub": "el después o la urgencia",
+          "texto": [
+            "Cómo queda la vida después, o el \"aprovecha antes de…\"."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "El susto se convierte en una alerta en el celular…"
+          }
+        },
+        {
+          "titulo": "Comentario",
+          "sub": "una acción pequeña",
+          "texto": [
+            "El cierre fijo lleva a inema.club y pide un comentario. En reel7etapas la petición es \"comenta PALABRA\"; en r7ex, \"pídeme el enlace\"."
+          ],
+          "exemplo": {
+            "rot": "Frase",
+            "texto": "Está todo en inema punto club. O pídeme el enlace aquí en los comentarios."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El plan y el guion de tu reel",
+      "sub": "Completa el plan primero. Si la nota queda por debajo de 7, cambia el enfoque antes de escribir lo que vas a decir.",
+      "blocos": [
+        {
+          "rot": "plano.md",
+          "icone": "alvo",
+          "conteudo": "# Plan del reel\n\n- Persona (quién mira): \n- Qué quiere (una frase: obtener algo, resolver un problema, alcanzar un deseo): \n- Gancho (miedo, novedad o provocación, con número o hecho): \n- Fuente del número: \n- Nota de potencial (0–10) — \"¿una persona desconocida que está deslizando el feed se detendría aquí?\": \n- Destino (la página que resuelve el problema y se convierte en la captura de prueba): "
+        },
+        {
+          "rot": "reel-r7e.md",
+          "icone": "video",
+          "conteudo": "| # | Parte | Frase (números escritos con letras) | Pantalla (imagen o captura + panel) |\n|---|---|---|---|\n| 1 | Gancho (detonante + número) | | |\n| 2 | Miedo o prueba | | |\n| 3 | Deseo | | |\n| 4 | Facilidad | | |\n| 5 | Descubrimiento (3 elementos) | | |\n| 6 | Beneficio o urgencia | | |\n| 7 | Comentario | Está todo en <tu sitio>. O pídeme el enlace aquí en los comentarios. | |\n\nTotal de la frase: 550 a 700 caracteres (~30–40 s)."
+        },
+        {
+          "rot": "pedido al agente",
+          "icone": "chat",
+          "conteudo": "Con base en el plano.md de abajo, escribe la frase de un reel en 7 partes\n(gancho con el número, miedo o prueba, deseo, facilidad, descubrimiento con\n3 elementos, beneficio, comentario). Reglas:\n- 550 a 700 caracteres en total;\n- números y años escritos con letras en la frase;\n- ninguna parte termina con un número suelto;\n- no inventes números: usa solo los que están en el plan, con su fuente;\n- la primera frase nunca empieza con \"Imagina\", \"Hola\" o \"En este video\".\n\n<pega aquí el plano.md>"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Los 4 lotes",
+            "html": "<ul><li><b>Lote 1</b> (gancho = promesa, foto desenfocada): sin visualizaciones en TikTok ni Instagram.</li><li><b>Lote 2</b> (solo el gancho se convirtió en detonante con número): mejor, \"todavía estándar\".</li><li><b>Lote 3</b> (plan antes de la frase, ideas sólidas, CTA fijo, capturas reales): el contenido acertó.</li><li><b>Lote 4, r7ex</b> (misma frase, acabado de noticiero): la forma acertó. Estándar desde 18/10/2026.</li></ul>"
+          },
+          {
+            "rot": "Reglas de la frase",
+            "html": "<p>Frase de 550 a 700 caracteres. Números y años escritos con letras porque el avatar los lee; los subtítulos los cambian por cifras. Nunca inventes números; \"gratis\" solo cuando la página lo dice.</p><p>El plan se dirige al público general (IA explicada para el día a día), no al nicho, porque el objetivo del reel es atraer gente nueva.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu reel en papel",
+      "sub": "Ejercicio 1 de la secuencia 4.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Un reel en 7 etapas, en papel",
+          "min": "20 min",
+          "texto": "Completa <code>plano.md</code> y escribe el reel de 30 a 45 segundos de tu nicho con el modelo de 7 partes. Léelo en voz alta y cronometra.",
+          "pronto": "lo lees en voz alta en menos de 45 s, la nota del plan es 7 o más y la primera frase ya engancha (según el estándar r7ex: el gancho lleva un detonante con un número o un dato)."
+        }
+      ],
+      "fonte": "La lista original de ejercicios dice «la primera frase ya menciona el beneficio». El estándar r7ex (18/10/2026) cambió el beneficio por un detonante con número en el gancho, después de varios lotes sin visualizaciones. Ejercicios: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Tu plan obtuvo 5 en «¿alguien que no te conoce se detendría aquí mientras recorre el feed?». ¿Qué haces?",
+          "opcoes": [
+            "Escribir lo que vas a decir y ver qué pasa.",
+            "Cambiar el enfoque o el tema antes de escribir lo que vas a decir.",
+            "Subir la música de fondo.",
+            "Grabar el avatar dos veces."
+          ],
+          "certa": 1,
+          "explica": "Si la nota es menor que 7, se cambia el enfoque o el tema. El plan existe precisamente para equivocarse en lo barato (el texto), no en lo caro (el avatar y el renderizado).",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Cuál de estos es un gancho según el estándar r7ex?",
+          "opcoes": [
+            "«Hola, hoy voy a hablar sobre seguridad».",
+            "«Tu agente obedece y gasta menos».",
+            "«Hackearon OpenCode: US$ 1.700 en una noche».",
+            "«Comenta SEGURIDAD y te mando el enlace»."
+          ],
+          "certa": 2,
+          "explica": "Gancho = detonante (miedo, novedad o provocación) con un número o un dato. «Gasta menos» es una promesa, el gancho del lote 1, que no tuvo visualizaciones.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué el texto dice «mil setecientos» en vez de «1.700»?",
+          "opcoes": [
+            "Porque suena más elegante.",
+            "Porque el avatar lee el texto; en los subtítulos se cambia por cifras.",
+            "Porque YouTube bloquea los números.",
+            "No hace falta: da igual."
+          ],
+          "certa": 1,
+          "explica": "El avatar lee el texto tal como está. Escrito con palabras, lo pronuncia bien; los subtítulos en pantalla muestran la cifra.",
+          "ref": "codigo"
+        },
+        {
+          "p": "¿Qué mostraron los cuatro lotes?",
+          "opcoes": [
+            "Que solo importa la forma.",
+            "Que el contenido se ajustó con el plan antes de escribir lo que se dice (lote 3) y la forma se ajustó con un acabado de noticiero (lote 4).",
+            "Que el avatar a pantalla completa se vuelve viral.",
+            "Que basta con publicar más veces al día."
+          ],
+          "certa": 1,
+          "explica": "El contenido y la forma se corrigieron en lotes distintos. El r7ex combinó el texto del lote 3 con el motor del lote 4.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para profundizar",
+      "links": [
+        {
+          "t": "Guía de reel7etapas (r7e)",
+          "href": "https://inematds.github.io/reel7etapas/guia/",
+          "icone": "video"
+        },
+        {
+          "t": "Guía de r7ex (nuevo estándar)",
+          "href": "https://inematds.github.io/r7ex/guia/",
+          "icone": "video"
+        },
+        {
+          "t": "Reel del hacker (r7ex, en YouTube)",
+          "href": "https://youtube.com/shorts/DG30IdeqWcg",
+          "icone": "play"
+        },
+        {
+          "t": "Reel JARVIS (r7e, en YouTube)",
+          "href": "https://www.youtube.com/shorts/V92t50ceCRg",
+          "icone": "play"
+        }
+      ]
+    }
+  ]
+}

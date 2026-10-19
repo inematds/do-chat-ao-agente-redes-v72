@@ -1,0 +1,334 @@
+{
+  "slug": "reel-7-etapas",
+  "num": 2,
+  "titulo": "The reel in 7 steps: plan before the script",
+  "titulo_curto": "The reel in 7 steps",
+  "menu": "Reel r7e",
+  "minutos": 18,
+  "hero_alt": "A vertical phone on a dark table beside a script divided into seven cards.",
+  "lead": "r7e gives you the script: seven trigger points, from a hook with a number to a request for comments. It took four batches of reels to reach the r7ex standard: the content worked when the plan came before the script, and the format worked with a TV-news finish. Here you’ll learn the plan, the seven parts, and the speaking rules.",
+  "objetivo": "write a 30 to 45 s reel in 7 steps based on a plan with an audience, a desire, a hook with a number, a rating, and a destination.",
+  "competencias": [
+    "reel-plan",
+    "r7e-script",
+    "avatar-script"
+  ],
+  "aprende": [
+    {
+      "icone": "alvo",
+      "t": "The five fields in the plan, before you write the script"
+    },
+    {
+      "icone": "video",
+      "t": "The seven parts, with the real example of the hacker reel"
+    },
+    {
+      "icone": "lista",
+      "t": "The speaking rules: length, numbers written out, CTA"
+    },
+    {
+      "icone": "grafico",
+      "t": "What the four batches taught us"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From thesis to reel in r7ex",
+      "sub": "Claude writes, Codex designs, HeyGen speaks, and the engine syncs everything with the voice.",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Plan",
+          "sub": "before the script",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Person and what they want"
+            },
+            {
+              "icone": "grafico",
+              "t": "Rating 0–10"
+            }
+          ],
+          "detalhe": "Person, what they want, a hook with a number or fact, potential rating, and destination on inema.club. Below 7, change the angle or topic before writing any script.",
+          "forte": true
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Form",
+          "sub": "ficha.yaml",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "7 parts: script + image + panel"
+            }
+          ],
+          "detalhe": "<code>python3 r7ex.py novo &lt;slug&gt;</code> creates the form from the template. You write the plan, opening, seven parts (script, image or screenshot, panel), CTA, and where to publish."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Check",
+          "sub": "form gate",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "7 parts, 550–700 characters"
+            }
+          ],
+          "detalhe": "<code>r7ex.py checar</code> requires 7 parts, a script from 550 to 700 characters, and every panel or counter word to appear in that part’s script."
+        },
+        {
+          "icone": "video",
+          "titulo": "Make",
+          "sub": "images + avatar + render",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Avatar only with approval"
+            },
+            {
+              "icone": "grafico",
+              "t": "12-frame sheet"
+            }
+          ],
+          "detalhe": "Images by Codex, avatar by the HeyGen studio (only with written approval in <code>APROVADO_HEYGEN</code>), scene, render, and review sheet. You review the opening title and the sheet before sending."
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Queue",
+          "sub": "bot + channel",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "Never upload directly"
+            }
+          ],
+          "detalhe": "It goes to the bot on Telegram and joins the end of the channel queue (1 every 2 hours). Never upload directly: the queue spaces out posts and gives you time to hold a video."
+        }
+      ],
+      "legenda": "Example from the r7ex repository. For your channel, the order matters: plan → form → gate → media → review → queue.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The whole process",
+        "texto": "No avatar or render before the plan and the plan sheet gate. The costly parts (avatar, images, render) only start once the cheap part (text) has passed."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The 7 parts, in the hacker reel",
+      "sub": "Real example from r7ex (published reel). The order of parts 2 to 6 adapts to the topic; there are always seven parts of ~30–40 s.",
+      "passos": [
+        {
+          "titulo": "Hook",
+          "sub": "trigger + number",
+          "texto": [
+            "Fear, something new, or a provocation, <b>with a number or fact</b>. Never defuse the trigger in the same sentence."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "Hackers broke into OpenCode… US$ 1.700 in one night."
+          }
+        },
+        {
+          "titulo": "Fear or proof",
+          "sub": "why it affects you",
+          "texto": [
+            "Show why it affects the person watching. You can also use proof: \"it’s happened 3 times already\"."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "The key is the password the AI uses… yours could be next."
+          }
+        },
+        {
+          "titulo": "Desire",
+          "sub": "what it looks like if it works",
+          "texto": [
+            "The person imagines being on the other side of the problem."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "Imagine sleeping easy, knowing that… the loss has a cap."
+          }
+        },
+        {
+          "titulo": "Ease",
+          "sub": "removes the objection",
+          "texto": [
+            "Answer \"I’m not technical\" or \"I don’t have time\" before the person scrolls away."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "You don’t need to be an expert or a programmer."
+          }
+        },
+        {
+          "titulo": "Discovery",
+          "sub": "the method, in 3 items",
+          "texto": [
+            "This is where you introduce the solution or method, preferably in three items."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "Three adjustments: a limit, one key per use, an alert…"
+          }
+        },
+        {
+          "titulo": "Benefit",
+          "sub": "what comes after, or urgency",
+          "texto": [
+            "What life looks like afterward, or \"take advantage before…\"."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "The scare turns into an alert on your phone…"
+          }
+        },
+        {
+          "titulo": "Comment",
+          "sub": "one small action",
+          "texto": [
+            "The fixed closing points to inema.club and asks for a comment. In reel7etapas, the request is \"comment WORD\"; in r7ex, \"ask me for the link\"."
+          ],
+          "exemplo": {
+            "rot": "Line",
+            "texto": "It’s all at inema dot club. Or ask me for the link here in the comments."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Your reel plan and script",
+      "sub": "Fill out the plan first. If the score is below 7, change the angle before writing the line.",
+      "blocos": [
+        {
+          "rot": "plano.md",
+          "icone": "alvo",
+          "conteudo": "# Reel plan\n\n- Person (who's watching): \n- What they want (one sentence: gain something, solve a pain point, reach a desire): \n- Hook (fear, something new, or a provocation, with a number or fact): \n- Source for the number: \n- Potential score (0–10) — \"would a stranger stop scrolling here?\": \n- Destination (the page that solves it, becomes the proof screenshot): "
+        },
+        {
+          "rot": "reel-r7e.md",
+          "icone": "video",
+          "conteudo": "| # | Part | Line (numbers spelled out) | Screen (image or screenshot + panel) |\n|---|---|---|---|\n| 1 | Hook (trigger + number) | | |\n| 2 | Fear or proof | | |\n| 3 | Desire | | |\n| 4 | Ease | | |\n| 5 | Discovery (3 items) | | |\n| 6 | Benefit or urgency | | |\n| 7 | Comment | It’s all at <your site>. Or ask me for the link here in the comments. | |\n\nTotal line: 550 to 700 characters (~30–40 s)."
+        },
+        {
+          "rot": "request to the agent",
+          "icone": "chat",
+          "conteudo": "Based on the plano.md below, write the line for a reel in 7 parts\n(hook with the number, fear or proof, desire, ease, discovery with\n3 items, benefit, comment). Rules:\n- 550 to 700 characters total;\n- spell out numbers and years in the line;\n- no part ends with a number by itself;\n- don’t make up numbers: use only those in the plan, with the source;\n- the first sentence never starts with \"Imagine\", \"Hello\", or \"In this video\".\n\n<paste plano.md here>"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "The 4 batches",
+            "html": "<ul><li><b>Batch 1</b> (hook = promise, blurred photo): no views on TikTok or Instagram.</li><li><b>Batch 2</b> (only the hook became a trigger with a number): better, \"still standard\".</li><li><b>Batch 3</b> (plan before the line, strong claims, fixed CTA, real screenshots): the content hit the mark.</li><li><b>Batch 4, r7ex</b> (same line, TV news finish): the style hit the mark. Standard since 10/18/2026.</li></ul>"
+          },
+          {
+            "rot": "Line rules",
+            "html": "<p>Line should be 550 to 700 characters. Spell out numbers and years because the avatar reads them; the captions switch them to numerals. Never make up a number; say \"free\" only when the page says so.</p><p>The plan targets a general audience (AI translated into everyday terms), not a niche, because the reel aims to bring in new people.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your reel on paper",
+      "sub": "Exercise 1 in sequence 4.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · One reel in 7 steps, on paper",
+          "min": "20 min",
+          "texto": "Fill out <code>plano.md</code> and write a 30- to 45-second reel for your niche using the 7-part template. Read it aloud while timing yourself.",
+          "pronto": "you can read it aloud in under 45 s, the plan scores 7 or higher, and the first sentence grabs attention (following the r7ex standard: the hook uses a number or fact)."
+        }
+      ],
+      "fonte": "The original exercise list says “the first sentence already states the benefit.” The r7ex standard (10/18/2026) replaced the benefit with a hook using a number, after batches that got no views. Exercises: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after you answer.",
+      "perguntas": [
+        {
+          "p": "Your plan scored 5 on “Would a stranger stop scrolling here?” What should you do?",
+          "opcoes": [
+            "Write the script and see how it goes.",
+            "Change the angle or topic before writing the script.",
+            "Turn up the background music.",
+            "Record the avatar twice."
+          ],
+          "certa": 1,
+          "explica": "Below 7, change the angle or topic. The plan is there so you can make mistakes cheaply (in text), not expensively (with the avatar and render).",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Which of these is a hook that follows the r7ex standard?",
+          "opcoes": [
+            "“Hello, today I’m going to talk about security.”",
+            "“Your agent obeys and spends less.”",
+            "“Hackers breached OpenCode: $1,700 in one night.”",
+            "“Comment SECURITY and I’ll send you the link.”"
+          ],
+          "certa": 2,
+          "explica": "Hook = a trigger (fear, news, or provocation) with a number or fact. “Spends less” is a promise, the hook from batch 1, which got no views.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why does the script spell out “one thousand seven hundred” instead of “1,700”?",
+          "opcoes": [
+            "Because it sounds more elegant.",
+            "Because the avatar reads the script; only the captions switch to numerals.",
+            "Because YouTube blocks numbers.",
+            "There’s no need: either way works."
+          ],
+          "certa": 1,
+          "explica": "The avatar reads the text as written. Spelled out, it’s pronounced correctly; the on-screen caption shows the numeral.",
+          "ref": "codigo"
+        },
+        {
+          "p": "What did the four batches show?",
+          "opcoes": [
+            "That only the format matters.",
+            "That the content got it right with the plan before the script (batch 3), and the format got it right with the news broadcast polish (batch 4).",
+            "That a full-screen avatar goes viral more often.",
+            "That you just need to post more times a day."
+          ],
+          "certa": 1,
+          "explica": "The content and format were corrected in separate batches. r7ex combined the script from batch 3 with the engine from batch 4.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To learn more",
+      "links": [
+        {
+          "t": "reel7etapas guide (r7e)",
+          "href": "https://inematds.github.io/reel7etapas/guia/",
+          "icone": "video"
+        },
+        {
+          "t": "r7ex guide (new standard)",
+          "href": "https://inematds.github.io/r7ex/guia/",
+          "icone": "video"
+        },
+        {
+          "t": "Hacker reel (r7ex, on YouTube)",
+          "href": "https://youtube.com/shorts/DG30IdeqWcg",
+          "icone": "play"
+        },
+        {
+          "t": "JARVIS reel (r7e, on YouTube)",
+          "href": "https://www.youtube.com/shorts/V92t50ceCRg",
+          "icone": "play"
+        }
+      ]
+    }
+  ]
+}
