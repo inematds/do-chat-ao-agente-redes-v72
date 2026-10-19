@@ -36,3 +36,9 @@ python3 gerar.py && python3 validar.py --links
 HTML estático, sem build e sem backend. O progresso fica só no navegador de quem estuda. Vídeos da série *Do chat ao agente* ([jornada-agentes](https://github.com/inematds/jornada-agentes), release `video-v2.0.0`).
 
 Conteúdo aberto e gratuito · [INEMA.CLUB](https://inema.club)
+
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/327-do-chat-ao-agente-degrau-4-redes-no-automatico-com-fonte-na-tela/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
