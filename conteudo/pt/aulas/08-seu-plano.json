@@ -1,0 +1,219 @@
+{
+  "slug": "seu-plano",
+  "num": 8,
+  "titulo": "O seu canal, na ordem certa",
+  "titulo_curto": "Seu plano",
+  "menu": "Plano",
+  "minutos": 12,
+  "hero_alt": "Mesa organizada com um caderno de planejamento aberto, um calendário e um celular vertical apoiado.",
+  "lead": "Você viu a esteira inteira. Agora junte as peças na ordem em que elas dependem uma da outra: o reel no papel, as regras, a base, o roteiro conferido, a agenda e a semana com portão. Gere o seu plano com datas e volte à visão geral da formação para ver como este degrau se apoia nos outros três.",
+  "objetivo": "sair com um plano datado dos 7 exercícios do degrau 4 e saber dizer, em cada etapa, o que prova que ela ficou pronta.",
+  "competencias": [
+    "plano-do-canal",
+    "agenda-com-portao"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "A ordem das peças e por que ela importa"
+    },
+    {
+      "icone": "calendario",
+      "t": "O seu plano com datas (.md e calendário)"
+    },
+    {
+      "icone": "check",
+      "t": "O que prova cada etapa"
+    },
+    {
+      "icone": "seta",
+      "t": "Onde este degrau se encaixa na formação"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "As peças, na ordem da dependência",
+      "sub": "Clique em cada degrau. Cada um usa o que veio antes.",
+      "nos": [
+        {
+          "icone": "video",
+          "titulo": "Reel no papel",
+          "sub": "aula 2 · E1",
+          "detalhe": "O reel em 7 etapas, a partir de um plano com nota 7 ou mais. Prova: você lê em menos de 45 s e a primeira frase prende."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Nicho e regras",
+          "sub": "aula 3 · E2",
+          "detalhe": "<code>canais.md</code> e <code>regras.md</code>. Prova: 5 referências com critério de uma linha e o aviso obrigatório escrito."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Base com fonte",
+          "sub": "aula 4 · E3",
+          "detalhe": "<code>base.md</code> de um vídeo transcrito. Prova: o <code>confere.py</code> imprime só OK.",
+          "forte": true
+        },
+        {
+          "icone": "chat",
+          "titulo": "Roteiro conferido",
+          "sub": "aula 5 · E4",
+          "detalhe": "O roteiro de 60 s pedido ao agente. Prova: todo número está na base e a lista do portão está marcada."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Agenda",
+          "sub": "aula 7 · E5",
+          "detalhe": "O timer ou o cron escrito. Prova: a próxima rodada aparece e você sabe o que acontece num dia sem assunto."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Semana com portão",
+          "sub": "aula 7 · E6",
+          "detalhe": "Uma semana aprovando cada vídeo, com as recusas virando regras. Prova: 3 dias seguidos sem recusar."
+        }
+      ],
+      "legenda": "O desafio extra (3 vídeos para o mesmo público, aula 6) entra quando o E4 estiver pronto. Ele não depende da agenda."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano respeita os exercícios que pedem dias de uso real.",
+      "curso": "Redes no automático",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Reel em 7 etapas",
+          "aula": "reel-7-etapas"
+        },
+        {
+          "titulo": "Nicho e regras",
+          "aula": "nicho-e-regras"
+        },
+        {
+          "titulo": "Base com fonte",
+          "aula": "base-com-fonte"
+        },
+        {
+          "titulo": "Roteiro conferido",
+          "aula": "roteiro-conferido"
+        },
+        {
+          "titulo": "Vídeos por público",
+          "aula": "videos-por-publico"
+        },
+        {
+          "titulo": "Agenda e portão",
+          "aula": "agenda-e-portao"
+        }
+      ],
+      "txt": {
+        "titulo": "Plano — Redes no automático",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que recusei e a regra que criei",
+        "h": "h por semana",
+        "exs": "exercícios"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "O degrau 4 em três frases",
+      "itens": [
+        {
+          "t": "Fonte antes do vídeo",
+          "texto": "Todo número da tela tem quem disse, o vídeo e o trecho literal. Se não tem, não entra."
+        },
+        {
+          "t": "Barato antes do caro",
+          "texto": "Plano, texto e conferência vêm antes de avatar e render. O portão fica onde o gasto começa."
+        },
+        {
+          "t": "Recusa vira regra",
+          "texto": "A agenda roda sozinha, mas cada recusa sua vira uma linha em regras.md. O portão só sai quando as recusas param."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "A formação inteira em vídeo",
+      "sub": "Onde este degrau entra: terminal, assistente, filas e redes.",
+      "chave": "jornada-ia"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste final",
+      "sub": "Uma pergunta por peça da esteira.",
+      "perguntas": [
+        {
+          "p": "Qual destas ordens respeita a dependência entre as peças?",
+          "opcoes": [
+            "Agenda → base → regras → roteiro.",
+            "Regras → base → roteiro conferido → agenda → semana com portão.",
+            "Roteiro → agenda → regras → base.",
+            "Semana com portão → regras → base."
+          ],
+          "certa": 1,
+          "explica": "A base depende das referências e das regras; o roteiro depende da base; a agenda só faz sentido com o roteiro conferido; o portão vem por último, com a agenda rodando.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "O que prova que a sua base com fonte está pronta?",
+          "opcoes": [
+            "Ela tem mais de 20 linhas.",
+            "O conferidor acha cada trecho na transcrição (só OK).",
+            "O agente disse que está boa.",
+            "Os números parecem razoáveis."
+          ],
+          "certa": 1,
+          "explica": "Pronto quando é verificável: o script procura cada trecho na transcrição. Opinião, sua ou do agente, não é prova.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Onde o portão protege mais dinheiro e tempo?",
+          "opcoes": [
+            "Depois da publicação.",
+            "Antes do avatar e do render, que custam e não se desfazem.",
+            "Na escolha da música.",
+            "Em nenhum lugar: é só formalidade."
+          ],
+          "certa": 1,
+          "explica": "Nos promoavatar, o primeiro portão protege o gasto de avatar e o segundo, o de render. O texto é a parte barata de errar.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continue por aqui",
+      "links": [
+        {
+          "t": "Visão geral da formação Do chat ao agente",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Os 23 exercícios da formação",
+          "href": "https://inematds.github.io/jornada-agentes/guia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Área da formação no eventos",
+          "href": "https://eventos.inema.pro/do-chat-ao-agente/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Cursos gratuitos no INEMA.CLUB",
+          "href": "https://www.inema.club/cursos/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

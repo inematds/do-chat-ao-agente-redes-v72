@@ -1,0 +1,277 @@
+{
+  "slug": "roteiro-conferido",
+  "num": 5,
+  "titulo": "Roteiro de 60 s com fonte na tela",
+  "titulo_curto": "Roteiro conferido",
+  "menu": "Roteiro",
+  "minutos": 17,
+  "hero_alt": "Celular vertical mostrando um número grande animado com a linha de fonte embaixo.",
+  "lead": "Com a base pronta, o agente escreve o roteiro, e só com o que está na base. O radar abre com a data e o número mais forte, conta cada assunto com a ficha de quem disse, termina com uma pergunta e o convite. Antes de virar vídeo, o roteiro passa pela conferência: número fora da base, o roteiro volta.",
+  "objetivo": "pedir ao agente um roteiro de 60 s a partir da base.md e devolvê-lo sempre que um número não estiver na base.",
+  "competencias": [
+    "roteiro-com-fonte",
+    "fala-para-avatar",
+    "portao-do-roteiro"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "A estrutura do curto: quadro 0, sumário, assuntos, pergunta, CTA"
+    },
+    {
+      "icone": "chat",
+      "t": "As regras da fala no tom de quem apresenta"
+    },
+    {
+      "icone": "arquivo",
+      "t": "O pedido ao agente, pronto para copiar"
+    },
+    {
+      "icone": "portao",
+      "t": "A lista do que reprova um roteiro"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A estrutura do curto de um radar",
+      "sub": "Clique em cada bloco. É o formato que o finviral, o saudeviral e o advviral seguem.",
+      "nos": [
+        {
+          "icone": "calendario",
+          "titulo": "Quadro 0",
+          "sub": "data + número",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "O número mais forte"
+            }
+          ],
+          "detalhe": "O primeiro quadro já vem cheio: a data dd/mm/aaaa e o número (ou fato) mais forte. A primeira fala é a frase-choque desse número, e nunca começa com \"Neste vídeo\", \"Imagine\" ou \"Olá\".",
+          "forte": true
+        },
+        {
+          "icone": "lista",
+          "titulo": "Sumário",
+          "sub": "\"Hoje no radar\"",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "Um item por assunto"
+            }
+          ],
+          "detalhe": "Logo depois, uma caixa com os assuntos que vêm, um item curto por assunto. No curto dos radares são pelo menos cinco assuntos, de influenciadores diferentes sempre que der, o mais forte primeiro."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Assuntos",
+          "sub": "2–3 falas cada",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Ficha de quem disse"
+            },
+            {
+              "icone": "arquivo",
+              "t": "Fonte em toda cena"
+            }
+          ],
+          "detalhe": "Cada assunto é contado inteiro: contexto, o que a pessoa disse, o que muda para quem assiste. Cada citado ganha a ficha (nome, canal, data, visualizações) e a linha de fonte: canal, YouTube, data, título curto."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Pergunta",
+          "sub": "gancho de comentário",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "Aviso do nicho na fonte"
+            }
+          ],
+          "detalhe": "A penúltima fala pergunta de onde a pessoa está assistindo e como é a situação na cidade dela. A fonte dessa cena traz o aviso do nicho, como \"Não é recomendação de investimento\"."
+        },
+        {
+          "icone": "megafone",
+          "titulo": "CTA",
+          "sub": "um destino só",
+          "itens": [
+            {
+              "icone": "seta",
+              "t": "Só o inema.club"
+            }
+          ],
+          "detalhe": "Uma ponte curta do tema para a IA e o convite para aprender no inema.club, com cursos gratuitos. Um destino só: sem canal do YouTube, sem \"se inscreva\", sem \"vídeo longo\"."
+        }
+      ],
+      "legenda": "Exemplo do repositório finviral. No seu canal, troque o CTA pelo seu destino, mas mantenha um destino só."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "As regras da fala",
+      "sub": "Cada uma veio de um vídeo reprovado. O checar.py confere várias delas sozinho.",
+      "passos": [
+        {
+          "titulo": "Por extenso",
+          "sub": "o avatar lê",
+          "texto": [
+            "Todos os números e anos por extenso na fala. A conferência reprova algarismo na fala."
+          ],
+          "exemplo": {
+            "rot": "Fala",
+            "texto": "sete vírgula sete por cento · dois mil e vinte e oito"
+          }
+        },
+        {
+          "titulo": "Como se fala",
+          "sub": "siglas e endereços",
+          "texto": [
+            "Siglas lidas como se falam. Endereço do governo sem \"ponto\": \"consumidor gov bê érre\". Na tela continua consumidor.gov.br."
+          ],
+          "exemplo": {
+            "rot": "Reprovado em 13/10/2026",
+            "texto": "\"consumidor ponto gov ponto bê erre\""
+          }
+        },
+        {
+          "titulo": "Você",
+          "sub": "nunca \"tu\"",
+          "texto": [
+            "Tratar quem assiste por \"você\", com frases curtas. A conferência reprova \"tu\", \"teu\" e \"tua\"."
+          ],
+          "exemplo": {
+            "rot": "Fala",
+            "texto": "Isso muda o que você paga no fim do mês."
+          }
+        },
+        {
+          "titulo": "Âncora sem número",
+          "sub": "o tempo da tela",
+          "texto": [
+            "Cada visual entra numa palavra comum da fala (a âncora), nunca num número: a transcrição do avatar escreve número em algarismo e a âncora não casaria."
+          ],
+          "exemplo": {
+            "rot": "Âncora",
+            "texto": "\"aluguel\" sim · \"doze\" não"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "O pedido do roteiro e a lista do portão",
+      "sub": "Cole a sua base.md e as suas regras no pedido. Depois confira com a lista.",
+      "blocos": [
+        {
+          "rot": "pedido ao agente",
+          "icone": "chat",
+          "conteudo": "Escreva o roteiro de um vídeo vertical de 60 segundos usando SÓ os\nnúmeros e fatos da base.md abaixo. Não use a internet nem outra fonte.\n\nEstrutura:\n1. Abertura: a frase-choque com o número mais forte (nunca \"Imagine\",\n   \"Olá\" ou \"Neste vídeo\").\n2. Três fatos, cada um com quem disse, o vídeo e a data na tela.\n3. O aviso obrigatório do nicho (está em regras.md).\n4. Uma pergunta que chama comentário.\n5. O convite final, para um destino só.\n\nRegras: trate por \"você\"; números e anos por extenso na fala; todo\nnúmero mostrado precisa estar na base.md. Se a base não tiver material\nsuficiente, responda só SEM PAUTA e o motivo.\n\n<cole a base.md>\n<cole a regras.md>"
+        },
+        {
+          "rot": "portao-roteiro.md",
+          "icone": "portao",
+          "conteudo": "- [ ] Todo número da tela está na base.md (com trecho literal)\n- [ ] Nenhum número em algarismo na fala\n- [ ] Abertura com o número mais forte, sem \"Imagine/Olá/Neste vídeo\"\n- [ ] Fonte (canal, data, título) em toda cena com fato\n- [ ] Aviso obrigatório do nicho presente\n- [ ] Trata por \"você\"\n- [ ] Penúltima fala: pergunta de comentário\n- [ ] Um destino só no convite final\n\nReprovou: o roteiro volta uma vez. Reprovou de novo: não sai vídeo hoje."
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "O que o checar.py confere",
+            "html": "<ul><li>cada trecho da base está na transcrição do vídeo citado;</li><li>número em algarismo na fala;</li><li>imagens existem;</li><li>CTA para o inema.club na última fala;</li><li>a frase do aviso do nicho;</li><li>\"tu/teu/tua\" na fala e \"gov\" com \"ponto\".</li></ul>"
+          },
+          {
+            "rot": "SEM PAUTA",
+            "html": "<p>O prompt dos radares manda gravar todos os arquivos <b>ou só</b> o <code>SEM_PAUTA.txt</code>. Quando não há material, o bot recebe \"sem pauta\" e o motivo. É melhor do que forçar um vídeo fraco.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o roteiro de 60 s",
+      "sub": "Exercício 4 da sequência 4. Use a base.md da aula anterior.",
+      "exercicios": [
+        {
+          "id": "e4",
+          "titulo": "E4 · Roteiro de 60 s com fonte na tela",
+          "min": "30 min",
+          "texto": "Peça ao agente o roteiro com o pedido acima: número mais forte na abertura, três fatos com quem disse, o aviso do nicho e o convite. Confira com a lista do portão e devolva o que falhar.",
+          "pronto": "todo número do roteiro está na <code>base.md</code> e a lista do portão está toda marcada. Se algum número não estiver, o roteiro voltou."
+        }
+      ],
+      "fonte": "O exercício pede três fatos para começar; o curto dos radares hoje exige pelo menos cinco assuntos. Exercício completo: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "O roteiro traz um número que não está na base.md. O que fazer?",
+          "opcoes": [
+            "Publicar, se o número parecer certo.",
+            "Trocar por um número arredondado.",
+            "Devolver o roteiro: todo número precisa estar na base, com trecho literal.",
+            "Tirar a fonte da tela."
+          ],
+          "certa": 2,
+          "explica": "A regra do E4: todo número do roteiro está na base.md. Se não estiver, o roteiro volta.",
+          "cert": true,
+          "ref": "codigo"
+        },
+        {
+          "p": "Qual é a melhor primeira fala de um radar?",
+          "opcoes": [
+            "\"Olá, pessoal, neste vídeo vamos ver as notícias.\"",
+            "\"Imagine se o seu aluguel subisse amanhã.\"",
+            "A frase-choque com o número mais forte do dia.",
+            "O convite para o inema.club."
+          ],
+          "certa": 2,
+          "explica": "O quadro 0 já mostra a data e o número; a primeira fala é a frase-choque dele. \"Olá\", \"Imagine\" e \"Neste vídeo\" são proibidos na abertura.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Por que a âncora de um visual nunca é um número?",
+          "opcoes": [
+            "Porque número não aparece na tela.",
+            "Porque a transcrição do avatar escreve número em algarismo e a âncora por extenso não casaria.",
+            "Porque número dá azar.",
+            "Porque a âncora tem que ser o nome da pessoa."
+          ],
+          "certa": 1,
+          "explica": "A fala diz \"doze\", a transcrição escreve \"12\". Uma palavra comum, como \"aluguel\", casa sempre.",
+          "ref": "passos"
+        },
+        {
+          "p": "O fim do roteiro convida para o inema.club, para o canal do YouTube e para um vídeo longo. Está certo?",
+          "opcoes": [
+            "Sim: quanto mais destinos, melhor.",
+            "Não: o convite final tem um destino só.",
+            "Sim, desde que seja rápido.",
+            "Só se o vídeo passar de 60 s."
+          ],
+          "certa": 1,
+          "explica": "Nos radares, o CTA é sempre só o inema.club. Três destinos dividem a atenção e nenhum é seguido.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para aprofundar",
+      "links": [
+        {
+          "t": "Guia do finviral (roteiro e conferência)",
+          "href": "https://inematds.github.io/finviral/guia/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Guia do advviral",
+          "href": "https://inematds.github.io/advviral/guia/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

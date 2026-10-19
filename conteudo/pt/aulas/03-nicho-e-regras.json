@@ -1,0 +1,299 @@
+{
+  "slug": "nicho-e-regras",
+  "num": 3,
+  "titulo": "Os 5 do seu nicho e as regras que nunca se quebram",
+  "titulo_curto": "Nicho e regras",
+  "menu": "Nicho",
+  "minutos": 16,
+  "hero_alt": "Quadro de cortiça com cinco cartões de canais de referência e uma folha de regras presa ao lado.",
+  "lead": "Um radar é tão bom quanto as fontes que ele assiste e as regras que ele obedece. Finanças, saúde e direito usam o mesmo motor, mas cada nicho tem o seu aviso obrigatório, o que conta como fato e o que nunca vai ao ar. Nesta aula você escolhe as suas referências e escreve as regras do seu nicho.",
+  "objetivo": "montar canais.md e regras.md do seu nicho: 5 referências consolidadas, o que conta como fato, o aviso obrigatório e o que nunca publica.",
+  "competencias": [
+    "regras-de-nicho",
+    "curadoria-de-fontes"
+  ],
+  "aprende": [
+    {
+      "icone": "lupa",
+      "t": "Como escolher as referências (e quem nunca entra)"
+    },
+    {
+      "icone": "escudo",
+      "t": "As quatro partes de regras.md"
+    },
+    {
+      "icone": "camadas",
+      "t": "Como finanças, saúde e direito resolveram cada uma"
+    },
+    {
+      "icone": "x",
+      "t": "Como uma recusa vira regra nova"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Das referências às regras",
+      "sub": "Clique em cada bloco. É o que fica em canais.json e no roteiro de cada radar.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Referências",
+          "sub": "canais.md",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Ranking ou medição"
+            },
+            {
+              "icone": "x",
+              "t": "\"ativo\": false pausa"
+            }
+          ],
+          "detalhe": "Nomes consolidados, com critério escrito: no finviral, o Top 10 do ranking Anbima FInfluence; no advviral, sem ranking oficial, uma busca por tema e uma medição datada. Para pausar alguém, <code>\"ativo\": false</code>, sem apagar."
+        },
+        {
+          "icone": "check",
+          "titulo": "O que é fato",
+          "sub": "só o que foi dito",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "Está na transcrição"
+            },
+            {
+              "icone": "usuario",
+              "t": "Atribuído: \"segundo ele\""
+            }
+          ],
+          "detalhe": "Só entra fato ou número que está na transcrição, com a fonte (canal, data, título) na tela. Tudo relatado e atribuído. No direito, lei, prazo, valor e decisão do STF só como foram ditos, e proposta de lei é chamada de proposta.",
+          "forte": true
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Aviso",
+          "sub": "em todo vídeo",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "Uma frase fixa por nicho"
+            }
+          ],
+          "detalhe": "Finanças: \"não é recomendação de investimento\". Saúde: \"não substitui consulta médica\". Direito: \"não substitui orientação de um advogado\". A conferência reprova o roteiro que não tiver a frase."
+        },
+        {
+          "icone": "x",
+          "titulo": "Nunca publico",
+          "sub": "a linha vermelha",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "Instrução para o caso de quem assiste"
+            },
+            {
+              "icone": "x",
+              "t": "Tomar lado em política"
+            }
+          ],
+          "detalhe": "Na saúde, nada de dose, remédio ou dieta como instrução. No direito, nada de \"faça X\" para o caso de quem assiste, nem propaganda de escritório. Em todos, política atribuída e sem lado; no direito, ninguém é culpado antes de condenação."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Recusas",
+          "sub": "regras novas",
+          "itens": [
+            {
+              "icone": "caneta",
+              "t": "Data + motivo"
+            }
+          ],
+          "detalhe": "Cada vez que você recusa algo no portão, o motivo vira uma linha nova em <code>regras.md</code>, com data. É assim que o \"gov bê érre\" sem \"ponto\" entrou no finviral: uma reprovação do dono em 13/10/2026."
+        }
+      ],
+      "volta": "Cada recusa no portão vira uma regra nova",
+      "legenda": "As regras não são enfeite: o checar.py e o prompt do roteiro leem cada uma delas."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Três nichos, três jeitos de proteger quem assiste",
+      "sub": "Regras reais dos radares. Use como ponto de partida para o seu.",
+      "passos": [
+        {
+          "titulo": "Finanças",
+          "sub": "finviral",
+          "texto": [
+            "Referências: o Top 10 do ranking Anbima FInfluence. Aviso: \"não é recomendação de investimento\".",
+            "Eleição e política: o vídeo relata o que cada um disse, sempre atribuído, sem tomar lado."
+          ],
+          "exemplo": {
+            "rot": "Regra",
+            "texto": "Só entra número que está na transcrição, com a fonte (canal, data, título) na tela."
+          }
+        },
+        {
+          "titulo": "Saúde",
+          "sub": "saudeviral",
+          "texto": [
+            "Referências: médicos, nutricionistas e psicólogos de maior audiência, a partir de uma pesquisa datada.",
+            "O que não tem consenso científico leva o carimbo <b>SEM CONSENSO</b> ou fica de fora. Canais com esse perfil ficam ativos por decisão do dono, sempre com o carimbo."
+          ],
+          "exemplo": {
+            "rot": "Regra",
+            "texto": "Nada de dose, remédio ou dieta como instrução. \"Não substitui consulta médica.\" em todo vídeo."
+          }
+        },
+        {
+          "titulo": "Direito",
+          "sub": "advviral",
+          "texto": [
+            "Referências: 10 advogados do YouTube por área (previdência, consumidor, dívidas, trabalho, imóvel, família, golpes). Canais de aula para concurso ficaram de fora.",
+            "Nada vira conselho para o caso de quem assiste."
+          ],
+          "exemplo": {
+            "rot": "Regra",
+            "texto": "\"Cada caso é um caso: procure um advogado ou a defensoria pública.\""
+          }
+        },
+        {
+          "titulo": "O seu nicho",
+          "sub": "exemplo ilustrativo",
+          "texto": [
+            "Pergunte: o que, no meu nicho, pode prejudicar quem assiste se for dito errado? A resposta vira o aviso e a lista do que nunca publico.",
+            "Escolha 5 canais com critério que você consegue escrever em uma linha."
+          ],
+          "exemplo": {
+            "rot": "Imóveis",
+            "texto": "Aviso: \"não é avaliação do seu imóvel\". Nunca publico: preço de um imóvel específico como certo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os dois arquivos do seu nicho",
+      "sub": "Copie, preencha e guarde na pasta do agente (a mesma do degrau 1).",
+      "blocos": [
+        {
+          "rot": "canais.md",
+          "icone": "lupa",
+          "conteudo": "# Canais de referência: <seu nicho>\n\nCritério de escolha (uma linha): \n\n| Nome | Link | Frequência de vídeos | Assunto que mais rende | Ativo |\n|---|---|---|---|---|\n| | | | | sim |\n| | | | | sim |\n| | | | | sim |\n| | | | | sim |\n| | | | | sim |\n\nNome emergente nunca entra. Inclusão nova só com o meu OK."
+        },
+        {
+          "rot": "regras.md",
+          "icone": "escudo",
+          "conteudo": "# Regras do nicho: <seu nicho>\n\n## O que conta como fato\n- Só o que está na transcrição, com fonte (canal, data, título) na tela.\n- Tudo relatado e atribuído (\"segundo ele\").\n- \n\n## Aviso obrigatório (em todo vídeo)\n- \n\n## Nunca publico\n- Instrução para o caso de quem assiste.\n- Lado em política.\n- \n\n## Regras vindas de recusas no portão\n- AAAA-MM-DD: "
+        },
+        {
+          "rot": "canais.json (formato dos radares)",
+          "icone": "arquivo",
+          "conteudo": "{\n  \"_como_editar\": \"'ativo': false pausa sem apagar. Nome emergente nunca entra.\",\n  \"canais\": [\n    {\"handle\": \"@canal1\", \"nome\": \"Nome do canal\", \"rk\": \"CRITÉRIO · ÁREA\", \"ativo\": true},\n    {\"handle\": \"@canal2\", \"nome\": \"Nome do canal\", \"rk\": \"CRITÉRIO · ÁREA\", \"ativo\": false}\n  ]\n}"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Quem entra",
+            "html": "<p>Nos três radares, se aparecer em destaque outro nome consolidado e confiável, o sistema <b>sugere</b> a inclusão na mensagem do bot. Nome emergente nunca entra, e a inclusão só acontece com o OK do dono.</p><p>Na saúde, o critério ainda pede registro profissional.</p>"
+          },
+          {
+            "rot": "O campo rk",
+            "html": "<p>O <code>rk</code> aparece na ficha do influenciador no vídeo: \"Nº 1 · ANBIMA\" no finviral, \"MÉDICO · ONCOLOGISTA\" no saudeviral, \"ADVOCACIA · PREVIDÊNCIA\" no advviral. Quem assiste vê por que aquela pessoa é referência.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: os 5 do seu nicho",
+      "sub": "Exercício 2 da sequência 4.",
+      "exercicios": [
+        {
+          "id": "e2",
+          "titulo": "E2 · Os 5 do seu nicho",
+          "min": "20 min",
+          "texto": "Escolha 5 canais de referência do seu nicho (nome, link, frequência, assunto que mais rende) e escreva as regras: o que conta como fato, o aviso obrigatório e o que você nunca publica.",
+          "pronto": "você tem <code>canais.md</code> e <code>regras.md</code> do seu nicho, e o critério de escolha cabe em uma linha."
+        }
+      ],
+      "fonte": "Exercício completo: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Um canal novo do seu nicho está crescendo rápido. O radar deve incluí-lo?",
+          "opcoes": [
+            "Sim, automaticamente, porque está em alta.",
+            "Não: nome emergente nunca entra; o sistema pode sugerir nomes consolidados e só inclui com o seu OK.",
+            "Sim, se tiver mais de mil inscritos.",
+            "Só aos domingos."
+          ],
+          "certa": 1,
+          "explica": "Os radares só sugerem nomes consolidados e confiáveis, e a inclusão depende do OK do dono. Emergente nunca entra.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Um médico de referência defende um tratamento sem consenso científico. Como o saudeviral trata isso?",
+          "opcoes": [
+            "Publica como recomendação.",
+            "Relata, atribui e carimba SEM CONSENSO, ou deixa de fora.",
+            "Corrige o médico com a opinião do Nei.",
+            "Remove o canal da lista na hora."
+          ],
+          "certa": 1,
+          "explica": "Tratamento sem consenso leva o carimbo SEM CONSENSO ou fica de fora. O vídeo relata e atribui; não dá instrução de dose, remédio ou dieta.",
+          "ref": "passos"
+        },
+        {
+          "p": "Um advogado comenta um projeto de lei que ainda não foi votado. Como o advviral fala dele?",
+          "opcoes": [
+            "Como lei em vigor.",
+            "Como proposta, atribuída a quem disse.",
+            "Não fala de leis.",
+            "Como conselho para quem assiste."
+          ],
+          "certa": 1,
+          "explica": "Proposta de lei é chamada de proposta. Lei, prazo, valor e decisão do STF só como foram ditos.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Para que serve a seção \"Regras vindas de recusas no portão\"?",
+          "opcoes": [
+            "Para guardar ideias de vídeo.",
+            "Para que cada recusa vire uma regra com data, e o mesmo erro não volte.",
+            "Para listar os canais pausados.",
+            "Não serve: é opcional."
+          ],
+          "certa": 1,
+          "explica": "Recusa sem regra se repete. Escrita em regras.md, ela passa a ser lida pelo roteiro e pela conferência.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para aprofundar",
+      "links": [
+        {
+          "t": "Guia do saudeviral (regra SEM CONSENSO)",
+          "href": "https://inematds.github.io/saudeviral/guia/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Guia do advviral (neutralidade e propostas)",
+          "href": "https://inematds.github.io/advviral/guia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Guia do finviral (ranking Anbima)",
+          "href": "https://inematds.github.io/finviral/guia/",
+          "icone": "grafico"
+        }
+      ]
+    }
+  ]
+}

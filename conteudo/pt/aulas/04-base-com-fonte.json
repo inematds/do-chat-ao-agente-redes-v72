@@ -1,0 +1,297 @@
+{
+  "slug": "base-com-fonte",
+  "num": 4,
+  "titulo": "A base com fonte: cada número com o trecho literal",
+  "titulo_curto": "A base com fonte",
+  "menu": "Base",
+  "minutos": 18,
+  "hero_alt": "Tela com uma transcrição longa e um trecho destacado sendo copiado para uma tabela.",
+  "lead": "A base.md é o coração do canal com fonte. Cada número que vai para a tela entra com quem disse, o vídeo, a data e um trecho copiado da transcrição, sem editar. Um script confere cada trecho; se algum não estiver lá, o vídeo é descartado. Aqui você monta a sua base e o seu conferidor.",
+  "objetivo": "montar a base.md de um vídeo do seu nicho, com trecho literal em cada linha, e conferir cada trecho na transcrição com um script.",
+  "competencias": [
+    "base-com-fonte",
+    "transcricao-local",
+    "conferencia-automatica"
+  ],
+  "aprende": [
+    {
+      "icone": "chat",
+      "t": "Do vídeo à transcrição, no seu computador"
+    },
+    {
+      "icone": "arquivo",
+      "t": "As cinco colunas da base.md"
+    },
+    {
+      "icone": "lupa",
+      "t": "O que é um trecho literal (e o que não é)"
+    },
+    {
+      "icone": "check",
+      "t": "Um conferidor de 15 linhas, como o checar.py"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do vídeo à linha conferida",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "video",
+          "titulo": "Vídeo",
+          "sub": "de uma referência",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "id, data, título"
+            }
+          ],
+          "detalhe": "Um vídeo de um dos 5 canais do seu <code>canais.md</code>. Anote o id do YouTube, a data e o título: eles vão para a coluna \"Vídeo\" e para a fonte na tela."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Transcrição",
+          "sub": "local",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "Whisper large-v3"
+            }
+          ],
+          "detalhe": "Os radares baixam só o áudio e transcrevem no próprio computador (inemavox, Whisper large-v3). Qualquer transcritor local serve. O arquivo <code>transcript.txt</code> é a prova de tudo o que vem depois."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "base.md",
+          "sub": "uma linha por número",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Número usado"
+            },
+            {
+              "icone": "usuario",
+              "t": "Quem disse"
+            },
+            {
+              "icone": "chat",
+              "t": "Trecho entre aspas"
+            }
+          ],
+          "detalhe": "Colunas: número usado, quem disse, vídeo (id exato), data e trecho. O trecho fica entre aspas retas e é cópia literal de um pedaço contínuo da transcrição, de 6 a 30 palavras, sem editar nem juntar pedaços.",
+          "forte": true
+        },
+        {
+          "icone": "portao",
+          "titulo": "Conferência",
+          "sub": "o trecho está lá?",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Ignora acento e pontuação"
+            },
+            {
+              "icone": "x",
+              "t": "Fora: vídeo descartado"
+            }
+          ],
+          "detalhe": "O script normaliza o texto (minúsculas, sem acento, sem pontuação) e procura cada trecho dentro da transcrição do vídeo citado. Um trecho que não está lá reprova a base inteira."
+        }
+      ],
+      "legenda": "A conferência não julga se o número é verdadeiro no mundo: ela garante que alguém disse exatamente aquilo, no vídeo citado. Por isso tudo é atribuído (\"segundo ele\")."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Trecho literal: certo e errado",
+      "sub": "Exemplos ilustrativos, a partir de uma transcrição inventada para o nicho de imóveis.",
+      "passos": [
+        {
+          "titulo": "Certo",
+          "sub": "cópia contínua",
+          "texto": [
+            "Copie direto da transcrição, do jeito que está, mesmo com a fala solta. Entre 6 e 30 palavras, o bastante para provar o número."
+          ],
+          "exemplo": {
+            "rot": "Trecho",
+            "texto": "\"o aluguel médio aqui na região subiu doze por cento em um ano\""
+          }
+        },
+        {
+          "titulo": "Errado: editado",
+          "sub": "melhorou o texto",
+          "texto": [
+            "Trocar palavras para ficar mais bonito quebra a conferência. O script não acha e o vídeo cai."
+          ],
+          "exemplo": {
+            "rot": "Trecho",
+            "texto": "\"o valor médio do aluguel na região aumentou 12% no último ano\""
+          }
+        },
+        {
+          "titulo": "Errado: colado",
+          "sub": "juntou dois pedaços",
+          "texto": [
+            "Juntar o começo de uma frase com o fim de outra cria uma frase que ninguém disse."
+          ],
+          "exemplo": {
+            "rot": "Trecho",
+            "texto": "\"o aluguel médio subiu… e vai continuar subindo em dois mil e vinte e sete\""
+          }
+        },
+        {
+          "titulo": "Errado: curto",
+          "sub": "não prova nada",
+          "texto": [
+            "Duas ou três palavras aparecem em qualquer lugar e não mostram o contexto. Use pelo menos 6."
+          ],
+          "exemplo": {
+            "rot": "Trecho",
+            "texto": "\"doze por cento\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os modelos: transcrever, anotar, conferir",
+      "sub": "Rode na pasta do agente. Troque &lt;URL&gt; pelo vídeo escolhido.",
+      "blocos": [
+        {
+          "rot": "terminal: áudio + transcrição local",
+          "icone": "terminal",
+          "conteudo": "yt-dlp -x --audio-format mp3 -o \"audio.%(ext)s\" \"<URL>\"\n# com o inemavox (ou outro transcritor local):\npython transcrever_v1.py --in audio.mp3 --outdir tx --whisper-model large-v3"
+        },
+        {
+          "rot": "base.md",
+          "icone": "arquivo",
+          "conteudo": "| Número usado | Quem disse | Vídeo | Data | Trecho da transcrição |\n|---|---|---|---|---|\n| | | <id do YouTube> | dd/mm/aaaa | \"<6 a 30 palavras copiadas>\" |"
+        },
+        {
+          "rot": "confere.py",
+          "icone": "check",
+          "conteudo": "#!/usr/bin/env python3\n\"\"\"uso: python3 confere.py base.md transcript.txt\nCada trecho entre aspas da base está na transcrição? Sai 1 se algum não estiver.\"\"\"\nimport re, sys, unicodedata\n\ndef n(s):  # minúsculas, sem acento, sem pontuação\n    s = unicodedata.normalize(\"NFD\", s.lower()).encode(\"ascii\", \"ignore\").decode()\n    return re.sub(r\"\\s+\", \" \", re.sub(r\"[^a-z0-9%]+\", \" \", s)).strip()\n\nbase = open(sys.argv[1], encoding=\"utf-8\").read()\ntx = n(open(sys.argv[2], encoding=\"utf-8\").read())\nfora = 0\nfor trecho in re.findall(r'\"([^\"]{20,})\"', base):\n    ok = n(trecho) in tx\n    fora += not ok\n    print(\"OK  \" if ok else \"FORA\", trecho[:70])\nsys.exit(1 if fora else 0)"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Saída",
+            "html": "<pre>OK   o aluguel médio aqui na região subiu doze por cento em um ano\nFORA o valor médio do aluguel na região aumentou 12% no último ano</pre><p>Uma linha FORA: corrija copiando de novo da transcrição. O <code>checar.py</code> dos radares faz o mesmo para cada vídeo citado.</p>"
+          },
+          {
+            "rot": "Por que normalizar",
+            "html": "<p>A transcrição e a base podem diferir em acento, vírgula ou maiúscula sem que o sentido mude. Normalizar os dois lados evita reprovar à toa e continua pegando palavra trocada ou frase colada.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "Veja a conferência funcionando",
+      "sub": "Cada linha da base passa pelo conferidor. Interrompa no meio e rode de novo.",
+      "tarefas": [
+        "Linha 1 · aluguel subiu 12% em um ano",
+        "Linha 2 · 3 bairros com vacância alta",
+        "Linha 3 · prazo de 30 dias para reajuste",
+        "Linha 4 · taxa de juros do financiamento",
+        "Linha 5 · 40% dos contratos renovados"
+      ],
+      "falha": 3,
+      "rot": {
+        "entrada": "base.md",
+        "rodando": "conferindo",
+        "feito": "achado",
+        "falhou": "fora da transcrição",
+        "rodar": "Conferir a base",
+        "parar": "Interromper",
+        "zerar": "Recomeçar"
+      },
+      "msg": {
+        "inicio": "5 linhas na base.md. Clique em \"Conferir a base\".",
+        "rodando": "Conferindo: cada trecho é procurado na transcrição do vídeo citado.",
+        "parou": "Interrompido. A linha do meio ficou em conferindo. Rode de novo.",
+        "retoma": "Retomada: a linha que estava em conferindo volta para a fila; as já achadas não são refeitas.",
+        "fim": "Base conferida: todas as linhas achadas.",
+        "fimfalha": "Uma linha está fora da transcrição. No radar, isso reprova a base: o roteiro volta uma vez e, se reprovar de novo, o vídeo não é feito."
+      },
+      "legenda": "Simulação ilustrativa no navegador. A linha que falha é proposital: o trecho dela foi \"melhorado\" e já não é literal."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a sua base com fonte",
+      "sub": "Exercício 3 da sequência 4.",
+      "exercicios": [
+        {
+          "id": "e3",
+          "titulo": "E3 · A base com fonte",
+          "min": "30 min",
+          "texto": "Transcreva um vídeo de um dos seus 5 canais e monte a <code>base.md</code> com número, quem disse, vídeo, data e trecho literal. Rode o <code>confere.py</code>.",
+          "pronto": "cada linha tem o trecho literal entre aspas e o <code>confere.py</code> imprime só OK."
+        }
+      ],
+      "fonte": "Exercício completo: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Você trocou \"doze por cento\" por \"12%\" no trecho da base para ficar mais limpo. O que acontece na conferência?",
+          "opcoes": [
+            "Nada: o sentido é o mesmo.",
+            "O trecho não é mais literal e a conferência reprova.",
+            "O script converte sozinho.",
+            "Só reprova se o número estiver errado."
+          ],
+          "certa": 1,
+          "explica": "A normalização ignora acento, pontuação e maiúscula, mas não troca palavra por algarismo. Trecho editado deixa de ser cópia literal.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "O que a conferência garante?",
+          "opcoes": [
+            "Que o número é verdadeiro no mundo.",
+            "Que alguém disse exatamente aquilo, no vídeo citado.",
+            "Que o vídeo vai viralizar.",
+            "Que o canal é confiável."
+          ],
+          "certa": 1,
+          "explica": "Ela prova a atribuição, não a verdade. Por isso tudo vai relatado (\"segundo ele\") e a confiança vem da escolha dos canais (aula 3).",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Qual trecho serve para a base?",
+          "opcoes": [
+            "\"doze por cento\"",
+            "Um resumo seu do que ele quis dizer.",
+            "Um pedaço contínuo de 6 a 30 palavras, copiado da transcrição.",
+            "O começo de uma frase colado ao fim de outra."
+          ],
+          "certa": 2,
+          "explica": "Curto demais não prova contexto; resumo e colagem não são literais.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para aprofundar",
+      "links": [
+        {
+          "t": "Guia do finviral (como o checar.py funciona)",
+          "href": "https://inematds.github.io/finviral/guia/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Repositório do finviral",
+          "href": "https://github.com/inematds/finviral",
+          "icone": "git"
+        }
+      ]
+    }
+  ]
+}
