@@ -171,12 +171,12 @@
       "sub": "Timer do systemd no seu usuário (o finviral usa assim). Troque &lt;canal&gt; e o caminho do script.",
       "blocos": [
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.timer",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.timer",
           "icone": "relogio",
           "conteudo": "[Unit]\nDescription=<canal> — diario às 02:00\n\n[Timer]\nOnCalendar=Mon..Fri *-*-* 02:00:00\nPersistent=false\n\n[Install]\nWantedBy=timers.target"
         },
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.service",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.service",
           "icone": "terminal",
           "conteudo": "[Unit]\nDescription=<canal> — rodada diario\nAfter=network-online.target\n\n[Service]\nType=oneshot\nExecStart=/bin/bash %h/projetos/<canal>/auto/rodar.sh diario\nTimeoutStartSec=10h\nMemoryMax=60G\nNice=5"
         },
@@ -267,10 +267,10 @@
         {
           "p": "Quando é razoável tirar o portão de uma etapa?",
           "opcoes": [
-            "Na primeira semana, para ganhar tempo.",
-            "Depois de 3 dias seguidos sem precisar recusar nada.",
             "Nunca: o portão é obrigatório em tudo.",
-            "Quando o canal passar de mil inscritos."
+            "Depois de 3 dias seguidos sem precisar recusar nada.",
+            "Quando o canal passar de mil inscritos.",
+            "Na primeira semana, para ganhar tempo."
           ],
           "certa": 1,
           "explica": "O E6 pede três dias seguidos sem recusa. Antes disso, o portão ainda está ensinando regras novas ao canal.",
@@ -281,11 +281,11 @@
           "p": "Às 9 h você não recebeu nada do bot. O que isso quer dizer?",
           "opcoes": [
             "Que foi um dia sem pauta.",
-            "Que algo travou antes do aviso: toda rodada termina com vídeo, \"sem pauta\" ou \"falhou em X\".",
             "Que o vídeo saiu e não precisava avisar.",
-            "Nada: é normal."
+            "Nada: é normal.",
+            "Que algo travou antes do aviso: toda rodada termina com vídeo, \"sem pauta\" ou \"falhou em X\"."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Silêncio nunca é resposta. Dia sem pauta manda \"sem pauta\"; falha manda \"falhou em X\". Se nada chegou, olhe a rodada.",
           "ref": "diagrama"
         },
@@ -293,23 +293,23 @@
           "p": "Amanhã é feriado e você não quer vídeo. O que fazer sem desligar a agenda?",
           "opcoes": [
             "Desligar o computador.",
+            "Deixar sair e apagar depois.",
             "Apagar o timer e criar de novo depois.",
-            "Pôr a data e o modo no pular.txt.",
-            "Deixar sair e apagar depois."
+            "Pôr a data e o modo no pular.txt."
           ],
-          "certa": 2,
+          "certa": 3,
           "explica": "Uma linha como \"2026-10-17 diario\" no pular.txt pula só aquela rodada.",
           "ref": "codigo"
         },
         {
           "p": "Por que Persistent=false no timer de um radar diário?",
           "opcoes": [
-            "Para economizar disco.",
-            "Para que uma rodada perdida não rode atrasada, publicando o radar de ontem à tarde.",
             "Porque o systemd exige.",
-            "Para rodar duas vezes por dia."
+            "Para economizar disco.",
+            "Para rodar duas vezes por dia.",
+            "Para que uma rodada perdida não rode atrasada, publicando o radar de ontem à tarde."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Um radar do dia perde o sentido fora de hora. Rodada perdida fica perdida; a próxima vem no horário.",
           "ref": "codigo"
         }

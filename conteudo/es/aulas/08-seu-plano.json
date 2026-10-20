@@ -5,12 +5,12 @@
   "titulo_curto": "Tu plan",
   "menu": "Plan",
   "minutos": 12,
-  "hero_alt": "Mesa organizada con un cuaderno de planificación abierto, un calendario y un celular en posición vertical apoyado.",
-  "lead": "Ya viste toda la cadena. Ahora reúne las piezas en el orden en que dependen unas de otras: el reel en papel, las reglas, la base, el guion revisado, la agenda y la semana con compuerta. Genera tu plan con fechas y vuelve a la vista general de la formación para ver cómo este nivel se apoya en los otros tres.",
-  "objetivo": "salir con un plan con fechas para los 7 ejercicios del nivel 4 y saber decir, en cada etapa, qué demuestra que quedó lista.",
+  "hero_alt": "Mesa organizada con un cuaderno de planificación abierto, un calendario y un celular vertical apoyado.",
+  "lead": "Viste toda la cadena. Ahora junta las piezas en el orden en que dependen una de otra: el reel en papel, las reglas, la base, el guion revisado, la agenda y la semana con compuerta. Genera tu plan con fechas y vuelve a la visión general de la formación para ver cómo este nivel se apoya en los otros tres.",
+  "objetivo": "salir con un plan con fechas de los 7 ejercicios del nivel 4 y saber decir, en cada etapa, qué prueba que quedó lista.",
   "competencias": [
-    "plan-del-canal",
-    "agenda-con-compuerta"
+    "plano-do-canal",
+    "agenda-con-portao"
   ],
   "aprende": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "icone": "check",
-      "t": "Qué demuestra cada etapa"
+      "t": "Qué prueba cada etapa"
     },
     {
       "icone": "seta",
@@ -33,53 +33,53 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "Las piezas, en el orden de dependencia",
+      "titulo": "Las piezas, en el orden de la dependencia",
       "sub": "Haz clic en cada nivel. Cada uno usa lo que vino antes.",
       "nos": [
         {
           "icone": "video",
           "titulo": "Reel en papel",
           "sub": "clase 2 · E1",
-          "detalhe": "El reel en 7 etapas, a partir de un plan con una nota de 7 o más. Prueba: lo lees en menos de 45 s y la primera frase engancha."
+          "detalhe": "El reel en 7 etapas, a partir de un plan con nota 7 o más. Prueba: lo lees en menos de 45 s y la primera frase atrapa."
         },
         {
           "icone": "escudo",
           "titulo": "Nicho y reglas",
           "sub": "clase 3 · E2",
-          "detalhe": "<code>canais.md</code> y <code>regras.md</code>. Prueba: 5 referencias con un criterio de una línea y el aviso obligatorio por escrito."
+          "detalhe": "<code>canais.md</code> y <code>regras.md</code>. Prueba: 5 referencias con criterio de una línea y el aviso obligatorio escrito."
         },
         {
           "icone": "arquivo",
-          "titulo": "Base con fuentes",
+          "titulo": "Base con fuente",
           "sub": "clase 4 · E3",
-          "detalhe": "<code>base.md</code> de un video transcrito. Prueba: <code>confere.py</code> imprime solo OK.",
+          "detalhe": "<code>base.md</code> de un video transcrito. Prueba: el <code>confere.py</code> imprime solo OK.",
           "forte": true
         },
         {
           "icone": "chat",
           "titulo": "Guion verificado",
           "sub": "clase 5 · E4",
-          "detalhe": "El guion de 60 s que le pediste al agente. Prueba: todos los números están en la base y la lista de la compuerta está marcada."
+          "detalhe": "El guion de 60 s pedido al agente. Prueba: todo número está en la base y la lista de la compuerta está marcada."
         },
         {
           "icone": "relogio",
           "titulo": "Agenda",
           "sub": "clase 7 · E5",
-          "detalhe": "El temporizador o el cron escrito. Prueba: aparece la siguiente ronda y sabes qué pasa un día sin tema."
+          "detalhe": "El timer o el cron escrito. Prueba: aparece la próxima ronda y sabes qué pasa en un día sin tema."
         },
         {
           "icone": "portao",
           "titulo": "Semana con compuerta",
           "sub": "clase 7 · E6",
-          "detalhe": "Una semana aprobando cada video, con los rechazos convertidos en reglas. Prueba: 3 días seguidos sin rechazar."
+          "detalhe": "Una semana aprobando cada video, con los rechazos convirtiéndose en reglas. Prueba: 3 días seguidos sin rechazar."
         }
       ],
-      "legenda": "El desafío extra (3 videos para el mismo público, clase 6) entra cuando E4 esté listo. No depende de la agenda."
+      "legenda": "El desafío extra (3 videos para el mismo público, clase 6) entra cuando el E4 esté listo. No depende de la agenda."
     },
     {
       "tipo": "gerador",
       "titulo": "Genera tu plan con fechas",
-      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que requieren días de uso real.",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que piden días de uso real.",
       "curso": "Redes en automático",
       "horas_padrao": 3,
       "degraus": [
@@ -92,7 +92,7 @@
           "aula": "nicho-e-regras"
         },
         {
-          "titulo": "Base con fuentes",
+          "titulo": "Base con fuente",
           "aula": "base-com-fonte"
         },
         {
@@ -112,12 +112,13 @@
         "titulo": "Plan — Redes en automático",
         "inicio": "Inicio",
         "ritmo": "Ritmo",
-        "termino": "Finalización prevista",
+        "termino": "Término previsto",
         "ate": "hasta",
         "pronto": "listo cuando",
         "semanas": "semanas",
-        "travou": "## Qué rechacé y la regla que creé",
+        "travou": "## Lo que rechacé y la regla que creé",
         "h": "h por semana",
+        "ex1": "ejercicio",
         "exs": "ejercicios"
       }
     },
@@ -126,76 +127,76 @@
       "titulo": "El nivel 4 en tres frases",
       "itens": [
         {
-          "t": "La fuente antes del video",
-          "texto": "Cada número en pantalla tiene quién lo dijo, el video y el fragmento literal. Si no los tiene, no se incluye."
+          "t": "Fuente antes del video",
+          "texto": "Todo número de la pantalla tiene quién lo dijo, el video y el fragmento literal. Si no lo tiene, no entra."
         },
         {
-          "t": "Lo barato antes que lo caro",
-          "texto": "El plan, el texto y la revisión van antes que el avatar y el render. La compuerta queda donde empieza el gasto."
+          "t": "Lo barato antes de lo caro",
+          "texto": "El plan, el texto y la verificación vienen antes del avatar y el render. La compuerta queda donde empieza el gasto."
         },
         {
-          "t": "El rechazo se convierte en regla",
-          "texto": "La agenda funciona sola, pero cada rechazo tuyo se convierte en una línea en regras.md. La compuerta solo se quita cuando dejan de haber rechazos."
+          "t": "El rechazo se vuelve regla",
+          "texto": "La agenda corre sola, pero cada rechazo tuyo se vuelve una línea en regras.md. La compuerta solo se va cuando los rechazos paran."
         }
       ]
     },
     {
       "tipo": "video",
-      "titulo": "Toda la formación en video",
+      "titulo": "La formación completa en video",
       "sub": "Dónde entra este nivel: terminal, asistente, colas y redes.",
       "chave": "jornada-ia"
     },
     {
       "tipo": "quiz",
       "titulo": "Prueba final",
-      "sub": "Una pregunta por cada pieza de la cadena.",
+      "sub": "Una pregunta por pieza de la cadena.",
       "perguntas": [
         {
           "p": "¿Cuál de estos órdenes respeta la dependencia entre las piezas?",
           "opcoes": [
-            "Agenda → base → reglas → guion.",
-            "Reglas → base → guion revisado → agenda → semana con compuerta.",
-            "Guion → agenda → reglas → base.",
-            "Semana con compuerta → reglas → base."
+            "Semana con compuerta → regras → base.",
+            "Guion → agenda → regras → base.",
+            "Agenda → base → regras → guion.",
+            "Regras → base → guion verificado → agenda → semana con compuerta."
           ],
-          "certa": 1,
-          "explica": "La base depende de las referencias y las reglas; el guion depende de la base; la agenda solo tiene sentido con el guion revisado; la compuerta va al final, con la agenda en marcha.",
+          "certa": 3,
+          "explica": "La base depende de las referencias y de las reglas; el guion depende de la base; la agenda solo tiene sentido con el guion verificado; la compuerta viene al final, con la agenda corriendo.",
           "cert": true,
           "ref": "diagrama"
         },
         {
-          "p": "¿Qué demuestra que tu base con fuentes está lista?",
+          "p": "¿Qué prueba que tu base con fuente está lista?",
           "opcoes": [
-            "Tiene más de 20 líneas.",
-            "El verificador encuentra cada fragmento en la transcripción (solo OK).",
             "El agente dijo que está bien.",
+            "El verificador encuentra cada fragmento en la transcripción (solo OK).",
+            "Tiene más de 20 líneas.",
             "Los números parecen razonables."
           ],
           "certa": 1,
-          "explica": "Listo cuando es verificable: el script busca cada fragmento en la transcripción. Una opinión, tuya o del agente, no es una prueba.",
+          "explica": "Listo cuando es verificable: el script busca cada fragmento en la transcripción. La opinión, tuya o del agente, no es prueba.",
           "ref": "diagrama"
         },
         {
-          "p": "¿Dónde protege la compuerta más dinero y tiempo?",
+          "p": "¿Dónde protege más la compuerta el dinero y el tiempo?",
           "opcoes": [
+            "Antes del avatar y del render, que cuestan y no se deshacen.",
             "Después de la publicación.",
-            "Antes del avatar y del render, que cuestan y no se pueden deshacer.",
-            "Al elegir la música.",
+            "En la elección de la música.",
             "En ningún lugar: es solo una formalidad."
           ],
-          "certa": 1,
-          "explica": "En promoavatar, la primera compuerta protege el gasto en avatar y la segunda, el de render. Equivocarse en el texto sale barato.",
+          "certa": 0,
+          "explica": "En los promoavatar, la primera compuerta protege el gasto de avatar y la segunda, el de render. El texto es la parte barata de equivocarse.",
           "ref": "resumo"
         }
       ]
     },
     {
       "tipo": "links",
-      "titulo": "Continúa por aquí",
+      "titulo": "Sigue por aquí",
       "links": [
         {
           "t": "Visión general de la formación Del chat al agente",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
           "icone": "camadas"
         },
         {

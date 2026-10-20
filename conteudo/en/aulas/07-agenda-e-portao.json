@@ -5,13 +5,13 @@
   "titulo_curto": "Schedule and gate",
   "menu": "Schedule",
   "minutos": 18,
-  "hero_alt": "A wall calendar marked with early-morning times and a phone showing an alert message.",
-  "lead": "The schedule turns the pipeline into a channel: one run a day, at a set time, without you having to remember. But a schedule without a gate means posting the wrong thing faster. In this lesson, you’ll write the timer, decide what happens on a day with no topic, and run a week approving each video until you stop having to reject them.",
-  "objetivo": "write your channel’s schedule and run a week with manual approval, turning each rejection into a rule.",
+  "hero_alt": "A wall calendar with early-morning markings and a phone showing a warning message.",
+  "lead": "The schedule turns the pipeline into a channel: one run a day, at a fixed time, without you having to remember. But a schedule without a gate just posts the wrong thing faster. In this lesson you write the timer, decide what happens on a day with no topic, and run a week approving every video, until the rejections stop.",
+  "objetivo": "write your channel's schedule and run a week with manual approval, turning every rejection into a rule.",
   "competencias": [
-    "schedule-with-gate",
-    "day-with-no-topic",
-    "rejection-becomes-rule"
+    "agenda-com-portao",
+    "dia-sem-pauta",
+    "recusa-vira-regra"
   ],
   "aprende": [
     {
@@ -28,14 +28,14 @@
     },
     {
       "icone": "portao",
-      "t": "The week with a gate and when to remove it"
+      "t": "The week with a gate, and when to remove it"
     }
   ],
   "secoes": [
     {
       "tipo": "diagrama",
       "titulo": "A scheduled run",
-      "sub": "Click each block. This is what happens every early morning in a radar.",
+      "sub": "Click each block. This is what happens every night in a radar.",
       "nos": [
         {
           "icone": "relogio",
@@ -47,7 +47,7 @@
               "t": "Mon–Fri 02:00"
             }
           ],
-          "detalhe": "The systemd timer (for your user) starts the run at the scheduled time. For finviral: Monday through Friday at 02:00 for the daily run, Saturday for the weekly run, and Sunday for next week’s run."
+          "detalhe": "The systemd timer (under your user) fires the run at the set time. In finviral: Monday to Friday at 02:00 the daily, Saturday the weekly, Sunday the one for next week."
         },
         {
           "icone": "lista",
@@ -56,22 +56,22 @@
           "itens": [
             {
               "icone": "x",
-              "t": "“2026-10-17 diario”"
+              "t": "\"2026-10-17 diario\""
             }
           ],
-          "detalhe": "Before anything else, the run checks <code>pular.txt</code>. A line with the date and mode skips that run without turning off the schedule: a holiday, a trip, a sensitive topic."
+          "detalhe": "Before anything else, the run checks <code>pular.txt</code>. A line with the date and the mode skips that run without turning off the schedule: holiday, trip, sensitive topic."
         },
         {
           "icone": "camadas",
-          "titulo": "Pipeline",
-          "sub": "collection → review",
+          "titulo": "Queue line",
+          "sub": "collection → check",
           "itens": [
             {
               "icone": "portao",
               "t": "checar.py"
             }
           ],
-          "detalhe": "Collection, database, script, review, avatar, and video: lessons 3 to 5 running on their own. If the script has no material, <code>SEM_PAUTA.txt</code> is created and the run ends there.",
+          "detalhe": "Collection, base, script, check, avatar, and video: lessons 3 to 5 running on their own. If the script has no material, <code>SEM_PAUTA.txt</code> comes out and the run ends there.",
           "forte": true
         },
         {
@@ -88,7 +88,7 @@
               "t": "Reject + rule"
             }
           ],
-          "detalhe": "During the first week, nothing goes live without your approval. Each rejection is recorded with the reason and becomes a rule in <code>regras.md</code>. Only after 3 days in a row without rejecting anything should you consider removing the gate from a step."
+          "detalhe": "In the first week, nothing goes live without your approval. Every rejection is noted with the reason and becomes a rule in <code>regras.md</code>. Only after 3 days in a row without a rejection should you think about removing the gate from a step."
         },
         {
           "icone": "enviar",
@@ -101,89 +101,89 @@
             },
             {
               "icone": "lista",
-              "t": "“no topic”"
+              "t": "\"no topic\""
             },
             {
               "icone": "x",
-              "t": "“failed at X”"
+              "t": "\"failed at X\""
             }
           ],
-          "detalhe": "Every run ends with a message on Telegram: the video (with the link), “no topic,” or “failed at X.” Silence is never an answer: if nothing arrived, something got stuck before the alert."
+          "detalhe": "Every run ends with a message on Telegram: the video (with the link), \"no topic\", or \"failed at X\". Silence is never an answer: if nothing arrived, something got stuck before the notice."
         }
       ],
-      "volta": "Each rejection becomes a rule; the next run reads it right away",
-      "legenda": "Each radar runs at a different time (02:00, 05:00, 08:00) so they don’t compete for the GPU and avatar studio."
+      "volta": "Every rejection becomes a rule; the next run already reads it",
+      "legenda": "Each radar runs at a different time (02:00, 05:00, 08:00) so they don't compete for the GPU and the avatar studio."
     },
     {
       "tipo": "passos",
-      "titulo": "Choose your schedule",
+      "titulo": "Decide your schedule",
       "sub": "The finviral model, for you to adapt.",
       "passos": [
         {
           "titulo": "Daily",
           "sub": "Mon–Fri",
           "texto": [
-            "40 to 60 seconds on what the sources published yesterday and the day before."
+            "40 to 60 seconds with what the references posted yesterday and the day before."
           ],
           "exemplo": {
             "rot": "finviral",
-            "texto": "Monday to Friday, 02:00 · \"daily\" run"
+            "texto": "Monday to Friday, 02:00 · run \"diario\""
           }
         },
         {
           "titulo": "Weekly",
           "sub": "Saturday",
           "texto": [
-            "90 seconds to 2 minutes with a recap of the week. The radars also produce a long 16:9 video, \"The week explained,\" from 5 to 7 minutes."
+            "90 s to 2 min with the week's recap. On the radars, a long 16:9 video, \"The week explained\", of 5 to 7 minutes comes out with it."
           ],
           "exemplo": {
             "rot": "finviral",
-            "texto": "Saturday, 02:00 · \"weekly\" run"
+            "texto": "Saturday, 02:00 · \"weekly\" round"
           }
         },
         {
           "titulo": "Sunday",
-          "sub": "what’s coming",
+          "sub": "what's coming",
           "texto": [
-            "About 90 seconds on what the sources expect for next week."
+            "About 90 s covering what the references expect for next week."
           ],
           "exemplo": {
             "rot": "finviral",
-            "texto": "Sunday, 02:00 · \"Sunday\" run"
+            "texto": "Sunday, 02:00 · \"domingo\" round"
           }
         },
         {
           "titulo": "Slow day",
-          "sub": "no video",
+          "sub": "doesn't become a video",
           "texto": [
-            "Decide in advance what happens on a day with no news: no video, and the message \"no story\" with the reason. Forcing a video on a slow day is the first step toward publishing the wrong thing."
+            "Write down beforehand what happens on a day with no topic: no video, and the \"sem pauta\" message with the reason. Forcing a video on a slow day is the first step toward publishing the wrong thing."
           ],
           "exemplo": {
             "rot": "Message",
-            "texto": "no story: none of the channels published a new video during this period."
+            "texto": "sem pauta: none of the channels published a new video in the period."
           }
         }
       ]
     },
     {
       "tipo": "codigo",
-      "titulo": "Scheduling",
-      "sub": "A systemd timer for your user (finviral works this way). Replace &lt;canal&gt; and the script path.",
+      "titulo": "The schedule",
+      "sub": "A systemd timer under your user (finviral uses it this way). Replace &lt;canal&gt; and the script path.",
       "blocos": [
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.timer",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.timer",
           "icone": "relogio",
-          "conteudo": "[Unit]\nDescription=<canal> — daily at 02:00\n\n[Timer]\nOnCalendar=Mon..Fri *-*-* 02:00:00\nPersistent=false\n\n[Install]\nWantedBy=timers.target"
+          "conteudo": "[Unit]\nDescription=<canal> — diario às 02:00\n\n[Timer]\nOnCalendar=Mon..Fri *-*-* 02:00:00\nPersistent=false\n\n[Install]\nWantedBy=timers.target"
         },
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.service",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.service",
           "icone": "terminal",
-          "conteudo": "[Unit]\nDescription=<canal> — daily run\nAfter=network-online.target\n\n[Service]\nType=oneshot\nExecStart=/bin/bash %h/projetos/<canal>/auto/rodar.sh diario\nTimeoutStartSec=10h\nMemoryMax=60G\nNice=5"
+          "conteudo": "[Unit]\nDescription=<canal> — rodada diario\nAfter=network-online.target\n\n[Service]\nType=oneshot\nExecStart=/bin/bash %h/projetos/<canal>/auto/rodar.sh diario\nTimeoutStartSec=10h\nMemoryMax=60G\nNice=5"
         },
         {
           "rot": "terminal",
           "icone": "terminal",
-          "conteudo": "systemctl --user daemon-reload\nsystemctl --user enable --now <canal>-diario.timer\nsystemctl --user list-timers '<canal>-*'\n\n# skip one run without disabling the schedule\necho \"2026-10-17 diario\" >> auto/pular.txt"
+          "conteudo": "systemctl --user daemon-reload\nsystemctl --user enable --now <canal>-diario.timer\nsystemctl --user list-timers '<canal>-*'\n\n# skip one round without turning off the schedule\necho \"2026-10-17 diario\" >> auto/pular.txt"
         },
         {
           "rot": "crontab (alternative)",
@@ -196,136 +196,136 @@
         "abas": [
           {
             "rot": "Why Persistent=false",
-            "html": "<p>With <code>Persistent=false</code>, a missed run (the machine is off at 02:00) <b>does not</b> run late when the machine comes back on. For a daily radar, a video about yesterday published in the afternoon is no use.</p>"
+            "html": "<p>With <code>Persistent=false</code>, a missed round (machine off at 02:00) <b>does not</b> run late when the machine comes back. For a daily radar, yesterday's video published in the afternoon is no use.</p>"
           },
           {
-            "rot": "Limits",
-            "html": "<p><code>TimeoutStartSec</code> and <code>MemoryMax</code> are limits: a run that gets stuck is stopped, and one that uses too much memory won’t bring the machine down. A run with no limit that gets stuck at 02:00 is still stuck at 09:00.</p>"
+            "rot": "The limits",
+            "html": "<p><code>TimeoutStartSec</code> and <code>MemoryMax</code> are limits: a round that hangs gets shut down, and one that bloats doesn't take the machine down with it. A round with no limit that hangs at 02:00 is still hanging at 09:00.</p>"
           }
         ]
       }
     },
     {
       "tipo": "simfila",
-      "titulo": "See a week of runs",
-      "sub": "Run it for a week. Interrupt it halfway through, then run it again.",
+      "titulo": "See a week of rounds",
+      "sub": "Run the week. Interrupt it halfway and run it again.",
       "tarefas": [
-        "Monday · daily",
-        "Tuesday · daily",
-        "Wednesday · daily",
-        "Thursday · daily",
-        "Friday · daily"
+        "Monday · diário",
+        "Tuesday · diário",
+        "Wednesday · diário",
+        "Thursday · diário",
+        "Friday · diário"
       ],
       "falha": 2,
       "rot": {
-        "entrada": "scheduled",
+        "entrada": "schedule",
         "rodando": "running",
-        "feito": "approved video",
-        "falhou": "no story",
+        "feito": "video approved",
+        "falhou": "sem pauta",
         "rodar": "Run the week",
-        "parar": "Interrupt",
-        "zerar": "Start again"
+        "parar": "Stop",
+        "zerar": "Start over"
       },
       "msg": {
-        "inicio": "5 scheduled runs. Click \"Run the week\".",
-        "rodando": "Each run: collection, source, script, review, and your gate.",
-        "parou": "Interrupted: the middle run didn’t finish. Next time, it starts over; completed runs aren’t repeated.",
-        "retoma": "Resumed: anything already approved isn’t done again.",
-        "fim": "Week complete: five approved videos.",
-        "fimfalha": "There was no topic on Wednesday: no video, and the bot received \"no topic\". A slow day doesn’t become a video."
+        "inicio": "5 rounds on the schedule. Click \"Run the week\".",
+        "rodando": "Each round: collection, base, script, check, and its gate.",
+        "parou": "Interrupted: the middle round didn't finish. On the next run it starts over; the ones that already went out aren't redone.",
+        "retoma": "Resumed: what was already approved isn't redone.",
+        "fim": "Full week: five videos approved.",
+        "fimfalha": "Wednesday had no topic: no video, and the bot received \"sem pauta\". A slow day doesn't become a video."
       },
-      "legenda": "Illustrative browser simulation. Wednesday with no topic is intentional, to show that an empty day is a normal result, not an error."
+      "legenda": "Illustrative simulation in the browser. The Wednesday with no topic is on purpose, to show that an empty day is a normal result, not an error."
     },
     {
       "tipo": "pratica",
       "titulo": "Practice: schedule and week with a gate",
-      "sub": "Exercises 5 and 6 in sequence 4.",
+      "sub": "Exercises 5 and 6 of sequence 4.",
       "exercicios": [
         {
           "id": "e5",
           "titulo": "E5 · The schedule",
           "min": "20 min",
-          "texto": "Choose the frequency and write the schedule (systemd timer or cron), including what happens on a day with no topic and where the failure alert goes.",
-          "pronto": "the schedule is written, <code>list-timers</code> (or crontab) shows the next run, and you know what happens on a day with no topic."
+          "texto": "Decide how often it runs and write the schedule (systemd timer or cron), including what happens on a day with no topic and where the failure alert goes.",
+          "pronto": "the schedule is written, <code>list-timers</code> (or the crontab) shows the next run, and you know what happens on a day with no topic."
         },
         {
           "id": "e6",
           "titulo": "E6 · The gate before publishing",
           "min": "1 week",
           "dias": 7,
-          "texto": "Run for a week with manual approval before each post. Note what you reject and why; each rejection becomes a rule in <code>regras.md</code>.",
-          "pronto": "you’ve gone 3 days in a row without needing to reject anything. Only then consider removing the gate from a step."
+          "texto": "Run a week with manual approval before every post. Write down what you rejected and why; each rejection becomes a rule in <code>regras.md</code>.",
+          "pronto": "you went 3 days in a row without having to reject anything. Only then think about removing the gate from any step."
         }
       ],
-      "fonte": "Completed exercises: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+      "fonte": "Full exercises: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
     },
     {
       "tipo": "quiz",
       "titulo": "Test what you learned",
-      "sub": "The explanation appears after you answer.",
+      "sub": "The explanation appears after your answer.",
       "perguntas": [
         {
           "p": "When is it reasonable to remove the gate from a step?",
           "opcoes": [
-            "In the first week, to save time.",
-            "After 3 days in a row without needing to reject anything.",
-            "Never: the gate is required for everything.",
-            "When the channel passes one thousand subscribers."
+            "Never: the gate is required everywhere.",
+            "After 3 days in a row without having to reject anything.",
+            "When the channel passes a thousand subscribers.",
+            "In the first week, to save time."
           ],
           "certa": 1,
-          "explica": "E6 requires three days in a row without a rejection. Before then, the gate is still teaching the channel new rules.",
+          "explica": "E6 asks for three days in a row with no rejections. Before that, the gate is still teaching the channel new rules.",
           "cert": true,
           "ref": "pratica"
         },
         {
-          "p": "It’s 9 a.m. and you haven’t received anything from the bot. What does that mean?",
+          "p": "At 9 a.m. you haven't received anything from the bot. What does that mean?",
           "opcoes": [
             "That it was a day with no topic.",
-            "That something got stuck before the alert: every run ends with a video, \"no topic,\" or \"failed at X.\"",
-            "That the video was posted and there was no need to alert you.",
-            "Nothing; that’s normal."
+            "That the video went out and there was no need to notify you.",
+            "Nothing: that's normal.",
+            "That something got stuck before the alert: every run ends with a video, \"sem pauta\" or \"falhou em X\"."
           ],
-          "certa": 1,
-          "explica": "Silence is never an answer. A day with no topic sends \"no topic\"; a failure sends \"failed at X.\" If nothing arrived, check the run.",
+          "certa": 3,
+          "explica": "Silence is never an answer. A day with no topic sends \"sem pauta\"; a failure sends \"falhou em X\". If nothing arrived, check the run.",
           "ref": "diagrama"
         },
         {
-          "p": "Tomorrow is a holiday, and you don’t want a video. What can you do without turning off the schedule?",
+          "p": "Tomorrow is a holiday and you don't want a video. What can you do without turning off the schedule?",
           "opcoes": [
             "Turn off the computer.",
+            "Let it go out and delete it later.",
             "Delete the timer and create it again later.",
-            "Put the date and mode in pular.txt.",
-            "Let it post and delete it afterward."
+            "Put the date and the mode in pular.txt."
           ],
-          "certa": 2,
+          "certa": 3,
           "explica": "A line like \"2026-10-17 diario\" in pular.txt skips only that run.",
           "ref": "codigo"
         },
         {
-          "p": "Why use Persistent=false on a daily radar timer?",
+          "p": "Why Persistent=false on the timer of a daily radar?",
           "opcoes": [
-            "To save disk space.",
-            "So a missed run doesn’t happen late, posting yesterday afternoon’s radar.",
             "Because systemd requires it.",
-            "To run twice a day."
+            "To save disk space.",
+            "To run twice a day.",
+            "So a missed run doesn't run late, publishing yesterday's radar in the afternoon."
           ],
-          "certa": 1,
-          "explica": "A daily radar loses its meaning if it runs late. A missed run stays missed; the next one runs on time.",
+          "certa": 3,
+          "explica": "A daily radar loses its meaning when it's out of time. A missed run stays missed; the next one comes at its scheduled time.",
           "ref": "codigo"
         }
       ]
     },
     {
       "tipo": "links",
-      "titulo": "To learn more",
+      "titulo": "Go deeper",
       "links": [
         {
-          "t": "The finviral repository (systemd/ folder)",
+          "t": "finviral repository (systemd/ folder)",
           "href": "https://github.com/inematds/finviral",
           "icone": "git"
         },
         {
-          "t": "saudeviral guide (scheduled for 05:00)",
+          "t": "saudeviral guide (schedule at 05:00)",
           "href": "https://inematds.github.io/saudeviral/guia/",
           "icone": "escudo"
         }

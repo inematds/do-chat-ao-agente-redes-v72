@@ -241,12 +241,12 @@
         {
           "p": "Em que momento trocar a imagem de capa de um reel sai de graça?",
           "opcoes": [
-            "Depois que o reel foi montado.",
-            "No portão da fase de texto, antes de qualquer avatar ou render.",
             "Durante o download.",
-            "Nunca sai de graça."
+            "Nunca sai de graça.",
+            "No portão da fase de texto, antes de qualquer avatar ou render.",
+            "Depois que o reel foi montado."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "No portão do texto ainda não se gerou avatar, imagem nem render. Depois, a troca exige refazer o reel.",
           "cert": true,
           "ref": "diagrama"
@@ -254,34 +254,34 @@
         {
           "p": "Qual é o CTA de um vídeo de alcance?",
           "opcoes": [
+            "Visitar três sites.",
             "Comprar agora.",
             "Comentar ou compartilhar, nunca comercial.",
-            "Visitar três sites.",
             "Assinar o canal e o curso."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "Alcance quer interromper a rolagem e ser compartilhado. O convite para o site fica no promocional.",
           "ref": "passos"
         },
         {
           "p": "O vídeo foi salvo no estúdio como \"C7-jovens-promocional-v1\". O que acontece no download?",
           "opcoes": [
-            "Baixa normalmente.",
             "Não é encontrado: o título tem de ser exatamente C7-jovens-pro-v1.",
+            "Baixa normalmente.",
             "O bot corrige o nome sozinho.",
             "Baixa a versão sem legenda."
           ],
-          "certa": 1,
+          "certa": 0,
           "explica": "O download casa por igualdade exata de texto. Por isso o chat manda o título pronto, para não ser digitado de memória.",
           "ref": "codigo"
         },
         {
           "p": "Para que serve o \"| sombra\"?",
           "opcoes": [
-            "Para escurecer o vídeo.",
+            "Para pular os portões.",
             "Para ver o plano (fase × alvo × fila) sem enfileirar nada nem gastar.",
             "Para publicar escondido.",
-            "Para pular os portões."
+            "Para escurecer o vídeo."
           ],
           "certa": 1,
           "explica": "Com \"| sombra\" o bot só imprime o plano. É assim que se confere um assunto novo antes de gastar GPU.",

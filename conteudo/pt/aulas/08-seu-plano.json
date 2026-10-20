@@ -118,6 +118,7 @@
         "semanas": "semanas",
         "travou": "## O que recusei e a regra que criei",
         "h": "h por semana",
+        "ex1": "exercício",
         "exs": "exercícios"
       }
     },
@@ -153,12 +154,12 @@
         {
           "p": "Qual destas ordens respeita a dependência entre as peças?",
           "opcoes": [
-            "Agenda → base → regras → roteiro.",
-            "Regras → base → roteiro conferido → agenda → semana com portão.",
+            "Semana com portão → regras → base.",
             "Roteiro → agenda → regras → base.",
-            "Semana com portão → regras → base."
+            "Agenda → base → regras → roteiro.",
+            "Regras → base → roteiro conferido → agenda → semana com portão."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "A base depende das referências e das regras; o roteiro depende da base; a agenda só faz sentido com o roteiro conferido; o portão vem por último, com a agenda rodando.",
           "cert": true,
           "ref": "diagrama"
@@ -166,9 +167,9 @@
         {
           "p": "O que prova que a sua base com fonte está pronta?",
           "opcoes": [
-            "Ela tem mais de 20 linhas.",
-            "O conferidor acha cada trecho na transcrição (só OK).",
             "O agente disse que está boa.",
+            "O conferidor acha cada trecho na transcrição (só OK).",
+            "Ela tem mais de 20 linhas.",
             "Os números parecem razoáveis."
           ],
           "certa": 1,
@@ -178,12 +179,12 @@
         {
           "p": "Onde o portão protege mais dinheiro e tempo?",
           "opcoes": [
-            "Depois da publicação.",
             "Antes do avatar e do render, que custam e não se desfazem.",
+            "Depois da publicação.",
             "Na escolha da música.",
             "Em nenhum lugar: é só formalidade."
           ],
-          "certa": 1,
+          "certa": 0,
           "explica": "Nos promoavatar, o primeiro portão protege o gasto de avatar e o segundo, o de render. O texto é a parte barata de errar.",
           "ref": "resumo"
         }

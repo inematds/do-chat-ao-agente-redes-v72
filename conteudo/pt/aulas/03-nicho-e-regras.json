@@ -226,10 +226,10 @@
         {
           "p": "Um canal novo do seu nicho está crescendo rápido. O radar deve incluí-lo?",
           "opcoes": [
-            "Sim, automaticamente, porque está em alta.",
+            "Só aos domingos.",
             "Não: nome emergente nunca entra; o sistema pode sugerir nomes consolidados e só inclui com o seu OK.",
             "Sim, se tiver mais de mil inscritos.",
-            "Só aos domingos."
+            "Sim, automaticamente, porque está em alta."
           ],
           "certa": 1,
           "explica": "Os radares só sugerem nomes consolidados e confiáveis, e a inclusão depende do OK do dono. Emergente nunca entra.",
@@ -239,12 +239,12 @@
         {
           "p": "Um médico de referência defende um tratamento sem consenso científico. Como o saudeviral trata isso?",
           "opcoes": [
-            "Publica como recomendação.",
             "Relata, atribui e carimba SEM CONSENSO, ou deixa de fora.",
             "Corrige o médico com a opinião do Nei.",
-            "Remove o canal da lista na hora."
+            "Remove o canal da lista na hora.",
+            "Publica como recomendação."
           ],
-          "certa": 1,
+          "certa": 0,
           "explica": "Tratamento sem consenso leva o carimbo SEM CONSENSO ou fica de fora. O vídeo relata e atribui; não dá instrução de dose, remédio ou dieta.",
           "ref": "passos"
         },
@@ -252,23 +252,23 @@
           "p": "Um advogado comenta um projeto de lei que ainda não foi votado. Como o advviral fala dele?",
           "opcoes": [
             "Como lei em vigor.",
+            "Como conselho para quem assiste.",
             "Como proposta, atribuída a quem disse.",
-            "Não fala de leis.",
-            "Como conselho para quem assiste."
+            "Não fala de leis."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "Proposta de lei é chamada de proposta. Lei, prazo, valor e decisão do STF só como foram ditos.",
           "ref": "diagrama"
         },
         {
           "p": "Para que serve a seção \"Regras vindas de recusas no portão\"?",
           "opcoes": [
-            "Para guardar ideias de vídeo.",
-            "Para que cada recusa vire uma regra com data, e o mesmo erro não volte.",
             "Para listar os canais pausados.",
-            "Não serve: é opcional."
+            "Não serve: é opcional.",
+            "Para guardar ideias de vídeo.",
+            "Para que cada recusa vire uma regra com data, e o mesmo erro não volte."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Recusa sem regra se repete. Escrita em regras.md, ela passa a ser lida pelo roteiro e pela conferência.",
           "ref": "codigo"
         }

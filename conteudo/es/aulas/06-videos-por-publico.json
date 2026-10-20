@@ -5,18 +5,18 @@
   "titulo_curto": "Videos por público",
   "menu": "Públicos",
   "minutos": 17,
-  "hero_alt": "Cuadrícula de doce pantallas verticales, cada una con un público diferente, sobre una mesa de edición.",
-  "lead": "El mismo tema no convence igual a una persona joven y a una jubilada. promoavatar escribe un guion para cada uno de 12 públicos; promoavatar3 escribe tres para el mismo público: alcance, autoridad y promocional. En ambos, el bot escribe y se detiene. Tú apruebas antes de gastar en avatar y render.",
-  "objetivo": "planear 3 videos para el mismo público (alcance, autoridad, promocional) con las dos compuertas y el título contrato de cada avatar.",
+  "hero_alt": "Cuadrícula de doce pantallas verticales, cada una con un público distinto, sobre una mesa de edición.",
+  "lead": "El mismo tema no convence igual a un joven que a una persona jubilada. promoavatar escribe un guion para cada uno de 12 públicos; promoavatar3 escribe tres para el mismo público: alcance, autoridad y promocional. En ambos, el bot escribe y se detiene. Tú apruebas antes de gastar avatar y render.",
+  "objetivo": "planificar 3 videos para el mismo público (alcance, autoridad, promocional) con las dos compuertas y el título-contrato de cada avatar.",
   "competencias": [
     "videos-por-publico",
-    "compuerta-antes-del-gasto",
+    "portao-antes-do-gasto",
     "titulo-contrato"
   ],
   "aprende": [
     {
       "icone": "usuario",
-      "t": "Los 12 públicos y el detonante de cada uno"
+      "t": "Los 12 públicos y el disparador de cada uno"
     },
     {
       "icone": "camadas",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "El ciclo de promoavatar",
-      "sub": "Cuatro fases y dos compuertas. El pipeline se detiene por sí solo en las compuertas y solo avanza cuando tú lo autorizas.",
+      "sub": "Cuatro fases y dos compuertas. El pipeline se detiene solo en las compuertas y solo avanza cuando tú lo liberas.",
       "nos": [
         {
           "icone": "arquivo",
@@ -51,7 +51,7 @@
               "t": "SE DETIENE: /aprovar"
             }
           ],
-          "detalhe": "El agente guarda un guion por público y envía cada uno al chat con el título exacto del video. Aquí está la primera compuerta: revisas y solo entonces das <code>/aprovar</code>. Cambiar la portada en este momento no cuesta nada.",
+          "detalhe": "El agente graba un guion por público y envía cada uno al chat con el título exacto del video. Aquí está la primera compuerta: lo revisas y solo entonces das <code>/aprovar</code>. Cambiar la portada en este momento sale gratis.",
           "forte": true
         },
         {
@@ -64,7 +64,7 @@
               "t": "Tú en el estudio (predeterminado)"
             }
           ],
-          "detalhe": "Quién genera el video del avatar. El predeterminado eres tú, en el estudio de HeyGen. Hay rutas en las que el bot lo genera (script en el estudio, créditos, API), pero solo una por flujo: dos generarían el mismo video dos veces."
+          "detalhe": "Quién genera el video del avatar. Lo predeterminado es que lo hagas tú, en el estudio de HeyGen. Hay rutas en las que el bot lo genera (script en el estudio, créditos, API), pero solo una por flujo: dos generarían el mismo video dos veces."
         },
         {
           "icone": "baixar",
@@ -77,10 +77,10 @@
             },
             {
               "icone": "portao",
-              "t": "PARA: tú revisas"
+              "t": "SE DETIENE: tú revisas"
             }
           ],
-          "detalhe": "Busca en el estudio el video con el título exacto y lo descarga. Si un carácter no coincide, no encuentra nada. Segunda compuerta: revisas los avatares descargados antes de gastar la cola de renderizado."
+          "detalhe": "Busca en el estudio el video con el título exacto y lo descarga. Un carácter de más o de menos y no encuentra nada. Segunda compuerta: revisas los avatares descargados antes de gastar la cola de render."
         },
         {
           "icone": "enviar",
@@ -92,10 +92,10 @@
               "t": "Canal del público"
             }
           ],
-          "detalhe": "Arma el reel 9:16 y lo entrega en el canal de ese público. La entrega es la última etapa del pipeline: el destino lo indica el campo <code>canal</code> de cada público en <code>flow.json</code>."
+          "detalhe": "Monta el reel 9:16 y lo entrega en el canal de ese público. La entrega es la última etapa del pipeline: quien dice el destino es el campo <code>canal</code> de cada público en el <code>flow.json</code>."
         }
       ],
-      "legenda": "Aprobar antes vale más que volver a intentarlo después: el avatar y el renderizado cuestan y no se pueden deshacer. La primera compuerta protege el gasto del avatar; la segunda, el del renderizado."
+      "legenda": "Aprobar antes vale más que reintentar después: el avatar y el render cuestan y no se deshacen. La primera compuerta protege el gasto de avatar; la segunda, el de render."
     },
     {
       "tipo": "passos",
@@ -106,7 +106,7 @@
           "titulo": "Alcance",
           "sub": "-alc · 25–40 s",
           "texto": [
-            "Objetivo: detener el desplazamiento y que lo compartan.",
+            "Objetivo: interrumpir el scroll y que lo compartan.",
             "CTA: comentar o compartir. Nunca comercial."
           ],
           "exemplo": {
@@ -130,8 +130,8 @@
           "titulo": "Promocional",
           "sub": "-pro · 30–45 s",
           "texto": [
-            "Objetivo: conectar el problema con la solución.",
-            "CTA: una sola, para inema.club."
+            "Objetivo: unir el dolor con la solución.",
+            "CTA: uno solo, hacia inema.club."
           ],
           "exemplo": {
             "rot": "Título en el estudio",
@@ -140,13 +140,13 @@
         },
         {
           "titulo": "Los 12 públicos",
-          "sub": "cada uno con su propio detonante",
+          "sub": "cada uno con su gatillo",
           "texto": [
-            "personas comunes, jóvenes, profesionales, mujeres, emprendedores, técnicos, 40+, 60+, educadores, creadores, personas que buscan reinsertarse laboralmente y familias. Cada público tiene un detonante y un canal propios."
+            "persona común, jóvenes, profesionales, mujeres, emprendedores, técnicos, 40+, 60+, educadores, creadores, recolocación y familia. Cada público tiene un gatillo y un canal propio."
           ],
           "exemplo": {
-            "rot": "Detonante para mayores de 40",
-            "texto": "Tu experiencia vale más cuando la multiplicas con IA."
+            "rot": "Gatillo de 40+",
+            "texto": "Tu experiencia vale más cuando la multiplica la IA."
           }
         }
       ]
@@ -159,17 +159,17 @@
         {
           "rot": "chat del bot",
           "icone": "chat",
-          "conteudo": "# ver el plan sin gastar nada (no agrega a la cola)\n/promoavatar3 <assunto> | alvos=jovens-alc,jovens-aut,jovens-pro | sombra\n\n# ejecutar solo para un público, en los tres tipos\n/promoavatar3 <assunto> | alvos=jovens-alc,jovens-aut,jovens-pro\n\n# después de revisar los textos\n/aprovar C#7"
+          "conteudo": "# ver el plan sin gastar nada (no encola)\n/promoavatar3 <asunto> | alvos=jovens-alc,jovens-aut,jovens-pro | sombra\n\n# correr solo para un público, en los tres tipos\n/promoavatar3 <asunto> | alvos=jovens-alc,jovens-aut,jovens-pro\n\n# después de revisar los textos\n/aprovar C#7"
         },
         {
           "rot": "titulo-contrato.txt",
           "icone": "arquivo",
-          "conteudo": "promoavatar:   A<N>-<publico>-v1        ej.: A8-mulheres-v1\npromoavatar3:  C<N>-<publico>-<tipo>-v1 ej.: C7-jovens-pro-v1\n\nLa descarga coincide por igualdad exacta. Sufijos cortos (alc, aut, pro):\nel título largo ya se truncó en el estudio y dejó de coincidir."
+          "conteudo": "promoavatar:   A<N>-<publico>-v1        ej.: A8-mulheres-v1\npromoavatar3:  C<N>-<publico>-<tipo>-v1 ej.: C7-jovens-pro-v1\n\nLa descarga coincide por igualdad exacta. Sufijos cortos (alc, aut, pro):\nun título largo ya se truncó en el estudio y rompió la coincidencia."
         },
         {
           "rot": "meus-3-videos.md",
           "icone": "video",
-          "conteudo": "# Mismo tema, mismo público: <público>\n\nTema: \nDisparador del público: \n\n| Tipo | Duración | Objetivo | CTA | Título en el estudio |\n|---|---|---|---|---|\n| alcance | 25–40 s | que se comparta | comentar o compartir | |\n| autoridad | 35–60 s | que se guarde | guardar, seguir o probar | |\n| promocional | 30–45 s | conectar el problema con una solución | uno solo, para tu sitio | |\n\nResultado (comentarios en 7 días): alc __ · aut __ · pro __"
+          "conteudo": "# Mismo asunto, mismo público: <público>\n\nAsunto: \nGatillo del público: \n\n| Tipo | Duración | Objetivo | CTA | Título en el estudio |\n|---|---|---|---|---|\n| alcance | 25–40 s | ser compartido | comentar o compartir | |\n| autoridad | 35–60 s | ser guardado | guardar, seguir o probar | |\n| promocional | 30–45 s | unir dolor y solución | uno solo, hacia tu sitio | |\n\nResultado (comentarios en 7 días): alc __ · aut __ · pro __"
         }
       ],
       "saida": {
@@ -177,18 +177,18 @@
         "abas": [
           {
             "rot": "Promoavatar × promoavatar3",
-            "html": "<ul><li><b>promoavatar</b>: un video por público, 12 públicos. Referencia A#N.</li><li><b>promoavatar3</b>: tres videos por público (alc, aut, pro), 36 posibles objetivos. Referencia C#N. Lo habitual es filtrar con <code>| alvos=</code>.</li><li>Son sistemas separados: cambiar uno no afecta al otro.</li></ul>"
+            "html": "<ul><li><b>promoavatar</b>: un video por público, 12 públicos. Referencia A#N.</li><li><b>promoavatar3</b>: tres videos por público (alc, aut, pro), 36 objetivos posibles. Referencia C#N. Lo normal es filtrar con <code>| alvos=</code>.</li><li>Son sistemas separados: tocar uno no afecta al otro.</li></ul>"
           },
           {
             "rot": "Variante viral",
-            "html": "<p><code>| prompt=viral</code>: alcance por encima de todo. Sin marca, sin curso y sin inema.club en el diálogo; CTA siempre de interacción, duración libre de 15 a 45 s. El clip final solo muestra la marca, para que no compita con la invitación a comentar.</p>"
+            "html": "<p><code>| prompt=viral</code>: alcance por encima de todo. Sin marca, sin curso y sin inema.club en el habla; CTA siempre de interacción, duración libre de 15 a 45 s. El clip final queda solo como marca, para no competir con el pedido de comentario.</p>"
           }
         ]
       }
     },
     {
       "tipo": "simfila",
-      "titulo": "Mira la descarga por título",
+      "titulo": "Mira la descarga por el título",
       "sub": "Los avatares están en el estudio. La descarga busca cada uno por el título exacto.",
       "tarefas": [
         "C7-jovens-alc-v1",
@@ -203,24 +203,24 @@
         "rodando": "descargando",
         "feito": "reel entregado",
         "falhou": "no encontrado",
-        "rodar": "Descargar y montar",
+        "rodar": "Baixar e montar",
         "parar": "Interrumpir",
         "zerar": "Reiniciar"
       },
       "msg": {
-        "inicio": "5 avatares listos en el estudio. Haz clic en \"Descargar y montar\".",
-        "rodando": "Buscando cada video por el título exacto, descargando y montando el reel.",
+        "inicio": "5 avatares listos en el estudio. Haz clic en \"Baixar e montar\".",
+        "rodando": "Busca cada video por su título exacto, lo descarga y arma el reel.",
         "parou": "Interrumpido. Lo que se estaba descargando vuelve a la cola en la próxima ronda.",
-        "retoma": "Reanudación: no se vuelve a hacer lo que ya se convirtió en reel.",
+        "retoma": "Reanudado: lo que ya se convirtió en reel no se rehace.",
         "fim": "Todos los reels entregados en el canal del público.",
         "fimfalha": "No se encontró un video: en el estudio se guardó como \"C7-40mais-alcance-v1\". Un título fuera del contrato nunca coincide."
       },
-      "legenda": "Simulación ilustrativa en el navegador. El fallo es intencional: un título escrito de memoria, con el sufijo largo."
+      "legenda": "Simulación ilustrativa en el navegador. El fallo es a propósito: un título escrito de memoria, con el sufijo largo."
     },
     {
       "tipo": "pratica",
       "titulo": "Práctica: el desafío extra de la secuencia 4",
-      "sub": "Hazlo después del E4. Puedes usar un avatar, tu cámara o solo los guiones.",
+      "sub": "Hazlo después del E4. Puede ser con avatar, con tu cámara o solo con los guiones.",
       "exercicios": [
         {
           "id": "desafio",
@@ -228,7 +228,7 @@
           "min": "1 semana",
           "dias": 7,
           "texto": "Escribe <code>meus-3-videos.md</code> para un público de tu nicho, publica en el orden alcance → autoridad → promocional y anota los comentarios de cada uno.",
-          "pronto": "los tres se publicaron con títulos según el contrato y sabes cuál de los tres tuvo más comentarios."
+          "pronto": "los tres salieron con títulos en el formato del contrato y sabes cuál de los tres trajo más comentarios."
         }
       ],
       "fonte": "Desafío extra de <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
@@ -239,52 +239,52 @@
       "sub": "La explicación aparece después de tu respuesta.",
       "perguntas": [
         {
-          "p": "¿En qué momento cambiar la imagen de portada de un reel no cuesta nada?",
+          "p": "¿En qué momento cambiar la imagen de portada de un reel sale gratis?",
           "opcoes": [
-            "Después de montar el reel.",
-            "En la compuerta de la fase de texto, antes de cualquier avatar o render.",
             "Durante la descarga.",
-            "Nunca es gratis."
+            "Nunca sale gratis.",
+            "En la compuerta de la fase de texto, antes de cualquier avatar o render.",
+            "Después de que el reel fue armado."
           ],
-          "certa": 1,
-          "explica": "En la compuerta del texto todavía no se generó ningún avatar, imagen ni render. Después, el cambio exige volver a hacer el reel.",
+          "certa": 2,
+          "explica": "En la compuerta del texto todavía no se generó avatar, imagen ni render. Después, el cambio exige rehacer el reel.",
           "cert": true,
           "ref": "diagrama"
         },
         {
           "p": "¿Cuál es el CTA de un video de alcance?",
           "opcoes": [
+            "Visitar tres sitios.",
             "Comprar ahora.",
             "Comentar o compartir, nunca comercial.",
-            "Visitar tres sitios.",
             "Suscribirse al canal y al curso."
           ],
-          "certa": 1,
-          "explica": "El alcance busca detener el desplazamiento y que se comparta. La invitación a visitar el sitio va en el promocional.",
+          "certa": 2,
+          "explica": "El alcance quiere interrumpir el scroll y ser compartido. La invitación al sitio queda para el promocional.",
           "ref": "passos"
         },
         {
-          "p": "El video se guardó en el estudio como \"C7-jovens-promocional-v1\". ¿Qué pasa al descargarlo?",
+          "p": "El video se guardó en el estudio como \"C7-jovens-promocional-v1\". ¿Qué pasa en la descarga?",
           "opcoes": [
+            "No se encuentra: el título tiene que ser exactamente C7-jovens-pro-v1.",
             "Se descarga normalmente.",
-            "No se encuentra: el título debe ser exactamente C7-jovens-pro-v1.",
-            "El bot corrige el nombre automáticamente.",
-            "Se descarga la versión sin subtítulos."
+            "El bot corrige el nombre solo.",
+            "Descarga la versión sin subtítulos."
           ],
-          "certa": 1,
-          "explica": "La descarga coincide por igualdad exacta de texto. Por eso el chat envía el título listo, para que no tengas que escribirlo de memoria.",
+          "certa": 0,
+          "explica": "La descarga coincide por igualdad exacta de texto. Por eso el chat manda el título listo, para que no se escriba de memoria.",
           "ref": "codigo"
         },
         {
-          "p": "¿Para qué sirve \"| sombra\"?",
+          "p": "¿Para qué sirve el \"| sombra\"?",
           "opcoes": [
-            "Para oscurecer el video.",
-            "Para ver el plan (fase × objetivo × cola) sin poner nada en la cola ni gastar.",
-            "Para publicar en secreto.",
-            "Para saltarse las compuertas."
+            "Para saltarse las compuertas.",
+            "Para ver el plan (fase × objetivo × cola) sin encolar nada ni gastar.",
+            "Para publicar a escondidas.",
+            "Para oscurecer el video."
           ],
           "certa": 1,
-          "explica": "Con \"| sombra\", el bot solo imprime el plan. Así puedes revisar un tema nuevo antes de gastar GPU.",
+          "explica": "Con \"| sombra\" el bot solo imprime el plan. Así se revisa un tema nuevo antes de gastar GPU.",
           "ref": "codigo"
         }
       ]
@@ -294,12 +294,12 @@
       "titulo": "Para profundizar",
       "links": [
         {
-          "t": "Guía de promoavatar",
+          "t": "Guía del promoavatar",
           "href": "https://inematds.github.io/promoavatar/guia/",
           "icone": "megafone"
         },
         {
-          "t": "Guía de promoavatar3",
+          "t": "Guía del promoavatar3",
           "href": "https://inematds.github.io/promoavatar3/guia/",
           "icone": "megafone"
         }

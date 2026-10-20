@@ -241,12 +241,12 @@
         {
           "p": "Você trocou \"doze por cento\" por \"12%\" no trecho da base para ficar mais limpo. O que acontece na conferência?",
           "opcoes": [
-            "Nada: o sentido é o mesmo.",
-            "O trecho não é mais literal e a conferência reprova.",
             "O script converte sozinho.",
-            "Só reprova se o número estiver errado."
+            "Só reprova se o número estiver errado.",
+            "O trecho não é mais literal e a conferência reprova.",
+            "Nada: o sentido é o mesmo."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "A normalização ignora acento, pontuação e maiúscula, mas não troca palavra por algarismo. Trecho editado deixa de ser cópia literal.",
           "cert": true,
           "ref": "passos"
@@ -254,24 +254,24 @@
         {
           "p": "O que a conferência garante?",
           "opcoes": [
+            "Que o canal é confiável.",
             "Que o número é verdadeiro no mundo.",
             "Que alguém disse exatamente aquilo, no vídeo citado.",
-            "Que o vídeo vai viralizar.",
-            "Que o canal é confiável."
+            "Que o vídeo vai viralizar."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "Ela prova a atribuição, não a verdade. Por isso tudo vai relatado (\"segundo ele\") e a confiança vem da escolha dos canais (aula 3).",
           "ref": "diagrama"
         },
         {
           "p": "Qual trecho serve para a base?",
           "opcoes": [
-            "\"doze por cento\"",
             "Um resumo seu do que ele quis dizer.",
-            "Um pedaço contínuo de 6 a 30 palavras, copiado da transcrição.",
-            "O começo de uma frase colado ao fim de outra."
+            "\"doze por cento\"",
+            "O começo de uma frase colado ao fim de outra.",
+            "Um pedaço contínuo de 6 a 30 palavras, copiado da transcrição."
           ],
-          "certa": 2,
+          "certa": 3,
           "explica": "Curto demais não prova contexto; resumo e colagem não são literais.",
           "ref": "passos"
         }

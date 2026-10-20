@@ -1,41 +1,41 @@
 {
   "slug": "esteira",
   "num": 1,
-  "titulo": "A channel pipeline with sources on screen",
-  "titulo_curto": "The channel pipeline",
-  "menu": "Pipeline",
+  "titulo": "The queue line of a channel with an on-screen source",
+  "titulo_curto": "The channel's queue line",
+  "menu": "Queue line",
   "minutos": 15,
-  "hero_alt": "Workstation with monitors showing a transcript, source table, and a vertical video being assembled.",
-  "lead": "The finviral, saudeviral, and advviral radar tools automatically make one video a day about what the biggest names in the niche have published, with the source for every number on screen. r7e and promoavatar make reels and videos for each audience. Before you build your own, see the whole pipeline and what each tool does.",
-  "objetivo": "explain the six stations in a channel pipeline with sources, and choose which tool your channel starts with.",
+  "hero_alt": "A desk with monitors showing a transcript, a table of sources, and a vertical video being assembled.",
+  "lead": "The finviral, saudeviral, and advviral radars automatically make one video a day about what the biggest creators in the niche have published, with the source of each number on screen. r7e and promoavatar make the reel and the videos for each audience. Before you build your own, look at the whole queue line and the role of each tool.",
+  "objetivo": "explain the six stations of a channel's queue line with a source and choose which tool your channel starts with.",
   "competencias": [
-    "channel-pipeline",
-    "tool-choice",
-    "gate-before-publishing"
+    "esteira-do-canal",
+    "escolha-de-ferramenta",
+    "portao-antes-de-publicar"
   ],
   "aprende": [
     {
       "icone": "camadas",
-      "t": "The six stations in the pipeline"
+      "t": "The six stations of the queue line"
     },
     {
       "icone": "video",
-      "t": "What each tool does: r7e, promoavatar, and the radar tools"
+      "t": "What each tool does: r7e, promoavatar, and the radars"
     },
     {
       "icone": "escudo",
-      "t": "Why the queue and gate come before automation"
+      "t": "Why the queue and the gate come before automation"
     },
     {
       "icone": "alvo",
-      "t": "Your channel profile"
+      "t": "Your channel's sheet"
     }
   ],
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "A radar pipeline (finviral, saudeviral, advviral)",
-      "sub": "The same engine powers all three: only the channels, rules, and schedule change.",
+      "titulo": "A radar's queue line (finviral, saudeviral, advviral)",
+      "sub": "The same engine in all three: only the channels, the rules, and the schedule change.",
       "nos": [
         {
           "icone": "lupa",
@@ -52,11 +52,11 @@
               "sub": "Whisper large-v3"
             }
           ],
-          "detalhe": "Lists videos from the channels in <code>canais.json</code> (metadata only, using yt-dlp), downloads the audio, and transcribes it on your own computer with inemavox (Whisper large-v3). No paid API is used at this step."
+          "detalhe": "Lists the videos from the channels in <code>canais.json</code> (metadata only, through yt-dlp), downloads the audio, and transcribes it on your own computer with inemavox (Whisper large-v3). No paid API in this step."
         },
         {
           "icone": "arquivo",
-          "titulo": "Sourced database",
+          "titulo": "Source base",
           "sub": "base.md",
           "itens": [
             {
@@ -65,10 +65,10 @@
             },
             {
               "icone": "chat",
-              "t": "Exact excerpt"
+              "t": "Verbatim excerpt"
             }
           ],
-          "detalhe": "The agent reads the transcripts and records each number or fact with who said it, the video ID, the date, and the exact transcript excerpt. This is the only source material the script can use.",
+          "detalhe": "The agent reads the transcripts and notes each number or fact with who said it, the video id, the date, and the verbatim excerpt from the transcript. This is the only raw material the script can use.",
           "forte": true
         },
         {
@@ -82,14 +82,14 @@
             },
             {
               "icone": "arquivo",
-              "t": "legenda.txt for approval"
+              "t": "legenda.txt to approve"
             }
           ],
-          "detalhe": "Using your subscription and no API, <code>claude -p</code> writes the lines and visuals to <code>roteiro.json</code> and the approval text to <code>legenda.txt</code>, always based on the database."
+          "detalhe": "<code>claude -p</code>, through the subscription and with no API, writes the lines and the visuals into <code>roteiro.json</code> and the approval text into <code>legenda.txt</code>, always working from the base."
         },
         {
           "icone": "portao",
-          "titulo": "Review",
+          "titulo": "Check",
           "sub": "checar.py",
           "itens": [
             {
@@ -98,10 +98,10 @@
             },
             {
               "icone": "x",
-              "t": "Fails twice: no video"
+              "t": "Failed twice: it does not go out"
             }
           ],
-          "detalhe": "<code>checar.py</code> checks whether each excerpt from the database is actually in the transcript, whether the numbers in the spoken lines are spelled out, and whether the niche disclaimer and CTA appear. If it fails, the script gets one revision. If it fails again, the video is not made."
+          "detalhe": "<code>checar.py</code> checks that each excerpt in the base is really in the transcript, that the numbers in the lines are spelled out, and that the niche notice and the CTA appear. If it fails, the script goes back once. If it fails again, the video is not made."
         },
         {
           "icone": "usuario",
@@ -114,10 +114,10 @@
             },
             {
               "icone": "grafico",
-              "t": "Source shown in every scene"
+              "t": "Source in every scene"
             }
           ],
-          "detalhe": "Nei's avatar comes from the HeyGen studio (subscription). If that fails, the fallback is a version with a photo and local voice. The stage is a page rendered frame by frame, with counters, word-by-word captions, and the source on screen in every scene."
+          "detalhe": "Nei's avatar comes from the HeyGen studio (subscription). If it fails, the version with a photo and a local voice goes out instead. The stage is a page rendered frame by frame, with counters, word-by-word captions, and the source on screen in every scene."
         },
         {
           "icone": "enviar",
@@ -130,54 +130,54 @@
             },
             {
               "icone": "enviar",
-              "t": "Video, no topic, or failure"
+              "t": "Video, no topic, or failed"
             }
           ],
-          "detalhe": "The video goes to the YouTube channel through <code>yt-pubx</code> and always to the Telegram bot. The bot receives one of three things: the video, \"no topic\" (a slow day doesn't become a video), or \"failed at X\"."
+          "detalhe": "The video goes to the YouTube channel through <code>yt-pubx</code> and always to the bot on Telegram. The bot receives one of three things: the video, \"no topic\" (a weak day does not become a video), or \"failed at X\"."
         }
       ],
-      "volta": "Failed review: the script gets one revision",
-      "legenda": "Without a queue and a gate, automating social media means posting the wrong thing faster. That's why this is step 4: it uses the terminal, assistant, and queue from the previous steps.",
+      "volta": "Failed the check: the script goes back once",
+      "legenda": "Without a queue and without a gate, automating social media just means posting the wrong thing faster. That is why this is step 4: it uses the terminal, the assistant, and the queue from the previous steps.",
       "rolagem": true,
       "rolagem_fim": {
-        "titulo": "The full pipeline",
-        "texto": "Collection and transcription feed the database; the database constrains the script; review blocks anything without a source; the avatar and stage assemble the video; publishing always lets you know. Each station is a lesson in this course."
+        "titulo": "The whole assembly line",
+        "texto": "Collection and transcription feed the base; the base limits the script; the check blocks anything without a source; the avatar and the stage assemble the video; publishing always notifies you. Each station is a lesson in this course."
       }
     },
     {
       "tipo": "passos",
-      "titulo": "What each tool does",
-      "sub": "Click each one. They are all open repositories from INEMA.",
+      "titulo": "Which tool does what",
+      "sub": "Tap each one. All of them are open INEMA repositories.",
       "passos": [
         {
           "titulo": "r7e and r7ex",
           "sub": "one thesis becomes a reel",
           "texto": [
-            "You provide a strong idea, and get a 30 to 40 second 9:16 reel using the 7-step trigger script, from the number hook to the request for a comment.",
-            "<b>r7e</b> (reel7etapas) provided the script; <b>r7ex</b> is the new standard (10/18/2026), with a TV news finish. Lesson 2 of this course."
+            "You hand over one strong idea and out comes a 30-to-40-second 9:16 reel, in the 7-step trigger script, from the hook with a number to the request for a comment.",
+            "<b>r7e</b> (reel7etapas) gave the script; <b>r7ex</b> is the new standard (10/18/2026), with a TV-news finish. Lesson 2 of this course."
           ],
           "exemplo": {
             "rot": "Input → output",
-            "texto": "One idea for the day → one reel with an avatar, panels timed to the spoken lines, and \"comment WORD\" at the end."
+            "texto": "One thesis of the day → one reel with an avatar, panels timed to the speech, and \"comenta PALAVRA\" at the end."
           }
         },
         {
           "titulo": "promoavatar",
           "sub": "one video per audience",
           "texto": [
-            "One topic becomes a script for each of 12 audiences (young people, adults 40+, entrepreneurs, educators…), each with its own trigger and channel.",
-            "The bot writes and <b>stops</b>: you approve before spending on the avatar and rendering. Lesson 6."
+            "One topic becomes a script for each of 12 audiences (young people, 40+, entrepreneurs, educators…), each with its own trigger and its own channel.",
+            "The bot writes and <b>stops</b>: you approve before spending avatar and render. Lesson 6."
           ],
           "exemplo": {
             "rot": "Input → output",
-            "texto": "\"/promoavatar <assunto>\" → 12 scripts, 2 gates, 12 reels delivered to each audience’s channel."
+            "texto": "\"/promoavatar &lt;assunto&gt;\" → 12 scripts, 2 gates, 12 reels delivered to each audience's channel."
           }
         },
         {
           "titulo": "promoavatar3",
           "sub": "three videos per audience",
           "texto": [
-            "The same topic yields three scripts for the same audience: <b>reach</b> (to be shared), <b>authority</b> (to be saved), and <b>promotional</b> (to connect a pain point to a solution).",
+            "The same topic yields three scripts for the same audience: <b>reach</b> (getting shared), <b>authority</b> (getting saved), and <b>promotional</b> (connecting pain to solution).",
             "Recommended publishing order: reach → authority → promotional. Lesson 6."
           ],
           "exemplo": {
@@ -189,25 +189,25 @@
           "titulo": "The radars (xviral)",
           "sub": "finviral, saudeviral, advviral",
           "texto": [
-            "They watch what the biggest names in the niche have published, check every number against the transcript, and publish one short video a day, with the source on screen and the niche disclaimer.",
-            "Finance, health, and law use the <b>same engine</b>; only the channel list, rules, and schedule change. Lessons 3, 4, 5, and 7."
+            "They watch what the biggest names in the niche published, check every number against the transcript, and publish one short a day, with the source on screen and the niche disclaimer.",
+            "Finance, health, and law use the <b>same engine</b>; only the channel list, the rules, and the schedule change. Lessons 3, 4, 5, and 7."
           ],
           "exemplo": {
             "rot": "Input → output",
-            "texto": "Monday-to-Friday timer → a 40- to 60-second video about what they said yesterday and the day before, or \"no topic\"."
+            "texto": "Timer from Monday to Friday → a 40 to 60 s video with what they said yesterday and the day before, or \"no topic\"."
           }
         }
       ]
     },
     {
       "tipo": "codigo",
-      "titulo": "Your channel profile",
-      "sub": "Copy and fill this out before any automation. It guides the rest of the course.",
+      "titulo": "Your channel's sheet",
+      "sub": "Copy it and fill it in before any automation. It guides the rest of the course.",
       "blocos": [
         {
           "rot": "meu-canal.md",
           "icone": "arquivo",
-          "conteudo": "# My channel\n\n## Niche\n- Topic: \n- Audience (who watches): \n\n## Where to start\n- [ ] r7e (a reel about one thesis)\n- [ ] promoavatar (one video per audience)\n- [ ] niche radar (what the biggest names said, with source)\n\n## Schedule\n- Frequency: \n- Run time: \n\n## Safety\n- Required niche disclaimer: \n- Who approves before publishing: \n- Where failure alerts go (e.g., bot on Telegram): "
+          "conteudo": "# My channel\n\n## Niche\n- Topic: \n- Audience (who watches): \n\n## Where I start\n- [ ] r7e (a reel for one thesis)\n- [ ] promoavatar (one video per audience)\n- [ ] niche radar (what the biggest names said, with sources)\n\n## Pace\n- Frequency: \n- Run time: \n\n## Safety\n- Required niche disclaimer: \n- Who approves before publishing: \n- Where the failure alert goes (e.g., Telegram bot): "
         }
       ],
       "saida": {
@@ -215,80 +215,80 @@
         "abas": [
           {
             "rot": "What changes between the radars",
-            "html": "<ul><li><b>finviral</b>: finance, Anbima FInfluence ranking Top 10, runs at 02:00, disclaimer \"not investment advice\".</li><li><b>saudeviral</b>: health, doctors, nutritionists, and psychologists with the largest audiences, runs at 05:00, disclaimer \"does not replace a medical consultation\" and SEM CONSENSO label.</li><li><b>advviral</b>: law, 10 YouTube lawyers, runs at 08:00, disclaimer \"does not replace advice from a lawyer\".</li></ul>"
+            "html": "<ul><li><b>finviral</b>: finance, Top 10 of the Anbima FInfluence ranking, runs at 02:00, disclaimer \"this is not investment advice\".</li><li><b>saudeviral</b>: health, the most-watched doctors, nutritionists, and psychologists, runs at 05:00, disclaimer \"does not replace a medical consultation\" and a NO CONSENSUS stamp.</li><li><b>advviral</b>: law, 10 lawyers on YouTube, runs at 08:00, disclaimer \"does not replace advice from a lawyer\".</li></ul>"
           },
           {
             "rot": "What stays the same",
-            "html": "<p>Transcript-based collection, <code>base.md</code> with a verbatim excerpt, script written by <code>claude -p</code> through the subscription, checked by <code>checar.py</code>, avatar made in the studio, frame 0 with the date and strongest number, comment hook, and CTA to inema.club.</p><p>The schedules differ so they don’t compete for the GPU and HeyGen.</p>"
+            "html": "<p>Collection by transcript, <code>base.md</code> with a literal excerpt, script by <code>claude -p</code> on the subscription, checking by <code>checar.py</code>, avatar by the studio, frame 0 with the date and the strongest number, a comment hook, and a CTA to inema.club.</p><p>The schedules are different so they don't compete for the GPU and HeyGen.</p>"
           }
         ]
       }
     },
     {
       "tipo": "video",
-      "titulo": "Step 4 in video",
-      "sub": "r7e, promoavatar, and your niche’s viral channel, in under two minutes.",
+      "titulo": "Step 4 on video",
+      "sub": "r7e, promoavatar, and the viral channel for your niche, in under two minutes.",
       "chave": "seq4-redes"
     },
     {
       "tipo": "quiz",
       "titulo": "Test what you learned",
-      "sub": "The explanation appears after you answer.",
+      "sub": "The explanation appears after your answer.",
       "perguntas": [
         {
-          "p": "A radar script failed review twice in a row. What happens?",
+          "p": "A radar's script failed the check twice in a row. What happens?",
           "opcoes": [
-            "The video is released anyway, with a disclaimer.",
-            "The video isn’t made, and the bot receives the failure notice.",
-            "The agent replaces the numbers with rounded figures.",
-            "The script keeps going back for revision until it passes."
+            "The agent swaps the numbers for rounded ones.",
+            "The video goes out anyway, with a warning.",
+            "The script keeps going back indefinitely until it passes.",
+            "The video is not made, and the bot receives the failure."
           ],
-          "certa": 1,
-          "explica": "If it fails once, the script goes back for revision. If it fails again, the video isn’t made. Better a day without a video than a number without a source.",
+          "certa": 3,
+          "explica": "If it fails once, the script goes back for a fix. If it fails again, the video is not made. Better a day without a video than a number without a source.",
           "cert": true,
           "ref": "diagrama"
         },
         {
           "p": "You want the same topic in three versions for the same audience: one to be shared, one to be saved, and one that leads to the course. Which tool?",
           "opcoes": [
+            "finviral",
             "r7ex",
-            "promoavatar",
             "promoavatar3",
-            "finviral"
+            "promoavatar"
           ],
           "certa": 2,
           "explica": "promoavatar3 makes three videos per audience: reach, authority, and promotional. promoavatar makes one video for each of 12 audiences.",
           "ref": "passos"
         },
         {
-          "p": "What does the bot on Telegram receive on a morning when the niche channels haven’t published anything relevant?",
+          "p": "What does the Telegram bot receive on a morning when the niche's channels published nothing relevant?",
           "opcoes": [
+            "A short video with whatever there is, even if weak.",
             "Nothing: silence means there was no video.",
-            "A short video with whatever is available, even if it’s weak.",
-            "The message \"no topic\".",
-            "An old video reposted."
+            "The \"no topic\" message.",
+            "An old video, republished."
           ],
           "certa": 2,
-          "explica": "The bot always receives one of three things: the video, \"no topic,\" or \"failed at X.\" A slow news day doesn’t become a video, and silence is never the answer.",
+          "explica": "The bot always receives one of three things: the video, \"no topic\", or \"failed at X\". A weak day doesn't become a video, and silence is never an answer.",
           "ref": "diagrama"
         },
         {
           "p": "Why do finviral, saudeviral, and advviral run at different times (02:00, 05:00, and 08:00)?",
           "opcoes": [
-            "Because each audience wakes up at a different time.",
-            "So they don’t compete for the GPU and HeyGen on the same machine.",
-            "Because YouTube only allows one upload per hour.",
-            "By lottery."
+            "Because YouTube only accepts one upload per hour.",
+            "By lottery.",
+            "So they don't compete for the GPU and HeyGen on the same machine.",
+            "Because each audience wakes up at a different time."
           ],
-          "certa": 1,
-          "explica": "All three use the same engine on the same machine. Separate schedules keep two from competing for the GPU and avatar studio at the same time.",
+          "certa": 2,
+          "explica": "All three use the same engine on the same machine. Separate schedules keep two of them from competing for the GPU and the avatar studio at the same time.",
           "ref": "codigo"
         }
       ]
     },
     {
       "tipo": "links",
-      "titulo": "To learn more",
+      "titulo": "Go deeper",
       "links": [
         {
           "t": "finviral guide",
@@ -306,8 +306,8 @@
           "icone": "lista"
         },
         {
-          "t": "Formation overview (step 4 lesson)",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/redes/index.html",
+          "t": "Course overview (step 4 lesson)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/aulas/redes/index.html",
           "icone": "camadas"
         }
       ]

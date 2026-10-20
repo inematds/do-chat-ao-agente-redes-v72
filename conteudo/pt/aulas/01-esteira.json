@@ -170,7 +170,7 @@
           ],
           "exemplo": {
             "rot": "Entrada → saída",
-            "texto": "\"/promoavatar <assunto>\" → 12 roteiros, 2 portões, 12 reels entregues no canal de cada público."
+            "texto": "\"/promoavatar &lt;assunto&gt;\" → 12 roteiros, 2 portões, 12 reels entregues no canal de cada público."
           }
         },
         {
@@ -238,12 +238,12 @@
         {
           "p": "O roteiro de um radar foi reprovado pela conferência duas vezes seguidas. O que acontece?",
           "opcoes": [
-            "O vídeo sai assim mesmo, com um aviso.",
-            "O vídeo não é feito, e o bot recebe a falha.",
             "O agente troca os números por arredondados.",
-            "O roteiro volta indefinidamente até passar."
+            "O vídeo sai assim mesmo, com um aviso.",
+            "O roteiro volta indefinidamente até passar.",
+            "O vídeo não é feito, e o bot recebe a falha."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Reprovou uma vez, o roteiro volta para correção. Reprovou de novo, o vídeo não é feito. Melhor um dia sem vídeo do que um número sem fonte.",
           "cert": true,
           "ref": "diagrama"
@@ -251,10 +251,10 @@
         {
           "p": "Você quer o mesmo assunto em três versões para o mesmo público: uma para ser compartilhada, uma para ser salva e uma que leva ao curso. Qual ferramenta?",
           "opcoes": [
+            "finviral",
             "r7ex",
-            "promoavatar",
             "promoavatar3",
-            "finviral"
+            "promoavatar"
           ],
           "certa": 2,
           "explica": "O promoavatar3 faz três vídeos por público: alcance, autoridade e promocional. O promoavatar faz um vídeo para cada um de 12 públicos.",
@@ -263,8 +263,8 @@
         {
           "p": "O que o bot no Telegram recebe numa manhã em que os canais do nicho não publicaram nada relevante?",
           "opcoes": [
-            "Nada: o silêncio quer dizer que não houve vídeo.",
             "Um vídeo curto com o que houver, mesmo fraco.",
+            "Nada: o silêncio quer dizer que não houve vídeo.",
             "A mensagem \"sem pauta\".",
             "Um vídeo antigo republicado."
           ],
@@ -275,12 +275,12 @@
         {
           "p": "Por que finviral, saudeviral e advviral rodam em horários diferentes (02:00, 05:00 e 08:00)?",
           "opcoes": [
-            "Porque cada público acorda num horário.",
-            "Para não disputarem a GPU e o HeyGen na mesma máquina.",
             "Porque o YouTube só aceita um envio por hora.",
-            "Por sorteio."
+            "Por sorteio.",
+            "Para não disputarem a GPU e o HeyGen na mesma máquina.",
+            "Porque cada público acorda num horário."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "Os três usam o mesmo motor na mesma máquina. Horários separados evitam que dois disputem a GPU e o estúdio do avatar ao mesmo tempo.",
           "ref": "codigo"
         }

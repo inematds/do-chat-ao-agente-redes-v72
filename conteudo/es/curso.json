@@ -5,17 +5,19 @@
   "nome": "Redes en automático",
   "sub": "Del chat al agente · nivel 4 completo",
   "volta": {
-    "t": "Vista general: Del chat al agente",
-    "href": "https://inematds.github.io/do-chat-ao-agente-v72/"
+    "t": "Visión general: Del chat al agente",
+    "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/"
   },
   "lado_card": {
     "rot": "Práctica de este nivel",
     "t": "6 ejercicios + 1 desafío con \"listo cuando\"",
-    "texto": "Del reel en papel a una semana con compuerta. Pasa al siguiente solo cuando el \"listo cuando\" sea verdad.",
+    "texto": "Del reel en papel hasta una semana con compuerta. Pasa al siguiente solo cuando el \"listo cuando\" sea verdad.",
     "link": "Abrir los ejercicios de la secuencia 4",
-    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md"
+    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md",
+    "href_en": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/04-redes.md",
+    "href_es": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/es/04-redes.md"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/\">Vista general: Del chat al agente</a> · <a href=\"https://eventos.inema.pro/do-chat-ao-agente/\">eventos.inema.pro/do-chat-ao-agente</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a> · <a href=\"https://www.inema.club/cursos/327-do-chat-ao-agente-degrau-4-redes-no-automatico-com-fonte-na-tela/\">Ficha completa de este curso en INEMA.CLUB</a>",
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/es/\">Visión general: Del chat al agente</a> · <a href=\"https://eventos.inema.pro/do-chat-ao-agente/\">eventos.inema.pro/do-chat-ao-agente</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a> · <a href=\"https://www.inema.club/cursos/327-do-chat-ao-agente-degrau-4-redes-no-automatico-com-fonte-na-tela/\">Ficha completa de este curso en INEMA.CLUB</a>",
   "videos": {
     "seq4-redes": {
       "titulo": "Redes en automático",
@@ -23,27 +25,47 @@
       "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
       "vtt": "assets/vtt/seq4-redes.vtt",
       "poster": "assets/img/seq4-redes.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/"
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/",
+      "idiomas": {
+        "en": {
+          "vtt": "assets/vtt/seq4-redes-en.vtt",
+          "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/en/"
+        },
+        "es": {
+          "vtt": "assets/vtt/seq4-redes-es.vtt",
+          "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/es/"
+        }
+      }
     },
     "jornada-ia": {
-      "titulo": "Del chat al agente: la vista general",
+      "titulo": "Del chat al agente: la visión general",
       "duracao": "2 min 27 s",
       "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
       "vtt": "assets/vtt/jornada-ia.vtt",
       "poster": "assets/img/jornada-ia.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/"
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/",
+      "idiomas": {
+        "en": {
+          "vtt": "assets/vtt/jornada-ia-en.vtt",
+          "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/en/"
+        },
+        "es": {
+          "vtt": "assets/vtt/jornada-ia-es.vtt",
+          "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/"
+        }
+      }
     }
   },
   "inicio": {
     "kicker": "Curso · nivel 4 de la formación Del chat al agente · 8 clases",
-    "titulo": "Redes en automático, con fuentes en pantalla",
-    "lead": "Reel en 7 etapas, videos por público y el canal de tu nicho que revisa a los más grandes, comprueba cada número y solo publica lo que aprobaste. En ocho clases montas todo el proceso: reglas, base con fuentes, guion revisado, agenda y compuerta.",
+    "titulo": "Redes en automático, con fuente en pantalla",
+    "lead": "Reel en 7 etapas, videos por público y el canal de tu nicho que mira a los más grandes, revisa cada número y solo publica lo que tú aprobaste. En ocho clases armas la cadena completa: reglas, base con fuente, guion revisado, agenda y compuerta.",
     "cta": "Empezar por la clase 1",
     "cta2": {
-      "t": "Ver la vista general de la formación",
-      "href": "https://inematds.github.io/do-chat-ao-agente-v72/"
+      "t": "Ver la visión general de la formación",
+      "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/"
     },
-    "capa_alt": "Mesa de edición con un celular en 9:16, una tabla de fuentes y un calendario: el proceso de un canal con fuentes en pantalla.",
+    "capa_alt": "Mesa de edición con un celular en 9:16, una tabla de fuentes y un calendario: la cadena de un canal con fuente en pantalla.",
     "numeros": [
       {
         "v": "8",
@@ -51,7 +73,7 @@
       },
       {
         "v": "7",
-        "t": "etapas del disparador"
+        "t": "etapas de disparador"
       },
       {
         "v": "7",
@@ -63,38 +85,38 @@
       }
     ],
     "aulas_titulo": "Las clases",
-    "aulas_sub": "En el orden del proceso: primero el guion, después las reglas y la base con fuentes, el guion revisado, los videos por público y, por último, la agenda con compuerta.",
+    "aulas_sub": "En el orden de la cadena: primero el guion, después las reglas y la base con fuente, el guion revisado, los videos por público y, por último, la agenda con compuerta.",
     "blocos": [
       {
         "t": "Para quién es",
         "itens": [
-          "Quienes ya completaron los niveles 1 a 3 (terminal, asistente propio y cola) y quieren llevar eso a las redes.",
+          "Quien ya hizo los niveles 1 a 3 (terminal, asistente propio y cola) y quiere llevar eso a las redes.",
           "Profesionales y creadores de un nicho que quieren publicar con regularidad sin inventar números.",
-          "Quienes orientan equipos o clientes y necesitan un método para crear contenido automático con responsabilidad."
+          "Quien guía equipos o clientes y necesita un método para contenido automático con responsabilidad."
         ]
       },
       {
-        "t": "Qué podrás hacer",
+        "t": "Lo que sales haciendo",
         "itens": [
-          "Escribir un reel en 7 etapas a partir de un plan con una puntuación de potencial.",
-          "Crear canais.md, regras.md y base.md de tu nicho, con el fragmento literal de cada número.",
+          "Escribir un reel en 7 etapas a partir de un plan con nota de potencial.",
+          "Armar canais.md, regras.md y base.md de tu nicho, con el fragmento literal de cada número.",
           "Pedirle al agente un guion de 60 s y devolver lo que no coincide con la base.",
-          "Escribir la agenda (timer) y trabajar una semana con compuerta, convirtiendo cada rechazo en una regla."
+          "Escribir la agenda (timer) y correr una semana con compuerta, convirtiendo cada rechazo en regla."
         ]
       }
     ]
   },
   "ui": {
-    "pular": "Ir al contenido",
+    "pular": "Saltar al contenido",
     "aulas": "Clases",
-    "concluido": "completado",
+    "concluido": "completada",
     "aula": "Clase",
-    "nesta_aula": "En esta clase, aprenderás:",
+    "nesta_aula": "En esta clase vas a aprender:",
     "objetivo": "Objetivo:",
-    "proxima_aula": "Clase siguiente",
+    "proxima_aula": "Siguiente clase",
     "aula_anterior": "Clase anterior",
     "voltar_inicio": "Volver al inicio del curso",
-    "marcar_concluida": "Marcar la clase como completada",
+    "marcar_concluida": "Marcar clase como completada",
     "dg_dica": "Haz clic en cada bloque del diagrama para ver qué hace.",
     "copiar": "Copiar",
     "copiado": "Copiado",
@@ -108,25 +130,25 @@
     "cert_tag": "competencia",
     "correto": "Correcto",
     "errado": "No es esa",
-    "quiz_aguarda": "Elige una opción. La explicación aparece después de tu intento.",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
     "proxima_pergunta": "Siguiente pregunta",
     "quiz_ver": "Ver resultado",
-    "quiz_fim": "Prueba completada",
-    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como completada.",
+    "quiz_fim": "Prueba concluida",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como concluida.",
     "aparencia": "Apariencia",
     "tamanho_texto": "Tamaño del texto",
     "tema": "Tema",
     "tema_escuro": "Oscuro",
     "tema_papel": "Papel claro",
-    "role_dica": "Desplázate por la página: cada etapa de abajo ilumina su parte del diagrama.",
+    "role_dica": "Desplázate por la página: cada etapa de abajo enciende su parte del diagrama.",
     "pre_requisito": "requiere",
     "ver_aula": "Ver la clase",
-    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y cuándo está listo.",
+    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
     "etapas": "Etapas",
     "exercicios": "ejercicios",
     "rever": "Repasar:",
-    "revisar_erradas": "Revisar las incorrectas",
-    "refazer": "Repetir la prueba",
+    "revisar_erradas": "Revisar las erróneas",
+    "refazer": "Rehacer la prueba",
     "h_semana": "h por semana",
     "data_inicio": "Fecha de inicio",
     "ritmo": "Tiempo disponible",
@@ -135,29 +157,29 @@
     "baixar_ics": "Descargar para el calendario (.ics)",
     "ind_estudo": "Estudio (clases)",
     "ind_pratica": "Práctica declarada",
-    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación se hace en el examen de certificación.",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en el examen de la certificación.",
     "estudo": {
       "titulo": "Tu estudio",
-      "continuar": "Continuar donde lo dejé",
+      "continuar": "Continuar desde donde me quedé",
       "comecar": "Empezar por la clase 1",
       "cta_continuar": "Continuar la clase {n}",
       "hoje": "hoy",
       "ontem": "ayer",
       "ha_dias": "hace {n} días",
-      "desempenho": "Resultados de las pruebas",
-      "notas": "Mis notas",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
       "dados": "Copiar mis datos",
-      "sem_testes": "Todavía no hiciste ninguna prueba. La prueba está al final de cada clase.",
-      "nao_fez": "prueba aún no hecha",
+      "sem_testes": "Aún no has hecho ningún test. El test está al final de cada clase.",
+      "nao_fez": "test aún no hecho",
       "ultimo": "Último",
       "melhor": "Mejor",
       "tentativas": "intentos",
       "tentativa": "intento",
-      "tudo_certo": "Acertaste todo en la última prueba.",
+      "tudo_certo": "Acertaste todo en el último test.",
       "rever": "Para repasar",
       "resposta": "Respuesta correcta:",
-      "ir_teste": "Repetir la prueba",
-      "sem_notas": "Todavía no hay anotaciones. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay anotaciones. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
       "so_marcado": "(solo marcado)",
       "marcar": "Marcar",
       "anotar": "Anotar",
@@ -167,17 +189,53 @@
       "nota_ph": "Escribe tu anotación sobre este fragmento…",
       "um_bloco": "Marca dentro de un solo párrafo.",
       "nao_marca": "Este fragmento no se puede marcar.",
-      "dados_exp": "Tu progreso, tus anotaciones y las notas de las pruebas se guardan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otra computadora o navegador; allí, carga la copia. Cargarla suma los datos a los que ya existen y no borra nada.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de los tests quedan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otra computadora u otro navegador; allí, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
       "exportar": "Descargar copia",
       "importar": "Cargar copia",
       "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
-      "import_erro": "Archivo no reconocido. No se modificó nada.",
-      "import_outro": "Esta copia es de otro curso. No se modificó nada.",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
       "export_ok": "Copia descargada."
     },
     "comecar": "Empezar la clase",
     "nesta_vai": "En esta clase vas a",
-    "trocar_tema": "Cambiar entre tema claro y oscuro"
+    "trocar_tema": "Cambiar tema claro/oscuro",
+    "conv_dica": "Elige tu respuesta. El comentario aparece justo después y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Elección débil",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "conf_vazio": "Pega el texto o carga el archivo antes de comprobar.",
+    "conf_falta": "Todavía no. Lo que falta:",
+    "conf_campo": "Falta la línea {c}: con la descripción (al menos {x} letras).",
+    "conf_planos": "Encontré {n} planes numerados; el pedido es de {x} a {y}. Empieza cada plano con el número (1 | ...).",
+    "conf_no_plano": "Plano {i}: falta {g}.",
+    "conf_um_so": "Plano {i}: {n} opciones de {g}; quédate con una sola.",
+    "conf_variedade": "Solo {n} tipo(s) distinto(s) de {g} en los planos; varía hasta tener al menos {x}.",
+    "conf_sem_duracao": "Plano {i}: falta la duración en segundos (ej.: 4 s).",
+    "conf_duracao": "Los planos suman {s} s; el pedido es de {x} a {y} s.",
+    "conf_termo": "Falta mencionar {g}.",
+    "conf_mais": "… y {n} más.",
+    "conf_rot": "Pega aquí tu archivo (o carga el .txt):",
+    "conf_conferir": "Revisar",
+    "conf_exemplo": "Ejemplo que pasa",
+    "conf_errado": "Ejemplo con error",
+    "conf_carregar": "Cargar .txt",
+    "conf_baixar": "Descargar el archivo",
+    "conf_limpar": "Limpiar",
+    "conf_video_dur": "El video dura {s} s; el pedido es de {x} a {y} s.",
+    "conf_video_prop": "El video es {w}×{h} ({p}); el pedido es {q}.",
+    "conf_video_larg": "El video tiene {w} px de ancho; el mínimo es {x} px.",
+    "conf_video_ler": "No pude leer este video. Expórtalo en MP4 (H.264) o WebM e inténtalo de nuevo.",
+    "conf_video_rot": "Elige tu video. Se lee aquí en el navegador: no se envía nada.",
+    "conf_video_escolher": "Elegir el video",
+    "conf_video_lendo": "Leyendo el video…"
   },
   "icone": "camadas"
 }

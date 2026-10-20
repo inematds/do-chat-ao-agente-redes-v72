@@ -13,7 +13,7 @@
     "t": "6 exercícios + 1 desafio com \"pronto quando\"",
     "texto": "Do reel no papel até uma semana com portão. Só passe para o próximo quando o \"pronto quando\" for verdade.",
     "link": "Abrir os exercícios da sequência 4",
-    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md"
+    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md", "href_en": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/04-redes.md", "href_es": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/es/04-redes.md"
   },
   "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/\">Visão geral: Do chat ao agente</a> · <a href=\"https://eventos.inema.pro/do-chat-ao-agente/\">eventos.inema.pro/do-chat-ao-agente</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.inema.club/cursos/327-do-chat-ao-agente-degrau-4-redes-no-automatico-com-fonte-na-tela/\">Ficha completa deste curso no INEMA.CLUB</a>",
   "videos": {
@@ -23,7 +23,7 @@
       "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
       "vtt": "assets/vtt/seq4-redes.vtt",
       "poster": "assets/img/seq4-redes.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/"
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/", "idiomas": {"en": {"vtt": "assets/vtt/seq4-redes-en.vtt", "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/en/"}, "es": {"vtt": "assets/vtt/seq4-redes-es.vtt", "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/es/"}}
     },
     "jornada-ia": {
       "titulo": "Do chat ao agente: a visão geral",
@@ -31,7 +31,7 @@
       "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
       "vtt": "assets/vtt/jornada-ia.vtt",
       "poster": "assets/img/jornada-ia.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/"
+      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/", "idiomas": {"en": {"vtt": "assets/vtt/jornada-ia-en.vtt", "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/en/"}, "es": {"vtt": "assets/vtt/jornada-ia-es.vtt", "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/"}}
     }
   },
   "inicio": {

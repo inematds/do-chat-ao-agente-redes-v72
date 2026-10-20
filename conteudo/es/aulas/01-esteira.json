@@ -1,22 +1,22 @@
 {
   "slug": "esteira",
   "num": 1,
-  "titulo": "La línea de producción de un canal con la fuente en pantalla",
-  "titulo_curto": "La línea de producción del canal",
-  "menu": "Línea de producción",
+  "titulo": "La cinta de un canal con fuente en pantalla",
+  "titulo_curto": "La cinta del canal",
+  "menu": "Cinta",
   "minutos": 15,
-  "hero_alt": "Mesa de trabajo con monitores que muestran una transcripción, una tabla de fuentes y un video vertical en producción.",
-  "lead": "Los radares finviral, saudeviral y advviral producen automáticamente un video al día sobre lo que publicaron los referentes de su nicho, con la fuente de cada dato en pantalla. r7e y promoavatar crean el reel y los videos para cada público. Antes de crear el tuyo, recorre toda la línea de producción y conoce la función de cada herramienta.",
-  "objetivo": "explicar las seis estaciones de la línea de producción de un canal con fuentes y elegir con qué herramienta empieza tu canal.",
+  "hero_alt": "Mesa de trabajo con monitores que muestran una transcripción, una tabla de fuentes y un video vertical en montaje.",
+  "lead": "Los radares finviral, saudeviral y advviral hacen solos un video al día sobre lo que publicaron los más grandes del nicho, con la fuente de cada número en pantalla. r7e y promoavatar hacen el reel y los videos por público. Antes de montar el tuyo, mira la cinta completa y el papel de cada herramienta.",
+  "objetivo": "explicar las seis estaciones de la cinta de un canal con fuente y elegir con qué herramienta empieza tu canal.",
   "competencias": [
-    "linea-de-produccion-del-canal",
-    "eleccion-de-herramienta",
-    "compuerta-antes-de-publicar"
+    "esteira-do-canal",
+    "escolha-de-ferramenta",
+    "portao-antes-de-publicar"
   ],
   "aprende": [
     {
       "icone": "camadas",
-      "t": "Las seis estaciones de la línea de producción"
+      "t": "Las seis estaciones de la cinta"
     },
     {
       "icone": "video",
@@ -34,12 +34,12 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "La línea de producción de un radar (finviral, saudeviral, advviral)",
+      "titulo": "La cinta de un radar (finviral, saudeviral, advviral)",
       "sub": "El mismo motor en los tres: solo cambian los canales, las reglas y el horario.",
       "nos": [
         {
           "icone": "lupa",
-          "titulo": "Recopilación",
+          "titulo": "Recolección",
           "sub": "canais.json",
           "itens": [
             {
@@ -52,11 +52,11 @@
               "sub": "Whisper large-v3"
             }
           ],
-          "detalhe": "Lista los videos de los canales de <code>canais.json</code> (solo metadatos, con yt-dlp), descarga el audio y lo transcribe en la propia computadora con inemavox (Whisper large-v3). En esta etapa no se usa ninguna API de pago."
+          "detalhe": "Lista los videos de los canales del <code>canais.json</code> (solo metadatos, con yt-dlp), descarga el audio y lo transcribe en tu propio computador con inemavox (Whisper large-v3). Ninguna API de pago en esta etapa."
         },
         {
           "icone": "arquivo",
-          "titulo": "Base con fuentes",
+          "titulo": "Base con fuente",
           "sub": "base.md",
           "itens": [
             {
@@ -68,7 +68,7 @@
               "t": "Fragmento literal"
             }
           ],
-          "detalhe": "El agente lee las transcripciones y anota cada número o dato con quién lo dijo, el id del video, la fecha y el fragmento literal de la transcripción. Es la única materia prima que puede usar el guion.",
+          "detalhe": "El agente lee las transcripciones y anota cada número o hecho con quién lo dijo, el id del video, la fecha y el fragmento literal de la transcripción. Es la única materia prima que el guion puede usar.",
           "forte": true
         },
         {
@@ -85,7 +85,7 @@
               "t": "legenda.txt para aprobar"
             }
           ],
-          "detalhe": "<code>claude -p</code>, con la suscripción y sin API, escribe las intervenciones y los elementos visuales en <code>roteiro.json</code>, y el texto para aprobar en <code>legenda.txt</code>, siempre a partir de la base."
+          "detalhe": "El <code>claude -p</code>, por la suscripción y sin API, escribe las falas y los visuales en <code>roteiro.json</code> y el texto de aprobación en <code>legenda.txt</code>, siempre a partir de la base."
         },
         {
           "icone": "portao",
@@ -98,10 +98,10 @@
             },
             {
               "icone": "x",
-              "t": "Si lo rechaza dos veces, no se publica"
+              "t": "Reprobó dos veces: no sale"
             }
           ],
-          "detalhe": "<code>checar.py</code> verifica si cada fragmento de la base aparece realmente en la transcripción, si los números de las intervenciones están escritos con letras, y si aparecen el aviso del nicho y el CTA. Si lo rechaza, el guion vuelve una vez. Si lo rechaza de nuevo, no se hace el video."
+          "detalhe": "El <code>checar.py</code> verifica que cada fragmento de la base esté realmente en la transcripción, que los números de la fala estén escritos con palabras, y que el aviso del nicho y el CTA aparezcan. Si reprueba, el guion vuelve una vez. Si reprueba de nuevo, el video no se hace."
         },
         {
           "icone": "usuario",
@@ -117,7 +117,7 @@
               "t": "Fuente en cada escena"
             }
           ],
-          "detalhe": "El avatar de Nei sale del estudio de HeyGen (suscripción). Si falla, sale la versión con foto y voz local. El escenario es una página renderizada cuadro por cuadro, con contadores, subtítulos palabra por palabra y la fuente en pantalla en cada escena."
+          "detalhe": "El avatar de Nei sale del estudio de HeyGen (suscripción). Si falla, sale la versión con foto y voz local. El escenario es una página renderizada cuadro a cuadro, con contadores, subtítulos palabra por palabra y la fuente en pantalla en cada escena."
         },
         {
           "icone": "enviar",
@@ -130,71 +130,71 @@
             },
             {
               "icone": "enviar",
-              "t": "Video, sin tema o falló"
+              "t": "Video, sin pauta o falló"
             }
           ],
-          "detalhe": "El video va al canal de YouTube con <code>yt-pubx</code> y siempre al bot en Telegram. El bot recibe una de estas tres cosas: el video, \"sin tema\" (un día flojo no se convierte en video) o \"falló en X\"."
+          "detalhe": "El video va al canal de YouTube con <code>yt-pubx</code> y siempre al bot en Telegram. El bot recibe una de tres cosas: el video, \"sem pauta\" (un día flojo no se convierte en video) o \"falhou em X\"."
         }
       ],
-      "volta": "Si lo rechaza en la verificación, el guion vuelve una vez",
-      "legenda": "Sin cola ni compuerta, automatizar las redes sociales es publicar mal y más rápido. Por eso este es el nivel 4: usa la terminal, el asistente y la cola de los niveles anteriores.",
+      "volta": "Reprobó en la verificación: el guion vuelve una vez",
+      "legenda": "Sin cola y sin compuerta, automatizar redes sociales se convierte en publicar mal más rápido. Por eso este es el nivel 4: usa la terminal, el asistente y la cola de los niveles anteriores.",
       "rolagem": true,
       "rolagem_fim": {
-        "titulo": "Todo el proceso",
-        "texto": "La recopilación y la transcripción alimentan la base; la base limita el guion; la verificación bloquea lo que no tiene fuente; el avatar y el escenario montan el video; la publicación siempre te avisa. Cada estación es una lección de este curso."
+        "titulo": "La cadena completa",
+        "texto": "La recolección y la transcripción alimentan la base; la base limita el guion; la verificación bloquea lo que no tiene fuente; el avatar y el escenario arman el video; la publicación siempre te avisa. Cada estación es una clase de este curso."
       }
     },
     {
       "tipo": "passos",
-      "titulo": "Qué hace cada herramienta",
-      "sub": "Haz clic en cada una. Todas son repositorios abiertos del INEMA.",
+      "titulo": "Qué herramienta hace qué",
+      "sub": "Haz clic en cada una. Todas son repositorios abiertos de INEMA.",
       "passos": [
         {
           "titulo": "r7e y r7ex",
           "sub": "una tesis se convierte en reel",
           "texto": [
-            "Entregas una idea contundente y obtienes un reel 9:16 de 30 a 40 segundos, con el guion de 7 etapas de activación, desde el gancho con un número hasta la invitación a comentar.",
-            "<b>r7e</b> (reel7etapas) creó el guion; <b>r7ex</b> es el nuevo estándar (18/10/2026), con acabado de noticiero. Lecciones 2 de este curso."
+            "Tú entregas una idea fuerte y sale un reel 9:16 de 30 a 40 segundos, con el guion de 7 etapas de gatillo, desde el gancho con número hasta el pedido de comentario.",
+            "El <b>r7e</b> (reel7etapas) dio el guion; el <b>r7ex</b> es el nuevo estándar (18/10/2026), con acabado de noticiero. Clases 2 de este curso."
           ],
           "exemplo": {
             "rot": "Entrada → salida",
-            "texto": "Una tesis del día → un reel con avatar, paneles al ritmo de lo que se dice y \"comenta PALABRA\" al final."
+            "texto": "Una tesis del día → un reel con avatar, paneles al ritmo de la fala y \"comenta PALABRA\" al final."
           }
         },
         {
           "titulo": "promoavatar",
           "sub": "un video por público",
           "texto": [
-            "Un tema se convierte en un guion para cada uno de 12 públicos (jóvenes, mayores de 40, emprendedores, educadores…), cada uno con su propio gancho y canal.",
-            "El bot escribe y <b>se detiene</b>: tú apruebas antes de gastar en avatar y renderizado. Lección 6."
+            "Un tema se convierte en un guion para cada uno de 12 públicos (jóvenes, 40+, emprendedores, educadores…), cada uno con su gatillo y su canal.",
+            "El bot escribe y <b>se detiene</b>: tú apruebas antes de gastar avatar y render. Clase 6."
           ],
           "exemplo": {
             "rot": "Entrada → salida",
-            "texto": "\"/promoavatar <assunto>\" → 12 guiones, 2 compuertas, 12 reels entregados en el canal de cada público."
+            "texto": "\"/promoavatar &lt;assunto&gt;\" → 12 guiones, 2 compuertas, 12 reels entregados en el canal de cada público."
           }
         },
         {
           "titulo": "promoavatar3",
           "sub": "tres videos por público",
           "texto": [
-            "El mismo tema genera tres guiones para el mismo público: <b>alcance</b> (para que se comparta), <b>autoridad</b> (para que se guarde) y <b>promocional</b> (conecta un problema con una solución).",
-            "Orden recomendado de publicación: alcance → autoridad → promocional. Lección 6."
+            "El mismo tema rinde tres guiones para el mismo público: <b>alcance</b> (ser compartido), <b>autoridad</b> (ser guardado) y <b>promocional</b> (unir dolor y solución).",
+            "Orden recomendado de publicación: alcance → autoridad → promocional. Clase 6."
           ],
           "exemplo": {
             "rot": "Entrada → salida",
-            "texto": "\"| alvos=jovens-alc,jovens-aut,jovens-pro\" → tres videos para jóvenes, con llamadas a la acción diferentes."
+            "texto": "\"| alvos=jovens-alc,jovens-aut,jovens-pro\" → tres videos para jóvenes, con CTAs diferentes."
           }
         },
         {
           "titulo": "Los radares (xviral)",
           "sub": "finviral, saudeviral, advviral",
           "texto": [
-            "Revisan lo que publicaron los referentes del nicho, verifican cada dato en la transcripción y publican un video corto al día, con la fuente en pantalla y el aviso del nicho.",
-            "Finanzas, salud y derecho usan el <b>mismo motor</b>; solo cambian la lista de canales, las reglas y el horario. Lecciones 3, 4, 5 y 7."
+            "Ven lo que publicaron los más grandes del nicho, verifican cada número en la transcripción y publican un corto por día, con la fuente en pantalla y el aviso del nicho.",
+            "Finanzas, salud y derecho usan el <b>mismo motor</b>; solo cambian la lista de canales, las reglas y el horario. Clases 3, 4, 5 y 7."
           ],
           "exemplo": {
             "rot": "Entrada → salida",
-            "texto": "Temporizador de lunes a viernes → video de 40 a 60 s con lo que dijeron ayer y anteayer, o \"sin tema\"."
+            "texto": "Timer de lunes a viernes → video de 40 a 60 s con lo que dijeron ayer y anteayer, o \"sem pauta\"."
           }
         }
       ]
@@ -202,12 +202,12 @@
     {
       "tipo": "codigo",
       "titulo": "La ficha de tu canal",
-      "sub": "Copia y completa esto antes de cualquier automatización. Guía el resto del curso.",
+      "sub": "Cópiala y complétala antes de cualquier automatización. Ella guía el resto del curso.",
       "blocos": [
         {
           "rot": "meu-canal.md",
           "icone": "arquivo",
-          "conteudo": "# Mi canal\n\n## Nicho\n- Tema: \n- Público (quién lo ve): \n\n## Por dónde empiezo\n- [ ] r7e (reel de una tesis)\n- [ ] promoavatar (un video por público)\n- [ ] radar del nicho (lo que dijeron los referentes, con fuente)\n\n## Ritmo\n- Frecuencia: \n- Hora de la ronda: \n\n## Seguridad\n- Aviso obligatorio del nicho: \n- Quién aprueba antes de publicar: \n- Dónde llega el aviso de error (ej.: bot en Telegram): "
+          "conteudo": "# Meu canal\n\n## Nicho\n- Tema: \n- Público (quien mira): \n\n## Por onde começo\n- [ ] r7e (reel de una tesis)\n- [ ] promoavatar (un video por público)\n- [ ] radar do nicho (lo que dijeron los más grandes, con fuente)\n\n## Ritmo\n- Frecuencia: \n- Horario de la ronda: \n\n## Segurança\n- Aviso obligatorio del nicho: \n- Quién aprueba antes de publicar: \n- Dónde llega el aviso de falla (ej.: bot en Telegram): "
         }
       ],
       "saida": {
@@ -215,11 +215,11 @@
         "abas": [
           {
             "rot": "Qué cambia entre los radares",
-            "html": "<ul><li><b>finviral</b>: finanzas, Top 10 del ranking Anbima FInfluence, se ejecuta a las 02:00, aviso \"no es una recomendación de inversión\".</li><li><b>saudeviral</b>: salud, médicos, nutricionistas y psicólogos con mayor audiencia, se ejecuta a las 05:00, aviso \"no sustituye una consulta médica\" y sello SIN CONSENSO.</li><li><b>advviral</b>: derecho, 10 abogados de YouTube, se ejecuta a las 08:00, aviso \"no sustituye la orientación de un abogado\".</li></ul>"
+            "html": "<ul><li><b>finviral</b>: finanzas, Top 10 del ranking Anbima FInfluence, corre a las 02:00, aviso \"no es recomendación de inversión\".</li><li><b>saudeviral</b>: salud, médicos, nutricionistas y psicólogos de mayor audiencia, corre a las 05:00, aviso \"no sustituye una consulta médica\" y sello SEM CONSENSO.</li><li><b>advviral</b>: derecho, 10 abogados de YouTube, corre a las 08:00, aviso \"no sustituye la orientación de un abogado\".</li></ul>"
           },
           {
             "rot": "Qué es igual",
-            "html": "<p>Recopilación por transcripción, <code>base.md</code> con fragmento literal, guion con <code>claude -p</code> mediante la suscripción, verificación con <code>checar.py</code>, avatar en el estudio, cuadro 0 con fecha y el dato más fuerte, gancho para comentarios y llamada a la acción para inema.club.</p><p>Los horarios son diferentes para que no compitan por la GPU y HeyGen.</p>"
+            "html": "<p>Recolección por transcripción, <code>base.md</code> con fragmento literal, guion con <code>claude -p</code> en la suscripción, verificación con <code>checar.py</code>, avatar desde el estudio, cuadro 0 con fecha y el número más fuerte, gancho de comentario y CTA hacia inema.club.</p><p>Los horarios son distintos para que no se disputen la GPU y HeyGen.</p>"
           }
         ]
       }
@@ -236,52 +236,52 @@
       "sub": "La explicación aparece después de tu respuesta.",
       "perguntas": [
         {
-          "p": "El guion de un radar fue rechazado dos veces seguidas en la verificación. ¿Qué pasa?",
+          "p": "El guion de un radar fue reprobado por la verificación dos veces seguidas. ¿Qué pasa?",
           "opcoes": [
-            "El video se publica de todos modos, con un aviso.",
-            "No se hace el video y el bot recibe el aviso del error.",
-            "El agente reemplaza los números por valores redondeados.",
-            "El guion vuelve indefinidamente hasta que pase."
+            "El agente cambia los números por otros redondeados.",
+            "El video sale igual, con un aviso.",
+            "El guion vuelve indefinidamente hasta que pase.",
+            "El video no se hace, y el bot recibe la falla."
           ],
-          "certa": 1,
-          "explica": "Si lo rechazan una vez, el guion vuelve para corregirse. Si lo rechazan de nuevo, no se hace el video. Es mejor pasar un día sin video que publicar un dato sin fuente.",
+          "certa": 3,
+          "explica": "Si reprobó una vez, el guion vuelve para corrección. Si reprobó de nuevo, el video no se hace. Mejor un día sin video que un número sin fuente.",
           "cert": true,
           "ref": "diagrama"
         },
         {
           "p": "Quieres el mismo tema en tres versiones para el mismo público: una para compartir, una para guardar y una que lleve al curso. ¿Qué herramienta usas?",
           "opcoes": [
+            "finviral",
             "r7ex",
-            "promoavatar",
             "promoavatar3",
-            "finviral"
+            "promoavatar"
           ],
           "certa": 2,
           "explica": "promoavatar3 hace tres videos por público: alcance, autoridad y promocional. promoavatar hace un video para cada uno de 12 públicos.",
           "ref": "passos"
         },
         {
-          "p": "¿Qué recibe el bot en Telegram una mañana en que los canales del nicho no publicaron nada relevante?",
+          "p": "¿Qué recibe el bot en Telegram en una mañana en que los canales del nicho no publicaron nada relevante?",
           "opcoes": [
-            "Nada: el silencio significa que no hubo video.",
             "Un video corto con lo que haya, aunque sea débil.",
-            "El mensaje \"sin tema\".",
-            "Un video antiguo republicado."
+            "Nada: el silencio quiere decir que no hubo video.",
+            "El mensaje \"sem pauta\".",
+            "Un video antiguo vuelto a publicar."
           ],
           "certa": 2,
-          "explica": "El bot siempre recibe una de tres cosas: el video, \"sin tema\" o \"falló en X\". Un día flojo no se convierte en video y el silencio nunca es una respuesta.",
+          "explica": "El bot siempre recibe una de tres cosas: el video, \"sem pauta\" o \"falhou em X\". Un día flojo no se convierte en video, y el silencio nunca es una respuesta.",
           "ref": "diagrama"
         },
         {
-          "p": "¿Por qué finviral, saudeviral y advviral se ejecutan en horarios diferentes (02:00, 05:00 y 08:00)?",
+          "p": "¿Por qué finviral, saudeviral y advviral corren en horarios distintos (02:00, 05:00 y 08:00)?",
           "opcoes": [
-            "Porque cada público se despierta a una hora distinta.",
-            "Para que no compitan por la GPU y HeyGen en la misma máquina.",
-            "Porque YouTube solo permite una publicación por hora.",
-            "Por sorteo."
+            "Porque YouTube solo acepta un envío por hora.",
+            "Por sorteo.",
+            "Para que no se disputen la GPU y HeyGen en la misma máquina.",
+            "Porque cada público se despierta a una hora."
           ],
-          "certa": 1,
-          "explica": "Los tres usan el mismo motor en la misma máquina. Separar los horarios evita que dos compitan por la GPU y el estudio del avatar al mismo tiempo.",
+          "certa": 2,
+          "explica": "Los tres usan el mismo motor en la misma máquina. Horarios separados evitan que dos se disputen la GPU y el estudio del avatar al mismo tiempo.",
           "ref": "codigo"
         }
       ]
@@ -306,8 +306,8 @@
           "icone": "lista"
         },
         {
-          "t": "Vista general de la formación (clase del nivel 4)",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/redes/index.html",
+          "t": "Visión general de la formación (clase del nivel 4)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/aulas/redes/index.html",
           "icone": "camadas"
         }
       ]

@@ -1,17 +1,17 @@
 {
   "slug": "base-com-fonte",
   "num": 4,
-  "titulo": "La base con fuentes: cada número con el fragmento literal",
-  "titulo_curto": "La base con fuentes",
+  "titulo": "La base con fuente: cada número con el fragmento literal",
+  "titulo_curto": "La base con fuente",
   "menu": "Base",
   "minutos": 18,
   "hero_alt": "Pantalla con una transcripción larga y un fragmento destacado que se copia a una tabla.",
-  "lead": "base.md es el corazón del canal con fuentes. Cada número que aparece en pantalla incluye quién lo dijo, el video, la fecha y un fragmento copiado de la transcripción, sin editar. Un script verifica cada fragmento; si alguno no aparece, se descarta el video. Aquí crearás tu base y tu verificador.",
-  "objetivo": "crear la base.md de un video de tu nicho, con un fragmento literal en cada fila, y verificar cada fragmento en la transcripción con un script.",
+  "lead": "La base.md es el corazón del canal con fuente. Cada número que va a la pantalla entra con quién lo dijo, el video, la fecha y un fragmento copiado de la transcripción, sin editar. Un script revisa cada fragmento; si alguno no está ahí, el video se descarta. Aquí armas tu base y tu verificador.",
+  "objetivo": "armar la base.md de un video de tu nicho, con fragmento literal en cada línea, y verificar cada fragmento en la transcripción con un script.",
   "competencias": [
-    "base-con-fuentes",
-    "transcripcion-local",
-    "verificacion-automatica"
+    "base-com-fonte",
+    "transcricao-local",
+    "conferencia-automatica"
   ],
   "aprende": [
     {
@@ -20,21 +20,21 @@
     },
     {
       "icone": "arquivo",
-      "t": "Las cinco columnas de base.md"
+      "t": "Las cinco columnas de la base.md"
     },
     {
       "icone": "lupa",
-      "t": "Qué es un fragmento literal (y qué no)"
+      "t": "Qué es un fragmento literal (y qué no es)"
     },
     {
       "icone": "check",
-      "t": "Un verificador de 15 líneas, como checar.py"
+      "t": "Un verificador de 15 líneas, como el checar.py"
     }
   ],
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "Del video a la fila verificada",
+      "titulo": "Del video a la línea verificada",
       "sub": "Haz clic en cada bloque.",
       "nos": [
         {
@@ -47,7 +47,7 @@
               "t": "id, fecha, título"
             }
           ],
-          "detalhe": "Un video de uno de los 5 canales de tu <code>canais.md</code>. Anota el id de YouTube, la fecha y el título: irán en la columna \"Video\" y en la fuente que aparece en pantalla."
+          "detalhe": "Un video de uno de los 5 canales de tu <code>canais.md</code>. Anota el id de YouTube, la fecha y el título: van a la columna \"Video\" y a la fuente en la pantalla."
         },
         {
           "icone": "chat",
@@ -59,12 +59,12 @@
               "t": "Whisper large-v3"
             }
           ],
-          "detalhe": "Los radares descargan solo el audio y lo transcriben en la propia computadora (inemavox, Whisper large-v3). Cualquier transcriptor local sirve. El archivo <code>transcript.txt</code> es la prueba de todo lo que viene después."
+          "detalhe": "Los radares descargan solo el audio y transcriben en tu propia computadora (inemavox, Whisper large-v3). Cualquier transcriptor local sirve. El archivo <code>transcript.txt</code> es la prueba de todo lo que viene después."
         },
         {
           "icone": "arquivo",
           "titulo": "base.md",
-          "sub": "una fila por número",
+          "sub": "una línea por número",
           "itens": [
             {
               "icone": "grafico",
@@ -79,75 +79,75 @@
               "t": "Fragmento entre comillas"
             }
           ],
-          "detalhe": "Columnas: número usado, quién lo dijo, video (id exacto), fecha y fragmento. El fragmento va entre comillas rectas y es una copia literal de una parte continua de la transcripción, de 6 a 30 palabras, sin editar ni unir partes.",
+          "detalhe": "Columnas: número usado, quién lo dijo, video (id exacto), fecha y fragmento. El fragmento va entre comillas rectas y es una copia literal de un pedazo continuo de la transcripción, de 6 a 30 palabras, sin editar ni unir pedazos.",
           "forte": true
         },
         {
           "icone": "portao",
           "titulo": "Verificación",
-          "sub": "¿El fragmento aparece ahí?",
+          "sub": "¿el fragmento está ahí?",
           "itens": [
             {
               "icone": "check",
-              "t": "Ignora los acentos y la puntuación"
+              "t": "Ignora acentos y puntuación"
             },
             {
               "icone": "x",
-              "t": "Si no aparece: video descartado"
+              "t": "Fuera: video descartado"
             }
           ],
-          "detalhe": "El script normaliza el texto (minúsculas, sin acentos ni puntuación) y busca cada fragmento en la transcripción del video citado. Si un fragmento no aparece, la base entera no pasa la verificación."
+          "detalhe": "El script normaliza el texto (minúsculas, sin acentos, sin puntuación) y busca cada fragmento dentro de la transcripción del video citado. Un fragmento que no está ahí reprueba toda la base."
         }
       ],
-      "legenda": "La verificación no determina si el número es cierto en el mundo real: garantiza que alguien dijo exactamente eso en el video citado. Por eso todo se atribuye (\"según él\")."
+      "legenda": "La verificación no juzga si el número es verdadero en el mundo: garantiza que alguien dijo exactamente eso, en el video citado. Por eso todo se atribuye (\"según él\")."
     },
     {
       "tipo": "passos",
       "titulo": "Fragmento literal: correcto e incorrecto",
-      "sub": "Ejemplos ilustrativos basados en una transcripción inventada para el nicho inmobiliario.",
+      "sub": "Ejemplos ilustrativos, a partir de una transcripción inventada para el nicho de inmuebles.",
       "passos": [
         {
           "titulo": "Correcto",
           "sub": "copia continua",
           "texto": [
-            "Copia directamente de la transcripción, tal como está, incluso si la frase queda suelta. Entre 6 y 30 palabras, suficientes para demostrar el número."
+            "Copia directo de la transcripción, tal como está, incluso con el habla suelta. Entre 6 y 30 palabras, lo suficiente para probar el número."
           ],
           "exemplo": {
             "rot": "Fragmento",
-            "texto": "\"el alquiler promedio aquí en la zona subió doce por ciento en un año\""
+            "texto": "\"o aluguel médio aqui na região subiu doze por cento em um ano\""
           }
         },
         {
           "titulo": "Incorrecto: editado",
           "sub": "mejoró el texto",
           "texto": [
-            "Cambiar palabras para que suene mejor rompe la verificación. El script no lo encuentra y el video falla."
+            "Cambiar palabras para que quede más bonito rompe la verificación. El script no lo encuentra y el video se descarta."
           ],
           "exemplo": {
             "rot": "Fragmento",
-            "texto": "\"el valor promedio del alquiler en la zona aumentó 12% el último año\""
+            "texto": "\"o valor médio do aluguel na região aumentou 12% no último ano\""
           }
         },
         {
           "titulo": "Incorrecto: pegado",
-          "sub": "unió dos fragmentos",
+          "sub": "unió dos pedazos",
           "texto": [
             "Unir el comienzo de una frase con el final de otra crea una frase que nadie dijo."
           ],
           "exemplo": {
             "rot": "Fragmento",
-            "texto": "\"el alquiler promedio subió… y seguirá subiendo en dos mil veintisiete\""
+            "texto": "\"o aluguel médio subiu… e vai continuar subindo em dois mil e vinte e sete\""
           }
         },
         {
           "titulo": "Incorrecto: corto",
           "sub": "no prueba nada",
           "texto": [
-            "Dos o tres palabras aparecen en cualquier parte y no muestran el contexto. Usa al menos 6."
+            "Dos o tres palabras aparecen en cualquier lugar y no muestran el contexto. Usa al menos 6."
           ],
           "exemplo": {
             "rot": "Fragmento",
-            "texto": "\"doce por ciento\""
+            "texto": "\"doze por cento\""
           }
         }
       ]
@@ -160,17 +160,17 @@
         {
           "rot": "terminal: audio + transcripción local",
           "icone": "terminal",
-          "conteudo": "yt-dlp -x --audio-format mp3 -o \"audio.%(ext)s\" \"<URL>\"\n# con inemavox (u otro transcriptor local):\npython transcrever_v1.py --in audio.mp3 --outdir tx --whisper-model large-v3"
+          "conteudo": "yt-dlp -x --audio-format mp3 -o \"audio.%(ext)s\" \"<URL>\"\n# con el inemavox (u otro transcriptor local):\npython transcrever_v1.py --in audio.mp3 --outdir tx --whisper-model large-v3"
         },
         {
           "rot": "base.md",
           "icone": "arquivo",
-          "conteudo": "| Número usado | Quién lo dijo | Video | Fecha | Fragmento de la transcripción |\n|---|---|---|---|---|\n| | | <id do YouTube> | dd/mm/aaaa | \"<6 a 30 palabras copiadas>\" |"
+          "conteudo": "| Número usado | Quién lo dijo | Video | Fecha | Fragmento de la transcripción |\n|---|---|---|---|---|\n| | | <id de YouTube> | dd/mm/aaaa | \"<6 a 30 palabras copiadas>\" |"
         },
         {
           "rot": "confere.py",
           "icone": "check",
-          "conteudo": "#!/usr/bin/env python3\n\"\"\"uso: python3 confere.py base.md transcript.txt\n¿Cada fragmento entre comillas de la base está en la transcripción? Sale 1 si alguno no está.\"\"\"\nimport re, sys, unicodedata\n\ndef n(s):  # minúsculas, sin acento, sin puntuación\n    s = unicodedata.normalize(\"NFD\", s.lower()).encode(\"ascii\", \"ignore\").decode()\n    return re.sub(r\"\\s+\", \" \", re.sub(r\"[^a-z0-9%]+\", \" \", s)).strip()\n\nbase = open(sys.argv[1], encoding=\"utf-8\").read()\ntx = n(open(sys.argv[2], encoding=\"utf-8\").read())\nfora = 0\nfor trecho in re.findall(r'\"([^\"]{20,})\"', base):\n    ok = n(trecho) in tx\n    fora += not ok\n    print(\"OK  \" if ok else \"FORA\", trecho[:70])\nsys.exit(1 if fora else 0)"
+          "conteudo": "#!/usr/bin/env python3\n\"\"\"uso: python3 confere.py base.md transcript.txt\n¿Cada fragmento entre comillas de la base está en la transcripción? Sale con 1 si alguno no está.\"\"\"\nimport re, sys, unicodedata\n\ndef n(s):  # minúsculas, sin acento, sin puntuación\n    s = unicodedata.normalize(\"NFD\", s.lower()).encode(\"ascii\", \"ignore\").decode()\n    return re.sub(r\"\\s+\", \" \", re.sub(r\"[^a-z0-9%]+\", \" \", s)).strip()\n\nbase = open(sys.argv[1], encoding=\"utf-8\").read()\ntx = n(open(sys.argv[2], encoding=\"utf-8\").read())\nfora = 0\nfor trecho in re.findall(r'\"([^\"]{20,})\"', base):\n    ok = n(trecho) in tx\n    fora += not ok\n    print(\"OK  \" if ok else \"FORA\", trecho[:70])\nsys.exit(1 if fora else 0)"
         }
       ],
       "saida": {
@@ -178,11 +178,11 @@
         "abas": [
           {
             "rot": "Salida",
-            "html": "<pre>OK   el alquiler promedio aquí en la zona subió doce por ciento en un año\nFORA el valor promedio del alquiler en la zona aumentó 12% el último año</pre><p>Una línea FORA: corrige copiándola de nuevo de la transcripción. El <code>checar.py</code> de los radares hace lo mismo con cada video citado.</p>"
+            "html": "<pre>OK   o aluguel médio aqui na região subiu doze por cento em um ano\nFORA o valor médio do aluguel na região aumentou 12% no último ano</pre><p>Una línea FORA: corrígela copiando de nuevo de la transcripción. El <code>checar.py</code> de los radares hace lo mismo para cada video citado.</p>"
           },
           {
             "rot": "Por qué normalizar",
-            "html": "<p>La transcripción y la base pueden diferir en acentos, comas o mayúsculas sin que cambie el sentido. Normalizar ambos lados evita desaprobar sin motivo y sigue detectando palabras cambiadas o frases pegadas.</p>"
+            "html": "<p>La transcripción y la base pueden diferir en acento, coma o mayúscula sin que cambie el sentido. Normalizar ambos lados evita reprobar sin motivo y sigue detectando una palabra cambiada o una frase pegada.</p>"
           }
         ]
       }
@@ -190,7 +190,7 @@
     {
       "tipo": "simfila",
       "titulo": "Mira la verificación en acción",
-      "sub": "Cada línea de la base pasa por el verificador. Interrúmpelo a mitad y vuelve a ejecutarlo.",
+      "sub": "Cada línea de la base pasa por el verificador. Interrúmpelo a la mitad y ejecútalo de nuevo.",
       "tarefas": [
         "Línea 1 · el alquiler subió 12% en un año",
         "Línea 2 · 3 barrios con alta vacancia",
@@ -209,12 +209,12 @@
         "zerar": "Reiniciar"
       },
       "msg": {
-        "inicio": "5 líneas en base.md. Haz clic en \"Verificar la base\".",
-        "rodando": "Verificando: se busca cada fragmento en la transcripción del video citado.",
-        "parou": "Interrumpido. La línea del medio quedó en verificando. Vuelve a ejecutarlo.",
-        "retoma": "Reanudado: la línea que estaba en verificando vuelve a la cola; las ya encontradas no se repiten.",
-        "fim": "Base verificada: se encontraron todas las líneas.",
-        "fimfalha": "Una línea está fuera de la transcripción. En el radar, eso hace que la base no pase: el guion vuelve una vez y, si vuelve a fallar, no se hace el video."
+        "inicio": "5 líneas en la base.md. Haz clic en \"Verificar la base\".",
+        "rodando": "Verificando: cada fragmento se busca en la transcripción del video citado.",
+        "parou": "Interrumpido. La línea del medio quedó en verificando. Ejecútalo de nuevo.",
+        "retoma": "Reanudación: la línea que estaba en verificando vuelve a la cola; las ya encontradas no se rehacen.",
+        "fim": "Base verificada: todas las líneas encontradas.",
+        "fimfalha": "Una línea está fuera de la transcripción. En el radar, eso reprueba la base: el guion vuelve una vez y, si reprueba de nuevo, el video no se hace."
       },
       "legenda": "Simulación ilustrativa en el navegador. La línea que falla es intencional: su fragmento fue \"mejorado\" y ya no es literal."
     },
@@ -225,7 +225,7 @@
       "exercicios": [
         {
           "id": "e3",
-          "titulo": "E3 · La base con fuentes",
+          "titulo": "E3 · La base con fuente",
           "min": "30 min",
           "texto": "Transcribe un video de uno de tus 5 canales y arma la <code>base.md</code> con número, quién lo dijo, video, fecha y fragmento literal. Ejecuta el <code>confere.py</code>.",
           "pronto": "cada línea tiene el fragmento literal entre comillas y el <code>confere.py</code> imprime solo OK."
@@ -239,40 +239,40 @@
       "sub": "La explicación aparece después de tu respuesta.",
       "perguntas": [
         {
-          "p": "Cambiaste \"doce por ciento\" por \"12%\" en el fragmento de la base para que se viera más limpio. ¿Qué pasa en la verificación?",
+          "p": "Cambiaste \"doze por cento\" por \"12%\" en el fragmento de la base para que quedara más limpio. ¿Qué pasa en la verificación?",
           "opcoes": [
-            "Nada: el sentido es el mismo.",
-            "El fragmento ya no es literal y la verificación lo rechaza.",
-            "El script lo convierte automáticamente.",
-            "Solo lo rechaza si el número es incorrecto."
+            "El script lo convierte solo.",
+            "Solo reprueba si el número está equivocado.",
+            "El fragmento ya no es literal y la verificación reprueba.",
+            "Nada: el sentido es el mismo."
           ],
-          "certa": 1,
-          "explica": "La normalización ignora acentos, puntuación y mayúsculas, pero no cambia palabras por cifras. Si editas el fragmento, deja de ser una copia literal.",
+          "certa": 2,
+          "explica": "La normalización ignora acentos, puntuación y mayúsculas, pero no cambia una palabra por un número. Un fragmento editado deja de ser una copia literal.",
           "cert": true,
           "ref": "passos"
         },
         {
           "p": "¿Qué garantiza la verificación?",
           "opcoes": [
+            "Que el canal es confiable.",
             "Que el número es verdadero en el mundo.",
-            "Que alguien dijo exactamente eso en el video citado.",
-            "Que el video se volverá viral.",
-            "Que el canal es confiable."
+            "Que alguien dijo exactamente eso, en el video citado.",
+            "Que el video se va a hacer viral."
           ],
-          "certa": 1,
-          "explica": "Prueba la atribución, no la verdad. Por eso todo se presenta como algo reportado (\"según él\") y la confianza depende de la selección de los canales (clase 3).",
+          "certa": 2,
+          "explica": "Prueba la atribución, no la verdad. Por eso todo va en modo relatado (\"según él\") y la confianza viene de la elección de los canales (clase 3).",
           "ref": "diagrama"
         },
         {
           "p": "¿Qué fragmento sirve para la base?",
           "opcoes": [
-            "\"doce por ciento\"",
             "Un resumen tuyo de lo que quiso decir.",
-            "Un fragmento continuo de 6 a 30 palabras, copiado de la transcripción.",
-            "El comienzo de una frase pegado al final de otra."
+            "\"doze por cento\"",
+            "El comienzo de una frase pegado al final de otra.",
+            "Un trozo continuo de 6 a 30 palabras, copiado de la transcripción."
           ],
-          "certa": 2,
-          "explica": "Un fragmento demasiado corto no prueba el contexto; los resúmenes y las uniones no son literales.",
+          "certa": 3,
+          "explica": "Demasiado corto no prueba contexto; el resumen y el pegado no son literales.",
           "ref": "passos"
         }
       ]

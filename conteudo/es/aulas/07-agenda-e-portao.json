@@ -1,17 +1,17 @@
 {
   "slug": "agenda-e-portao",
   "num": 7,
-  "titulo": "Agenda con compuerta: el canal funciona solo, tú decides",
+  "titulo": "Agenda con compuerta: el canal corre solo, tú decides",
   "titulo_curto": "Agenda y compuerta",
   "menu": "Agenda",
   "minutos": 18,
-  "hero_alt": "Calendario de pared con marcas de madrugada y un celular que muestra un mensaje de aviso.",
-  "lead": "La agenda convierte la cadena de producción en un canal: una ronda al día, a una hora fija, sin que tengas que acordarte. Pero una agenda sin compuerta significa publicar algo incorrecto más rápido. En esta clase escribirás el temporizador, decidirás qué hacer un día sin tema y harás funcionar el canal durante una semana aprobando cada video, hasta que dejes de rechazarlo.",
-  "objetivo": "escribir la programación de tu canal y hacerlo funcionar durante una semana con aprobación manual, convirtiendo cada rechazo en una regla.",
+  "hero_alt": "Calendario de pared con marcas de madrugada y un celular mostrando un mensaje de aviso.",
+  "lead": "La agenda convierte la cinta en un canal: una ronda por día, a una hora fija, sin que tengas que acordarte. Pero una agenda sin compuerta es publicar mal más rápido. En esta clase escribes el timer, decides qué pasa en un día sin tema y corres una semana aprobando cada video, hasta que las negativas se acaben.",
+  "objetivo": "escribir la programación de tu canal y correr una semana con aprobación manual, convirtiendo cada rechazo en una regla.",
   "competencias": [
-    "agenda-con-compuerta",
-    "dia-sin-tema",
-    "rechazo-se-vuelve-regla"
+    "agenda-con-portao",
+    "dia-sem-pauta",
+    "recusa-vira-regra"
   ],
   "aprende": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "icone": "relogio",
-      "t": "El temporizador de systemd (o cron)"
+      "t": "El timer de systemd (o el cron)"
     },
     {
       "icone": "enviar",
@@ -35,11 +35,11 @@
     {
       "tipo": "diagrama",
       "titulo": "Una ronda programada",
-      "sub": "Haz clic en cada bloque. Esto es lo que ocurre cada madrugada en un radar.",
+      "sub": "Haz clic en cada bloque. Es lo que pasa todas las madrugadas en un radar.",
       "nos": [
         {
           "icone": "relogio",
-          "titulo": "Temporizador",
+          "titulo": "Timer",
           "sub": "OnCalendar",
           "itens": [
             {
@@ -47,7 +47,7 @@
               "t": "Lun–Vie 02:00"
             }
           ],
-          "detalhe": "El temporizador de systemd (de tu usuario) inicia la ronda a la hora indicada. En finviral: de lunes a viernes a las 02:00, la ronda diaria; el sábado, la semanal; el domingo, la de la semana siguiente."
+          "detalhe": "El timer de systemd (de tu usuario) dispara la ronda a la hora indicada. En finviral: de lunes a viernes a las 02:00 el diario, el sábado el semanal, el domingo el de la semana próxima."
         },
         {
           "icone": "lista",
@@ -59,11 +59,11 @@
               "t": "\"2026-10-17 diario\""
             }
           ],
-          "detalhe": "Antes que nada, la ronda consulta <code>pular.txt</code>. Una línea con la fecha y el modo salta esa ronda sin desactivar la agenda: feriado, viaje, tema delicado."
+          "detalhe": "Antes que nada, la ronda revisa el <code>pular.txt</code>. Una línea con la fecha y el modo salta esa ronda sin apagar la agenda: feriado, viaje, tema delicado."
         },
         {
           "icone": "camadas",
-          "titulo": "Línea de producción",
+          "titulo": "Cinta",
           "sub": "recolección → revisión",
           "itens": [
             {
@@ -71,7 +71,7 @@
               "t": "checar.py"
             }
           ],
-          "detalhe": "Recolección, base, guion, revisión, avatar y video: las clases 3 a 5 funcionan solas. Si el guion no tiene material, se genera <code>SEM_PAUTA.txt</code> y la ronda termina ahí.",
+          "detalhe": "Recolección, base, guion, revisión, avatar y video: las clases 3 a 5 corriendo solas. Si el guion no tiene material, sale <code>SEM_PAUTA.txt</code> y la ronda termina ahí.",
           "forte": true
         },
         {
@@ -88,7 +88,7 @@
               "t": "Rechazo + regla"
             }
           ],
-          "detalhe": "Durante la primera semana, nada se publica sin tu aprobación. Cada rechazo se anota con el motivo y se convierte en una regla en <code>regras.md</code>. Solo después de 3 días seguidos sin rechazar, considera quitar la compuerta de alguna etapa."
+          "detalhe": "En la primera semana nada sale al aire sin tu aprobación. Cada rechazo se anota con el motivo y se convierte en regla en <code>regras.md</code>. Solo después de 3 días seguidos sin rechazar piensa en quitar la compuerta de alguna etapa."
         },
         {
           "icone": "enviar",
@@ -108,11 +108,11 @@
               "t": "\"falló en X\""
             }
           ],
-          "detalhe": "Cada ronda termina con un mensaje en Telegram: el video (con el enlace), \"sin tema\" o \"falló en X\". El silencio nunca es una respuesta: si no llegó nada, algo se detuvo antes del aviso."
+          "detalhe": "Toda ronda termina con un mensaje en Telegram: el video (con el enlace), \"sin tema\" o \"falló en X\". El silencio nunca es una respuesta: si no llegó nada, algo se trabó antes del aviso."
         }
       ],
-      "volta": "Cada rechazo se convierte en una regla; la siguiente ronda ya la lee",
-      "legenda": "El horario de cada radar es diferente (02:00, 05:00, 08:00) para que no compitan por la GPU y el estudio del avatar."
+      "volta": "Cada rechazo se convierte en regla; la próxima ronda ya la lee",
+      "legenda": "El horario de cada radar es distinto (02:00, 05:00, 08:00) para que no compitan por la GPU y el estudio del avatar."
     },
     {
       "tipo": "passos",
@@ -123,18 +123,18 @@
           "titulo": "Diario",
           "sub": "lun–vie",
           "texto": [
-            "40 a 60 segundos con lo que publicaron ayer y anteayer las fuentes de referencia."
+            "De 40 a 60 segundos con lo que las referencias publicaron ayer y anteayer."
           ],
           "exemplo": {
             "rot": "finviral",
-            "texto": "De lunes a viernes, 02:00 · ronda \"diario\""
+            "texto": "Lunes a viernes, 02:00 · ronda \"diario\""
           }
         },
         {
           "titulo": "Semanal",
           "sub": "sábado",
           "texto": [
-            "90 s a 2 min con el resumen de la semana. En los radares, también sale un video largo en 16:9, \"La semana explicada\", de 5 a 7 minutos."
+            "De 90 s a 2 min con el balance de la semana. En los radares, sale junto un largo 16:9, \"La semana explicada\", de 5 a 7 minutos."
           ],
           "exemplo": {
             "rot": "finviral",
@@ -145,7 +145,7 @@
           "titulo": "Domingo",
           "sub": "lo que viene",
           "texto": [
-            "Cerca de 90 s con lo que las fuentes de referencia esperan para la próxima semana."
+            "Cerca de 90 s con lo que las referencias esperan para la próxima semana."
           ],
           "exemplo": {
             "rot": "finviral",
@@ -156,11 +156,11 @@
           "titulo": "Día flojo",
           "sub": "no se convierte en video",
           "texto": [
-            "Escribe antes qué pasa en un día sin tema: ningún video y el mensaje \"sin tema\" con el motivo. Forzar un video en un día flojo es el primer paso para publicar algo equivocado."
+            "Escribe antes qué pasa en un día sin tema: ningún video, y el mensaje \"sem pauta\" con el motivo. Forzar un video en un día flojo es el primer paso para publicar mal."
           ],
           "exemplo": {
             "rot": "Mensaje",
-            "texto": "sin tema: ninguno de los canales publicó videos nuevos durante el período."
+            "texto": "sem pauta: nenhum dos canais publicou vídeo novo no período."
           }
         }
       ]
@@ -168,27 +168,27 @@
     {
       "tipo": "codigo",
       "titulo": "La programación",
-      "sub": "Temporizador de systemd en tu usuario (finviral lo usa así). Cambia &lt;canal&gt; y la ruta del script.",
+      "sub": "Timer de systemd en tu usuario (finviral lo usa así). Cambia &lt;canal&gt; y la ruta del script.",
       "blocos": [
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.timer",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.timer",
           "icone": "relogio",
           "conteudo": "[Unit]\nDescription=<canal> — diario às 02:00\n\n[Timer]\nOnCalendar=Mon..Fri *-*-* 02:00:00\nPersistent=false\n\n[Install]\nWantedBy=timers.target"
         },
         {
-          "rot": "~/.config/systemd/user/<canal>-diario.service",
+          "rot": "~/.config/systemd/user/&lt;canal&gt;-diario.service",
           "icone": "terminal",
           "conteudo": "[Unit]\nDescription=<canal> — rodada diario\nAfter=network-online.target\n\n[Service]\nType=oneshot\nExecStart=/bin/bash %h/projetos/<canal>/auto/rodar.sh diario\nTimeoutStartSec=10h\nMemoryMax=60G\nNice=5"
         },
         {
           "rot": "terminal",
           "icone": "terminal",
-          "conteudo": "systemctl --user daemon-reload\nsystemctl --user enable --now <canal>-diario.timer\nsystemctl --user list-timers '<canal>-*'\n\n# saltar una ronda sin desactivar la agenda\necho \"2026-10-17 diario\" >> auto/pular.txt"
+          "conteudo": "systemctl --user daemon-reload\nsystemctl --user enable --now <canal>-diario.timer\nsystemctl --user list-timers '<canal>-*'\n\n# saltar una ronda sin apagar la programación\necho \"2026-10-17 diario\" >> auto/pular.txt"
         },
         {
           "rot": "crontab (alternativa)",
           "icone": "calendario",
-          "conteudo": "# minuto hora día mes día-de-la-semana  comando\n0 2 * * 1-5  /bin/bash $HOME/projetos/<canal>/auto/rodar.sh diario"
+          "conteudo": "# minuto hora dia mês dia-da-semana  comando\n0 2 * * 1-5  /bin/bash $HOME/projetos/<canal>/auto/rodar.sh diario"
         }
       ],
       "saida": {
@@ -196,11 +196,11 @@
         "abas": [
           {
             "rot": "Por qué Persistent=false",
-            "html": "<p>Con <code>Persistent=false</code>, una ronda perdida (máquina apagada a las 02:00) <b>no</b> se ejecuta con retraso cuando la máquina vuelve a encenderse. Para un radar del día, un video de ayer publicado por la tarde no sirve.</p>"
+            "html": "<p>Con <code>Persistent=false</code>, una ronda perdida (máquina apagada a las 02:00) <b>no</b> se ejecuta con retraso cuando la máquina vuelve. Para un radar del día, un video de ayer publicado por la tarde no sirve.</p>"
           },
           {
-            "rot": "Los límites",
-            "html": "<p><code>TimeoutStartSec</code> y <code>MemoryMax</code> son límites: la ronda que se bloquee se detiene y la que consuma demasiada memoria no tira abajo la máquina. Una ronda sin límite que se bloquea a las 02:00 sigue bloqueada a las 09:00.</p>"
+            "rot": "Los topes",
+            "html": "<p><code>TimeoutStartSec</code> y <code>MemoryMax</code> son topes: la ronda que se trabe se cierra y la que se hinche no tumba la máquina. Una ronda sin tope que se traba a las 02:00 sigue trabada a las 09:00.</p>"
           }
         ]
       }
@@ -218,35 +218,35 @@
       ],
       "falha": 2,
       "rot": {
-        "entrada": "agenda",
+        "entrada": "programada",
         "rodando": "en curso",
         "feito": "video aprobado",
-        "falhou": "sin tema",
+        "falhou": "sem pauta",
         "rodar": "Ejecutar la semana",
         "parar": "Interrumpir",
         "zerar": "Reiniciar"
       },
       "msg": {
-        "inicio": "5 rondas en la agenda. Haz clic en \"Ejecutar la semana\".",
-        "rodando": "Cada ronda: recopilación, base, guion, revisión y tu compuerta.",
-        "parou": "Interrumpido: la ronda del medio no terminó. La próxima vez, se reinicia; las que ya salieron no se repiten.",
-        "retoma": "Reanudación: lo que ya se aprobó no se repite.",
+        "inicio": "5 rondas en la programación. Haz clic en \"Ejecutar la semana\".",
+        "rodando": "Cada ronda: recolección, base, guion, revisión y su compuerta.",
+        "parou": "Interrumpida: la ronda del medio no terminó. En la próxima, vuelve a empezar; las que ya salieron no se rehacen.",
+        "retoma": "Reanudada: lo que ya fue aprobado no se rehace.",
         "fim": "Semana completa: cinco videos aprobados.",
-        "fimfalha": "El miércoles no hubo tema: ningún video y el bot recibió \"sin tema\". Un día flojo no se convierte en video."
+        "fimfalha": "El miércoles no hubo tema: ningún video, y el bot recibió \"sem pauta\". Un día flojo no se convierte en video."
       },
-      "legenda": "Simulación ilustrativa en el navegador. El miércoles sin tema es intencional, para mostrar que un día vacío es un resultado normal, no un error."
+      "legenda": "Simulación ilustrativa en el navegador. El miércoles sin tema es a propósito, para mostrar que un día vacío es un resultado normal, no un error."
     },
     {
       "tipo": "pratica",
-      "titulo": "Práctica: agenda y semana con compuerta",
+      "titulo": "Práctica: programación y semana con compuerta",
       "sub": "Ejercicios 5 y 6 de la secuencia 4.",
       "exercicios": [
         {
           "id": "e5",
           "titulo": "E5 · La agenda",
           "min": "20 min",
-          "texto": "Decide la frecuencia y escribe la programación (timer de systemd o cron), qué pasa en un día sin tema y dónde llega el aviso de error.",
-          "pronto": "la programación está escrita, <code>list-timers</code> (o el crontab) muestra la próxima ronda y sabes qué pasa en un día sin tema."
+          "texto": "Decide la frecuencia y escribe la programación (timer de systemd o cron), con lo que pasa en un día sin tema y a dónde llega el aviso de falla.",
+          "pronto": "la programación está escrita, <code>list-timers</code> (o el crontab) muestra la próxima ejecución y sabes qué pasa en un día sin tema."
         },
         {
           "id": "e6",
@@ -254,7 +254,7 @@
           "min": "1 semana",
           "dias": 7,
           "texto": "Ejecuta una semana con aprobación manual antes de cada publicación. Anota qué rechazaste y por qué; cada rechazo se convierte en una regla en <code>regras.md</code>.",
-          "pronto": "pasaste 3 días seguidos sin tener que rechazar nada. Solo entonces piensa en quitar la compuerta de alguna etapa."
+          "pronto": "pasaste 3 días seguidos sin necesitar rechazar. Solo entonces piensa en quitar la compuerta de alguna etapa."
         }
       ],
       "fonte": "Ejercicios completos: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
@@ -267,50 +267,50 @@
         {
           "p": "¿Cuándo es razonable quitar la compuerta de una etapa?",
           "opcoes": [
-            "La primera semana, para ahorrar tiempo.",
-            "Después de 3 días seguidos sin tener que rechazar nada.",
             "Nunca: la compuerta es obligatoria en todo.",
-            "Cuando el canal supere los mil suscriptores."
+            "Después de 3 días seguidos sin necesitar rechazar nada.",
+            "Cuando el canal pase de mil suscriptores.",
+            "En la primera semana, para ganar tiempo."
           ],
           "certa": 1,
-          "explica": "El E6 pide tres días seguidos sin rechazos. Antes de eso, la compuerta todavía le está enseñando reglas nuevas al canal.",
+          "explica": "El E6 pide tres días seguidos sin rechazo. Antes de eso, la compuerta todavía le está enseñando reglas nuevas al canal.",
           "cert": true,
           "ref": "pratica"
         },
         {
-          "p": "A las 9 h no recibiste nada del bot. ¿Qué significa?",
+          "p": "A las 9 h no recibiste nada del bot. ¿Qué significa eso?",
           "opcoes": [
             "Que fue un día sin tema.",
-            "Que algo se atascó antes del aviso: cada ronda termina con un video, \"sin tema\" o \"falló en X\".",
             "Que el video salió y no hacía falta avisar.",
-            "Nada: es normal."
+            "Nada: es normal.",
+            "Que algo se trabó antes del aviso: toda ejecución termina con video, \"sem pauta\" o \"falhou em X\"."
           ],
-          "certa": 1,
-          "explica": "El silencio nunca es una respuesta. Un día sin tema envía \"sin tema\"; un error envía \"falló en X\". Si no llegó nada, revisa la ronda.",
+          "certa": 3,
+          "explica": "El silencio nunca es una respuesta. Un día sin tema manda \"sem pauta\"; una falla manda \"falhou em X\". Si no llegó nada, revisa la ejecución.",
           "ref": "diagrama"
         },
         {
-          "p": "Mañana es feriado y no quieres un video. ¿Qué haces sin desactivar la agenda?",
+          "p": "Mañana es feriado y no quieres video. ¿Qué haces sin apagar la agenda?",
           "opcoes": [
-            "Apagar la computadora.",
-            "Borrar el timer y crear uno nuevo después.",
-            "Poner la fecha y el modo en pular.txt.",
-            "Dejar que salga y borrarlo después."
+            "Apagar el computador.",
+            "Dejar que salga y borrarlo después.",
+            "Borrar el timer y crearlo de nuevo después.",
+            "Poner la fecha y el modo en pular.txt."
           ],
-          "certa": 2,
-          "explica": "Una línea como \"2026-10-17 diario\" en pular.txt omite solo esa ronda.",
+          "certa": 3,
+          "explica": "Una línea como \"2026-10-17 diario\" en pular.txt salta solo esa ejecución.",
           "ref": "codigo"
         },
         {
           "p": "¿Por qué Persistent=false en el timer de un radar diario?",
           "opcoes": [
-            "Para ahorrar espacio en disco.",
-            "Para que una ronda perdida no se ejecute tarde y publique el radar de ayer por la tarde.",
             "Porque systemd lo exige.",
-            "Para ejecutarlo dos veces al día."
+            "Para ahorrar disco.",
+            "Para ejecutarse dos veces al día.",
+            "Para que una ejecución perdida no corra con retraso, publicando el radar de ayer por la tarde."
           ],
-          "certa": 1,
-          "explica": "Un radar del día pierde sentido fuera de horario. Una ronda perdida se queda perdida; la siguiente llega a la hora prevista.",
+          "certa": 3,
+          "explica": "Un radar del día pierde sentido fuera de hora. Una ejecución perdida queda perdida; la siguiente llega en su horario.",
           "ref": "codigo"
         }
       ]

@@ -2,25 +2,25 @@
   "slug": "roteiro-conferido",
   "num": 5,
   "titulo": "60-second script with the source on screen",
-  "titulo_curto": "Verified script",
+  "titulo_curto": "Checked script",
   "menu": "Script",
   "minutos": 17,
-  "hero_alt": "A vertical phone showing a large animated number with the source line underneath.",
-  "lead": "With the source file ready, the agent writes the script using only what’s in the file. The roundup opens with the date and the strongest number, covers each topic with a note about who said it, and ends with a question and an invitation. Before it becomes a video, the script goes through verification: if a number isn’t in the source file, the script goes back.",
-  "objetivo": "ask the agent for a 60-second script based on base.md, and send it back whenever a number isn’t in the source file.",
+  "hero_alt": "Vertical phone showing a big animated number with the source line below it.",
+  "lead": "With the base ready, the agent writes the script, and only from what is in the base. The radar opens with the date and the strongest number, covers each topic with the profile card of who said it, and ends with a question and the invitation. Before it becomes a video, the script goes through the check: if a number isn't in the base, the script goes back.",
+  "objetivo": "ask the agent for a 60-second script from the base.md and send it back whenever a number isn't in the base.",
   "competencias": [
-    "source-backed-script",
-    "avatar-script",
-    "script-gate"
+    "roteiro-com-fonte",
+    "fala-para-avatar",
+    "portao-do-roteiro"
   ],
   "aprende": [
     {
       "icone": "camadas",
-      "t": "The short’s structure: opening frame, summary, topics, question, CTA"
+      "t": "The structure of the short: frame 0, summary, topics, question, CTA"
     },
     {
       "icone": "chat",
-      "t": "Speaking rules for the presenter’s tone"
+      "t": "The rules for the spoken lines, in the tone of a presenter"
     },
     {
       "icone": "arquivo",
@@ -28,18 +28,18 @@
     },
     {
       "icone": "portao",
-      "t": "The list of reasons a script fails"
+      "t": "The list of what fails a script"
     }
   ],
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "The structure of a roundup short",
-      "sub": "Click each block. This is the format finviral, saudeviral, and advviral follow.",
+      "titulo": "The structure of a radar short",
+      "sub": "Tap each block. This is the format that finviral, saudeviral, and advviral follow.",
       "nos": [
         {
           "icone": "calendario",
-          "titulo": "Opening frame",
+          "titulo": "Frame 0",
           "sub": "date + number",
           "itens": [
             {
@@ -47,20 +47,20 @@
               "t": "The strongest number"
             }
           ],
-          "detalhe": "The first frame is already filled in: the date dd/mm/aaaa and the strongest number (or fact). The opening line is the punchy sentence about that number, and it never starts with \"In this video,\" \"Imagine,\" or \"Hello.\"",
+          "detalhe": "The first frame is already full: the date dd/mm/yyyy and the strongest number (or fact). The first spoken line is the punchline of that number, and it never starts with \"In this video,\" \"Imagine,\" or \"Hello.\"",
           "forte": true
         },
         {
           "icone": "lista",
           "titulo": "Summary",
-          "sub": "\"Today’s roundup\"",
+          "sub": "\"Today on the radar\"",
           "itens": [
             {
               "icone": "fila",
               "t": "One item per topic"
             }
           ],
-          "detalhe": "Right after that, a box lists the upcoming topics, with one short item per topic. Roundup shorts cover at least five topics, from different influencers whenever possible, with the strongest one first."
+          "detalhe": "Right after, a box with the topics coming up, one short item per topic. In the radar shorts there are at least five topics, from different influencers whenever possible, the strongest first."
         },
         {
           "icone": "usuario",
@@ -69,26 +69,26 @@
           "itens": [
             {
               "icone": "usuario",
-              "t": "Who said it"
+              "t": "Profile card of who said it"
             },
             {
               "icone": "arquivo",
-              "t": "Source shown in every scene"
+              "t": "Source in every scene"
             }
           ],
-          "detalhe": "Each topic is told in full: the context, what the person said, and what changes for viewers. Each person mentioned gets a profile (name, channel, date, views) and a source line: channel, YouTube, date, short title."
+          "detalhe": "Each topic is told in full: context, what the person said, what changes for the viewer. Each person cited gets the profile card (name, channel, date, views) and the source line: channel, YouTube, date, short title."
         },
         {
           "icone": "chat",
           "titulo": "Question",
-          "sub": "comment prompt",
+          "sub": "comment hook",
           "itens": [
             {
               "icone": "escudo",
               "t": "Niche disclaimer in the source"
             }
           ],
-          "detalhe": "The second-to-last line asks where the person is watching from and what the situation is like in their city. The source for that scene includes the niche disclaimer, such as \"This is not investment advice.\""
+          "detalhe": "The second-to-last line asks where the person is watching from and what the situation is like in their city. The source for that scene carries the niche disclaimer, like \"Not investment advice.\""
         },
         {
           "icone": "megafone",
@@ -100,76 +100,76 @@
               "t": "Only inema.club"
             }
           ],
-          "detalhe": "A short bridge from the topic to AI and an invitation to learn at inema.club, with free courses. One destination only: no YouTube channel, no \"subscribe,\" no \"full video.\""
+          "detalhe": "A short bridge from the topic to AI, and the invitation to learn at inema.club, with free courses. One destination only: no YouTube channel, no \"subscribe,\" no \"long video.\""
         }
       ],
-      "legenda": "Example from the finviral repository. On your channel, change the CTA to your destination, but keep it to one destination."
+      "legenda": "Example from the finviral repository. On your channel, swap the CTA for your own destination, but keep it to one destination."
     },
     {
       "tipo": "passos",
-      "titulo": "Speaking rules",
-      "sub": "Each one came from a rejected video. checar.py checks several of them automatically.",
+      "titulo": "The speech rules",
+      "sub": "Each one came from a rejected video. The checar.py checks several of them on its own.",
       "passos": [
         {
-          "titulo": "Spell it out",
+          "titulo": "Spelled out",
           "sub": "the avatar reads it",
           "texto": [
-            "Spell out all numbers and years in speech. The check rejects numerals in speech."
+            "All numbers and years are spelled out in the speech. The check rejects digits in the speech."
           ],
           "exemplo": {
-            "rot": "Line",
-            "texto": "seven point seven percent · two thousand twenty-eight"
+            "rot": "Spoken line",
+            "texto": "sete vírgula sete por cento · dois mil e vinte e oito"
           }
         },
         {
-          "titulo": "How to say",
+          "titulo": "How it's spoken",
           "sub": "acronyms and addresses",
           "texto": [
-            "Say acronyms the way people say them. Read the government address without \"dot\": \"consumidor gov B R.\" On screen, it still says consumidor.gov.br."
+            "Acronyms are read the way they are spoken. A government address has no \"ponto\": \"consumidor gov bê érre\". On screen it stays consumidor.gov.br."
           ],
           "exemplo": {
             "rot": "Rejected on 10/13/2026",
-            "texto": "\"consumidor dot gov dot B R\""
+            "texto": "\"consumidor ponto gov ponto bê erre\""
           }
         },
         {
           "titulo": "You",
-          "sub": "talk to one person",
+          "sub": "never \"tu\"",
           "texto": [
-            "Address the viewer as \"you\", in short sentences. The Portuguese check rejects the informal \"tu\", \"teu\" and \"tua\"; list in regras.md the forms your language should avoid."
+            "Address the viewer as \"você\" (you), with short sentences. The check rejects \"tu,\" \"teu\" and \"tua.\""
           ],
           "exemplo": {
-            "rot": "Line",
+            "rot": "Spoken line",
             "texto": "This changes what you pay at the end of the month."
           }
         },
         {
           "titulo": "Anchor without a number",
-          "sub": "screen timing",
+          "sub": "the on-screen timing",
           "texto": [
-            "Each visual appears on a common word in the speech (the anchor), never on a number: the avatar transcript writes numbers as numerals, so the anchor wouldn't match."
+            "Each visual comes in on an ordinary word of the speech (the anchor), never on a number: the avatar's transcript writes numbers as digits, so the anchor would not match."
           ],
           "exemplo": {
             "rot": "Anchor",
-            "texto": "\"rent\" yes · \"twelve\" no"
+            "texto": "\"aluguel\" yes · \"doze\" no"
           }
         }
       ]
     },
     {
       "tipo": "codigo",
-      "titulo": "The script prompt and the gate checklist",
-      "sub": "Paste your base.md and your rules into the prompt. Then check them against the list.",
+      "titulo": "The script request and the gate checklist",
+      "sub": "Paste your base.md and your rules into the request. Then check it against the list.",
       "blocos": [
         {
           "rot": "request to the agent",
           "icone": "chat",
-          "conteudo": "Write a 60-second vertical video script using ONLY\nthe numbers and facts in the base.md below. Do not use the internet or any other source.\n\nStructure:\n1. Opening: the shocking line with the strongest number (never \"Imagine,\"\n   \"Hello,\" or \"In this video\").\n2. Three facts, each with who said it, the video, and the date on screen.\n3. The required niche disclaimer (in regras.md).\n4. A question that invites comments.\n5. The closing invitation, to one destination only.\n\nRules: address viewers as \"you\"; spell out numbers and years in speech; every\nnumber shown must be in base.md. If base.md doesn't have enough material,\nreply only NO STORY and the reason.\n\n<paste base.md>\n<paste regras.md>"
+          "conteudo": "Write the script for a 60-second vertical video using ONLY the\nnumbers and facts from the base.md below. Do not use the internet or any other source.\n\nStructure:\n1. Opening: the shock line with the strongest number (never \"Imagine,\"\n   \"Hello\" or \"In this video\").\n2. Three facts, each with who said it, the video and the date on screen.\n3. The mandatory niche notice (it is in regras.md).\n4. A question that invites comments.\n5. The closing invitation, to one destination only.\n\nRules: address the viewer as \"você\"; numbers and years spelled out in the speech; every\nnumber shown must be in the base.md. If the base does not have enough\nmaterial, answer only SEM PAUTA and the reason.\n\n<paste the base.md>\n<paste the regras.md>"
         },
         {
           "rot": "portao-roteiro.md",
           "icone": "portao",
-          "conteudo": "- [ ] Every number on screen is in base.md (with an exact excerpt)\n- [ ] No numerals in speech\n- [ ] Opening uses the strongest number, without \"Imagine/Hello/In this video\"\n- [ ] Source (channel, date, title) in every scene with a fact\n- [ ] Required niche disclaimer included\n- [ ] Addresses viewers as \"you\"\n- [ ] Second-to-last line: comment question\n- [ ] One destination only in the closing invitation\n\nRejected: the script goes back once. Rejected again: no video goes out today."
+          "conteudo": "- [ ] Every number on screen is in the base.md (with a literal excerpt)\n- [ ] No number written as digits in the speech\n- [ ] Opening with the strongest number, without \"Imagine/Hello/In this video\"\n- [ ] Source (channel, date, title) in every scene with a fact\n- [ ] Mandatory niche notice present\n- [ ] Addresses the viewer as \"você\"\n- [ ] Second-to-last line: comment question\n- [ ] One destination only in the closing invitation\n\nFailed: the script goes back once. Failed again: no video today."
         }
       ],
       "saida": {
@@ -177,89 +177,89 @@
         "abas": [
           {
             "rot": "What checar.py checks",
-            "html": "<ul><li>each excerpt from the source appears in the cited video's transcript;</li><li>numerals in speech;</li><li>images exist;</li><li>CTA to inema.club in the last line;</li><li>the niche disclaimer sentence;</li><li>forbidden forms of address in speech (\"tu/teu/tua\" in Portuguese) and \"gov\" with \"dot.\"</li></ul>"
+            "html": "<ul><li>each excerpt from the base is in the transcript of the cited video;</li><li>numbers written as digits in the speech;</li><li>images exist;</li><li>CTA to inema.club in the last line;</li><li>the niche notice sentence;</li><li>\"tu/teu/tua\" in the speech and \"gov\" with \"ponto\".</li></ul>"
           },
           {
-            "rot": "NO STORY",
-            "html": "<p>The radar prompt says to save all the files <b>or just</b> <code>SEM_PAUTA.txt</code>. When there's no material, the bot receives \"no story\" and the reason. That's better than forcing a weak video.</p>"
+            "rot": "SEM PAUTA",
+            "html": "<p>The radars' prompt says to write all the files <b>or only</b> <code>SEM_PAUTA.txt</code>. When there is no material, the bot receives \"sem pauta\" and the reason. That is better than forcing a weak video.</p>"
           }
         ]
       }
     },
     {
       "tipo": "pratica",
-      "titulo": "Practice: the 60-second script",
-      "sub": "Exercise 4 in sequence 4. Use the base.md from the previous lesson.",
+      "titulo": "Practice: the 60 s script",
+      "sub": "Exercise 4 of sequence 4. Use the base.md from the previous lesson.",
       "exercicios": [
         {
           "id": "e4",
-          "titulo": "E4 · 60-second script with source on screen",
+          "titulo": "E4 · 60 s script with the source on screen",
           "min": "30 min",
-          "texto": "Ask the agent for the script using the prompt above: strongest number in the opening, three facts with who said them, the niche disclaimer, and the invitation. Check it against the gate checklist and send back anything that fails.",
-          "pronto": "every number in the script is in <code>base.md</code> and every item on the gate checklist is checked. If a number isn't there, the script goes back."
+          "texto": "Ask the agent for the script using the request above: strongest number in the opening, three facts with who said them, the niche notice and the invitation. Check it against the gate checklist and send back whatever fails.",
+          "pronto": "every number in the script is in the <code>base.md</code> and the gate checklist is fully checked. If any number is not there, the script goes back."
         }
       ],
-      "fonte": "The exercise asks for three facts to get started; today’s radar short requires at least five topics. Full exercise: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
+      "fonte": "The exercise asks for three facts to start with; the radars' short today requires at least five topics. Full exercise: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/04-redes.md</a>."
     },
     {
       "tipo": "quiz",
       "titulo": "Test what you learned",
-      "sub": "The explanation appears after you answer.",
+      "sub": "The explanation appears after your answer.",
       "perguntas": [
         {
-          "p": "The script includes a number that isn’t in base.md. What should you do?",
+          "p": "The script has a number that is not in the base.md. What should you do?",
           "opcoes": [
-            "Publish it if the number seems right.",
-            "Replace it with a rounded number.",
-            "Return the script: every number must be in the source, with an exact quote.",
-            "Remove the source from the screen."
+            "Send the script back: every number must be in the base, with a literal excerpt.",
+            "Remove the source from the screen.",
+            "Swap it for a rounded number.",
+            "Publish it if the number looks right."
           ],
-          "certa": 2,
-          "explica": "E4’s rule: every number in the script must be in base.md. If it isn’t, the script goes back.",
+          "certa": 0,
+          "explica": "The E4 rule: every number in the script is in the base.md. If it isn't, the script goes back.",
           "cert": true,
           "ref": "codigo"
         },
         {
-          "p": "What’s the best opening line for a radar video?",
+          "p": "What is the best first line for a radar?",
           "opcoes": [
-            "\"Hello, everyone. In this video, we’ll look at the news.\"",
-            "\"Imagine if your rent went up tomorrow.\"",
-            "The day’s strongest number in a punchy opening line.",
-            "An invitation to inema.club."
+            "\"Hi, everyone, in this video we're going to look at the news.\"",
+            "The invitation to inema.club.",
+            "The shock line with the strongest number of the day.",
+            "\"Imagine if your rent went up tomorrow.\""
           ],
           "certa": 2,
-          "explica": "Frame 0 already shows the date and number; the first line is its punchy opening. “Hello,” “Imagine,” and “In this video” are not allowed in the opening.",
+          "explica": "Frame 0 already shows the date and the number; the first line spoken is its shock line. \"Hello,\" \"Imagine\" and \"In this video\" are banned in the opening.",
           "ref": "diagrama"
         },
         {
-          "p": "Why is a visual’s anchor never a number?",
+          "p": "Why is the anchor of a visual never a number?",
           "opcoes": [
-            "Because numbers don’t appear on screen.",
-            "Because the avatar transcript writes numbers as digits, so a spelled-out anchor wouldn’t match.",
-            "Because numbers bring bad luck.",
-            "Because the anchor has to be the person’s name."
+            "Because numbers are bad luck.",
+            "Because the anchor has to be the person's name.",
+            "Because numbers don't show up on screen.",
+            "Because the avatar's transcript writes numbers as digits, and an anchor spelled out in words wouldn't match."
           ],
-          "certa": 1,
-          "explica": "The voice says “twelve,” but the transcript writes “12.” A common word like “rent” always matches.",
+          "certa": 3,
+          "explica": "The speech says \"twelve,\" the transcript writes \"12.\" A common word, like \"rent,\" always matches.",
           "ref": "passos"
         },
         {
-          "p": "The end of the script invites viewers to inema.club, the YouTube channel, and a long video. Is that right?",
+          "p": "The end of the script invites people to inema.club, to the YouTube channel, and to a long video. Is that right?",
           "opcoes": [
             "Yes: the more destinations, the better.",
-            "No: the final invitation has just one destination.",
-            "Yes, as long as it’s quick.",
-            "Only if the video is over 60 s."
+            "Only if the video runs longer than 60 s.",
+            "Yes, as long as it's quick.",
+            "No: the closing invitation has only one destination."
           ],
-          "certa": 1,
-          "explica": "For radar videos, the CTA is always just inema.club. Three destinations divide attention, and viewers won’t follow any of them.",
+          "certa": 3,
+          "explica": "On the radars, the CTA is always just inema.club. Three destinations split attention, and none gets followed.",
           "ref": "diagrama"
         }
       ]
     },
     {
       "tipo": "links",
-      "titulo": "To learn more",
+      "titulo": "Go deeper",
       "links": [
         {
           "t": "finviral guide (script and review)",

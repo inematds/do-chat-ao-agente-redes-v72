@@ -256,10 +256,10 @@
         {
           "p": "Seu plano tirou nota 5 em \"um desconhecido rolando o feed para aqui?\". O que fazer?",
           "opcoes": [
-            "Escrever a fala e ver no que dá.",
+            "Gravar o avatar duas vezes.",
             "Trocar o ângulo ou o tema antes de escrever a fala.",
-            "Aumentar a música de fundo.",
-            "Gravar o avatar duas vezes."
+            "Escrever a fala e ver no que dá.",
+            "Aumentar a música de fundo."
           ],
           "certa": 1,
           "explica": "Abaixo de 7, troca-se o ângulo ou o tema. O plano existe justamente para errar no barato (texto), não no caro (avatar e render).",
@@ -269,24 +269,24 @@
         {
           "p": "Qual destes é um gancho no padrão r7ex?",
           "opcoes": [
-            "\"Olá, hoje eu vou falar sobre segurança.\"",
-            "\"Seu agente obedece e gasta menos.\"",
             "\"Hackers invadiram o OpenCode: US$ 1.700 numa noite.\"",
-            "\"Comenta SEGURANÇA que eu te mando o link.\""
+            "\"Comenta SEGURANÇA que eu te mando o link.\"",
+            "\"Seu agente obedece e gasta menos.\"",
+            "\"Olá, hoje eu vou falar sobre segurança.\""
           ],
-          "certa": 2,
+          "certa": 0,
           "explica": "Gancho = gatilho (medo, novidade ou provocação) com número ou fato. \"Gasta menos\" é promessa, o gancho do lote 1, que não teve visualização.",
           "ref": "passos"
         },
         {
           "p": "Por que a fala escreve \"mil e setecentos\" em vez de \"1.700\"?",
           "opcoes": [
-            "Porque fica mais elegante.",
-            "Porque o avatar lê a fala; a legenda é que troca por algarismo.",
             "Porque o YouTube bloqueia números.",
-            "Não precisa: tanto faz."
+            "Não precisa: tanto faz.",
+            "Porque o avatar lê a fala; a legenda é que troca por algarismo.",
+            "Porque fica mais elegante."
           ],
-          "certa": 1,
+          "certa": 2,
           "explica": "O avatar lê o texto como está. Por extenso, ele pronuncia certo; a legenda na tela mostra o algarismo.",
           "ref": "codigo"
         },
@@ -294,11 +294,11 @@
           "p": "O que os quatro lotes mostraram?",
           "opcoes": [
             "Que só a forma importa.",
-            "Que o conteúdo acertou com o plano antes da fala (lote 3) e a forma acertou com o acabamento de telejornal (lote 4).",
+            "Que basta postar mais vezes por dia.",
             "Que o avatar em tela cheia viraliza mais.",
-            "Que basta postar mais vezes por dia."
+            "Que o conteúdo acertou com o plano antes da fala (lote 3) e a forma acertou com o acabamento de telejornal (lote 4)."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Conteúdo e forma foram corrigidos em lotes diferentes. O r7ex juntou a fala do lote 3 com o motor do lote 4.",
           "ref": "codigo"
         }

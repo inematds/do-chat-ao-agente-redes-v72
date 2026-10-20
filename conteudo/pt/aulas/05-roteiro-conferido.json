@@ -209,12 +209,12 @@
         {
           "p": "O roteiro traz um número que não está na base.md. O que fazer?",
           "opcoes": [
-            "Publicar, se o número parecer certo.",
-            "Trocar por um número arredondado.",
             "Devolver o roteiro: todo número precisa estar na base, com trecho literal.",
-            "Tirar a fonte da tela."
+            "Tirar a fonte da tela.",
+            "Trocar por um número arredondado.",
+            "Publicar, se o número parecer certo."
           ],
-          "certa": 2,
+          "certa": 0,
           "explica": "A regra do E4: todo número do roteiro está na base.md. Se não estiver, o roteiro volta.",
           "cert": true,
           "ref": "codigo"
@@ -223,9 +223,9 @@
           "p": "Qual é a melhor primeira fala de um radar?",
           "opcoes": [
             "\"Olá, pessoal, neste vídeo vamos ver as notícias.\"",
-            "\"Imagine se o seu aluguel subisse amanhã.\"",
+            "O convite para o inema.club.",
             "A frase-choque com o número mais forte do dia.",
-            "O convite para o inema.club."
+            "\"Imagine se o seu aluguel subisse amanhã.\""
           ],
           "certa": 2,
           "explica": "O quadro 0 já mostra a data e o número; a primeira fala é a frase-choque dele. \"Olá\", \"Imagine\" e \"Neste vídeo\" são proibidos na abertura.",
@@ -234,12 +234,12 @@
         {
           "p": "Por que a âncora de um visual nunca é um número?",
           "opcoes": [
-            "Porque número não aparece na tela.",
-            "Porque a transcrição do avatar escreve número em algarismo e a âncora por extenso não casaria.",
             "Porque número dá azar.",
-            "Porque a âncora tem que ser o nome da pessoa."
+            "Porque a âncora tem que ser o nome da pessoa.",
+            "Porque número não aparece na tela.",
+            "Porque a transcrição do avatar escreve número em algarismo e a âncora por extenso não casaria."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "A fala diz \"doze\", a transcrição escreve \"12\". Uma palavra comum, como \"aluguel\", casa sempre.",
           "ref": "passos"
         },
@@ -247,11 +247,11 @@
           "p": "O fim do roteiro convida para o inema.club, para o canal do YouTube e para um vídeo longo. Está certo?",
           "opcoes": [
             "Sim: quanto mais destinos, melhor.",
-            "Não: o convite final tem um destino só.",
+            "Só se o vídeo passar de 60 s.",
             "Sim, desde que seja rápido.",
-            "Só se o vídeo passar de 60 s."
+            "Não: o convite final tem um destino só."
           ],
-          "certa": 1,
+          "certa": 3,
           "explica": "Nos radares, o CTA é sempre só o inema.club. Três destinos dividem a atenção e nenhum é seguido.",
           "ref": "diagrama"
         }
